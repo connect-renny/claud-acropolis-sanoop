@@ -17,6 +17,7 @@
      8. Buttons       data-btn tiers, press, magnetic hover, idle nudge (GSAP)
      9. Screens       side pager + per-section entrance animations
     10. Network map   dot-matrix world map with animated routes (canvas)
+    11. Enquiry forms contact / partner forms → pre-filled email (no backend)
    ═══════════════════════════════════════════════════════════════════════════ */
 
 (function () {
@@ -724,5 +725,55 @@
         drawNet(reduceMotion ? null : clock);
       }).observe(netCanvas);
     }
+  })();
+
+  /* ─── 11. Enquiry forms ─────────────────────────────────────────────────── */
+  // The site is static, so a form[data-mailto] validates natively, then
+  // opens the visitor's mail client with every labelled field in the body.
+  (function () {
+    var forms = document.querySelectorAll("form[data-mailto]");
+    if (!forms.length) return;
+
+    forms.forEach(function (form) {
+      var status = form.querySelector(".form-status");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var hp = form.querySelector(".form-hp input");
+        if (hp && hp.value) return;
+
+        if (!form.checkValidity()) {
+          form.querySelectorAll("input, select, textarea").forEach(function (el) {
+            el.setAttribute("aria-invalid", el.checkValidity() ? "false" : "true");
+          });
+          form.reportValidity();
+          return;
+        }
+
+        var lines = [];
+        form.querySelectorAll("[name]").forEach(function (el) {
+          if (el.closest(".form-hp") || !el.labels || !el.labels.length) return;
+          var label = el.labels[0].textContent.replace(/\*/g, "").trim();
+          var value = el.type === "checkbox" ? (el.checked ? "Yes" : "No") : el.value.trim();
+          if (value) lines.push(label + ": " + value);
+        });
+
+        window.location.href =
+          "mailto:" + form.dataset.mailto +
+          "?subject=" + encodeURIComponent(form.dataset.subject || "Website enquiry") +
+          "&body=" + encodeURIComponent(lines.join("\n"));
+
+        if (status) {
+          status.dataset.state = "success";
+          status.textContent = "Your email app should open with your message ready to send. If it doesn't, write to " + form.dataset.mailto + ".";
+        }
+      });
+
+      form.addEventListener("input", function (e) {
+        if (e.target.getAttribute("aria-invalid") === "true" && e.target.checkValidity()) {
+          e.target.setAttribute("aria-invalid", "false");
+        }
+      });
+    });
   })();
 })();

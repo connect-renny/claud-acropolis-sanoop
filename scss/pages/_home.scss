@@ -52,21 +52,10 @@
   transition: transform 7s linear;
 
   .hero-slide.is-active & {
-    transform: scale(1.12);
+    transform: scale(1.08);
   }
 }
 
-.hero-slide-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgb(6 8 18 / 82%) 0%,
-    rgb(6 8 18 / 58%) 34%,
-    rgb(6 8 18 / 20%) 62%,
-    rgb(6 8 18 / 5%) 100%
-  );
-}
 
 .hero-slide-content {
   position: relative;
@@ -2044,14 +2033,6 @@
     }
   }
 
-  .hero-slide-overlay {
-    background: linear-gradient(
-      180deg,
-      rgb(6 8 18 / 35%) 0%,
-      rgb(6 8 18 / 65%) 55%,
-      rgb(6 8 18 / 82%) 100%
-    );
-  }
 
   .hero-arrow {
     display: none;

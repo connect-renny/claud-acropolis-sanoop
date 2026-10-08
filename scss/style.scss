@@ -35,6 +35,7 @@
 // 5. Pages
 @use "pages/home";
 @use "pages/service";
+@use "pages/company";
 
 // 6. Utilities — last, so they can override anything above
 @use "utilities/spacing";
