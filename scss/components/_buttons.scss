@@ -1,0 +1,276 @@
+@use "../abstracts" as *;
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  Buttons
+//  Base styles work without JS. main.js tags each button with a `data-btn`
+//  tier (when GSAP is present) and the second block below layers the premium
+//  hover effects on top: fill sweep, shine, top-edge accent bar.
+// ═══════════════════════════════════════════════════════════════════════════
+
+.btn {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  height: 52px;
+  padding: 0 26px;
+  border-radius: 12px;
+  font-size: 0.96rem;
+  font-weight: var(--fw-semibold);
+  white-space: nowrap;
+  transition:
+    transform 0.25s var(--ease),
+    box-shadow 0.25s var(--ease),
+    background 0.25s var(--ease),
+    color 0.2s ease,
+    border-color 0.2s ease,
+    padding 0.25s var(--ease);
+
+  .arrow {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.25s var(--ease);
+  }
+
+  &:not([data-btn]):hover .arrow {
+    transform: translate(3px, -2px);
+  }
+}
+
+// ─── Sizes ─────────────────────────────────────────────────────────────────
+.btn-sm {
+  height: 44px;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+
+.btn-lg {
+  height: 56px;
+  padding: 0 30px;
+  font-size: 1rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+// ─── Colour variants ───────────────────────────────────────────────────────
+.btn-primary {
+  background: var(--gradient);
+  color: var(--white);
+
+  &:hover {
+    background: var(--gradient);
+    box-shadow: 0 14px 28px rgb(62 107 240 / 28%);
+  }
+
+  &:not([data-btn]):hover {
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+}
+
+.btn-outline {
+  background: var(--white);
+  color: var(--ink);
+  border: 1.5px solid var(--line);
+
+  &:hover {
+    border-color: var(--blue);
+    color: var(--blue);
+  }
+}
+
+.btn-white {
+  background: var(--white);
+  color: var(--ink);
+
+  &:hover {
+    box-shadow: var(--shadow-md);
+  }
+
+  &:not([data-btn]):hover {
+    transform: translateY(-2px);
+  }
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: var(--white);
+  border: 1.5px solid rgb(255 255 255 / 35%);
+
+  &:hover {
+    border-color: var(--white);
+    background: rgb(255 255 255 / 8%);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  Premium micro-interaction layer — progressive enhancement via [data-btn]
+// ═══════════════════════════════════════════════════════════════════════════
+
+%btn-layer {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.btn[data-btn] {
+  transition:
+    box-shadow 0.3s var(--ease),
+    border-color 0.3s var(--ease),
+    background 0.3s var(--ease),
+    color 0.2s ease;
+
+  .arrow {
+    z-index: 1;
+  }
+}
+
+// Gradient fill sweeps in from the left on primary (dark) buttons.
+.btn[data-btn="primary"],
+.btn[data-btn="dark"] {
+  &::before {
+    @extend %btn-layer;
+    inset: 0;
+    background: linear-gradient(100deg, #3e6bf0 0%, #4fd1e8 55%, #7c3aed 100%);
+    transform: translateX(-105%);
+    transition: transform 0.5s var(--ease);
+  }
+
+  &:hover {
+    box-shadow: 0 14px 28px rgb(62 107 240 / 32%);
+
+    &::before {
+      transform: translateX(0);
+    }
+  }
+}
+
+// Soft shine sweep for white buttons on dark surfaces.
+.btn[data-btn="primary-light"] {
+  &::before {
+    @extend %btn-layer;
+    inset: 0;
+    background: linear-gradient(
+      100deg,
+      transparent 0%,
+      rgb(62 107 240 / 16%) 45%,
+      rgb(79 209 232 / 22%) 75%,
+      transparent 100%
+    );
+    transform: translateX(-105%);
+    transition: transform 0.5s var(--ease);
+  }
+
+  &:hover {
+    box-shadow: var(--shadow-md);
+
+    &::before {
+      transform: translateX(0);
+    }
+  }
+}
+
+// Outline buttons: a gradient bar grows along the top edge. (A conic-gradient
+// border mask left a diagonal artifact through short, wide pill shapes.)
+.btn[data-btn="outline"],
+.btn[data-btn="outline-dark"] {
+  &::before {
+    @extend %btn-layer;
+    left: 16%;
+    right: 16%;
+    top: 0;
+    height: 2px;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s var(--ease);
+  }
+
+  &:hover {
+    transform: scale(1.015);
+
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+}
+
+.btn[data-btn="outline"] {
+  &::before {
+    background: linear-gradient(90deg, var(--blue), var(--cyan), var(--purple));
+  }
+
+  &:hover {
+    box-shadow: 0 10px 24px rgb(62 107 240 / 16%);
+  }
+}
+
+.btn[data-btn="outline-dark"] {
+  &::before {
+    background: linear-gradient(90deg, #fff, var(--cyan), rgb(255 255 255 / 70%));
+  }
+
+  &:hover {
+    box-shadow: 0 10px 24px rgb(79 209 232 / 18%);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  Text links
+// ═══════════════════════════════════════════════════════════════════════════
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.98rem;
+  font-weight: var(--fw-bold);
+  color: var(--ink);
+
+  .arrow {
+    color: var(--blue);
+    transition: transform 0.25s var(--ease);
+  }
+
+  &:hover .arrow {
+    transform: translateX(4px);
+  }
+
+  &--light {
+    color: var(--white);
+
+    .arrow {
+      color: var(--cyan-soft);
+    }
+  }
+}
+
+// Card footer link; the whole card is the anchor, so this is a <span>.
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.88rem;
+  font-weight: var(--fw-bold);
+  color: var(--ink);
+
+  .arrow {
+    color: var(--blue);
+  }
+
+  &--light,
+  &--light .arrow {
+    color: var(--white);
+  }
+}

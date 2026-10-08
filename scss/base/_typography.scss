@@ -1,0 +1,129 @@
+@use "../abstracts" as *;
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  Typography
+// ═══════════════════════════════════════════════════════════════════════════
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: var(--fw-extrabold);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+em {
+  font-style: normal;
+  color: var(--blue);
+}
+
+.center {
+  text-align: center;
+}
+
+// ─── Eyebrow ───────────────────────────────────────────────────────────────
+// The four-square brand mark (echoes the logo) sits in front of every one.
+@mixin brand-squares($last: var(--brand-navy)) {
+  background:
+    linear-gradient(var(--brand-purple), var(--brand-purple)) 0 0 / 5px 5px
+      no-repeat,
+    linear-gradient(var(--brand-green), var(--brand-green)) 100% 0 / 5px 5px
+      no-repeat,
+    linear-gradient(var(--brand-sky), var(--brand-sky)) 0 100% / 5px 5px
+      no-repeat,
+    linear-gradient($last, $last) 100% 100% / 5px 5px no-repeat;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+  font-size: var(--fs-label);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--purple);
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    @include brand-squares;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
+  &--light {
+    color: rgb(255 255 255 / 82%);
+
+    &::before {
+      @include brand-squares(#fff);
+    }
+  }
+}
+
+// ─── Section headings ──────────────────────────────────────────────────────
+.section-title {
+  margin-bottom: 0;
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-extrabold);
+  line-height: 1.1;
+
+  &.center {
+    max-width: 780px;
+    margin-inline: auto;
+  }
+
+  &--statement {
+    font-size: var(--fs-statement);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+  }
+}
+
+.section-intro {
+  max-width: 600px;
+  font-size: var(--fs-lead);
+  line-height: 1.6;
+  color: var(--muted);
+
+  &.center {
+    margin-inline: auto;
+    text-align: center;
+  }
+}
+
+// ─── Gradient text ─────────────────────────────────────────────────────────
+.text-glow,
+.text-gradient {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-glow {
+  background-image: linear-gradient(90deg, #8fd9ee 0%, #a9b8ff 50%, #c9a8ff 100%);
+}
+
+.text-gradient {
+  background-image: linear-gradient(90deg, var(--blue) 0%, var(--purple) 100%);
+}
+
+::selection {
+  color: var(--white);
+  background: var(--blue);
+}

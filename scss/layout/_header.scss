@@ -1,0 +1,67 @@
+@use "../abstracts" as *;
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  Site header
+//  Sticky, with the four-colour brand bar along its top edge. The height is
+//  fixed (--header-h) so the hero and every screen can be sized against it.
+// ═══════════════════════════════════════════════════════════════════════════
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  background: rgb(255 255 255 / 96%);
+  transition:
+    box-shadow 0.3s var(--ease),
+    background 0.3s var(--ease);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--brand-bar);
+  }
+
+  // main.js adds this past 24px of scroll.
+  &.is-scrolled {
+    background: rgb(255 255 255 / 92%);
+    backdrop-filter: blur(14px);
+    box-shadow:
+      0 1px 0 var(--line),
+      0 8px 24px rgb(14 18 32 / 6%);
+  }
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  height: var(--header-h);
+}
+
+.brand {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  width: auto;
+  height: 38px;
+
+  @media (width <= 768px) {
+    height: 34px;
+  }
+}
+
+.header-actions {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 16px;
+}

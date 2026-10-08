@@ -1,0 +1,46 @@
+{
+  "name": "ready-to-html",
+  "version": "6.1.0",
+  "private": true,
+  "description": "Cloud Acropolis home page, built on the Ready to HTML kit: SCSS design tokens, GSAP, Inter.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "npm-run-all --parallel watch:css serve",
+    "serve": "browser-sync start --server --files \"*.html, assets/css/*.css, assets/js/*.js\" --no-notify --port 3000",
+    "watch:css": "sass --watch scss/style.scss:assets/css/style.css --style=expanded --source-map",
+    "build:css": "sass scss/style.scss:assets/css/style.css --style=expanded --no-source-map && sass scss/style.scss:assets/css/style.min.css --style=compressed --no-source-map",
+    "prefix": "postcss assets/css/style.css assets/css/style.min.css --replace",
+    "build": "npm run build:css && npm run prefix",
+    "vendor": "node scripts/vendor.mjs",
+    "pages": "node scripts/build-services.mjs",
+    "lint:css": "stylelint \"scss/**/*.scss\"",
+    "format": "prettier --write \"**/*.{html,scss,js,mjs,json,md}\"",
+    "clean": "rimraf assets/css/style.css assets/css/style.min.css assets/css/*.map"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead"
+  ],
+  "devDependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "autoprefixer": "^10.6.1",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
+    "browser-sync": "^3.0.4",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.26",
+    "npm-run-all2": "^9.0.3",
+    "postcss": "^8.5.28",
+    "postcss-cli": "^12.0.0",
+    "prettier": "^3.9.7",
+    "rimraf": "^6.1.3",
+    "sass": "^1.104.1",
+    "stylelint": "^17.15.0",
+    "stylelint-config-standard-scss": "^17.0.0",
+    "swiper": "^14.2.0"
+  }
+}

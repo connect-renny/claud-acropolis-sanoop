@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  Accessibility primitives
+// ═══════════════════════════════════════════════════════════════════════════
+
+// Keyboard users land here first and can jump past the nav.
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: -999px;
+  z-index: var(--z-skip);
+  padding: 10px 16px;
+  background: var(--ink);
+  color: var(--white);
+  border-radius: 8px;
+
+  &:focus {
+    top: 16px;
+    left: 16px;
+  }
+}
+
+// Screen-reader-only text. Use on icon-only buttons that have no label.
+.sr-only,
+.visually-hidden {
+  @include visually-hidden;
+}
+
+// Visible keyboard focus everywhere, without changing the mouse look. No
+// border-radius here (unlike the focus-ring mixin) so rounded controls keep
+// their shape when focused.
+a,
+button {
+  &:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 3px;
+  }
+}

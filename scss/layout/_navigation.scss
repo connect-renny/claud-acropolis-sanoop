@@ -1,0 +1,333 @@
+@use "../abstracts" as *;
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  Primary navigation: desktop links + mega menu, mobile drawer + scrim
+// ═══════════════════════════════════════════════════════════════════════════
+
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 11px 16px;
+  border-radius: 8px;
+  font-size: 0.96rem;
+  font-weight: var(--fw-semibold);
+  color: var(--ink);
+
+  // Gradient underline that wipes in from the left.
+  &::after {
+    content: "";
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 6px;
+    height: 2px;
+    background: var(--gradient);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s var(--ease);
+  }
+
+  &:hover::after,
+  &.is-current::after {
+    transform: scaleX(1);
+  }
+
+  .chev {
+    display: inline;
+    color: currentcolor;
+    opacity: 0.6;
+    transition: transform 0.25s var(--ease);
+  }
+
+  &[aria-expanded="true"] .chev {
+    transform: rotate(180deg);
+  }
+}
+
+// ─── Mega menu ─────────────────────────────────────────────────────────────
+.has-menu {
+  position: relative;
+}
+
+.mega-menu {
+  position: absolute;
+  top: calc(100% + 18px);
+  left: 50%;
+  z-index: 50;
+  padding: 0;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(8px);
+  transition:
+    opacity 0.28s var(--ease),
+    transform 0.28s var(--ease);
+
+  &.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  &--full {
+    width: min(1000px, 92vw);
+  }
+}
+
+.mega-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  padding: 32px 32px 8px;
+}
+
+.mega-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-right: 24px;
+}
+
+.mega-cat {
+  margin: 0 0 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.72rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+
+// Ink by default, soft tint on hover, gradient marker for the active item.
+.mega-svc {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: var(--fw-semibold);
+  color: var(--ink);
+  transition:
+    background 0.15s ease,
+    padding-left 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    padding-left: 12px;
+    background: var(--surface-alt);
+  }
+
+  &.is-active,
+  &[aria-current="page"] {
+    background: var(--surface-tint);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      border-radius: 2px;
+      background: var(--gradient);
+    }
+  }
+}
+
+.mega-go {
+  font-weight: var(--fw-semibold);
+  color: var(--ink);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+
+  .mega-svc:hover &,
+  .mega-svc:focus-visible & {
+    opacity: 0.55;
+    transform: none;
+  }
+}
+
+.mega-featured {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 18px 32px;
+  background: var(--surface-alt);
+  border-top: 1px solid var(--line);
+  border-radius: 0 0 20px 20px;
+}
+
+.mega-featured-label {
+  font-size: 0.88rem;
+  font-weight: var(--fw-medium);
+  color: var(--muted);
+}
+
+.mega-featured-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: var(--fw-bold);
+  color: var(--ink);
+
+  .arrow {
+    transition: transform 0.2s ease;
+  }
+
+  &:hover .arrow {
+    transform: translateX(3px);
+  }
+}
+
+// ─── Hamburger ─────────────────────────────────────────────────────────────
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 34px;
+  height: 34px;
+
+  span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 2px;
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+  }
+
+  &[aria-expanded="true"] span {
+    &:nth-child(1) {
+      transform: translateY(6px) rotate(45deg);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+    }
+    &:nth-child(3) {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+  }
+}
+
+@media (width <= 1024px) {
+  .main-nav {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+}
+
+// ─── Mobile drawer ─────────────────────────────────────────────────────────
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: var(--z-drawer);
+  width: min(380px, 88vw);
+  height: 100%;
+  overflow-y: auto;
+  background: var(--white);
+  box-shadow: -10px 0 30px rgb(14 18 32 / 15%);
+  transition: right 0.3s var(--ease);
+
+  &.is-open {
+    right: 0;
+  }
+}
+
+.mobile-nav-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 100px 28px 40px;
+}
+
+.mobile-top-link {
+  display: block;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 1.05rem;
+  font-weight: var(--fw-extrabold);
+}
+
+.mobile-services {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+
+  summary {
+    padding: 6px 0;
+    font-size: 1.05rem;
+    font-weight: var(--fw-extrabold);
+    cursor: pointer;
+  }
+
+  a {
+    display: block;
+    padding: 8px 6px;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    font-weight: var(--fw-medium);
+    color: var(--ink);
+
+    &:hover {
+      background: var(--surface-alt);
+    }
+  }
+}
+
+.mobile-cat {
+  margin: 16px 0 2px;
+  font-size: 0.72rem;
+  font-weight: var(--fw-extrabold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+
+.mobile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.nav-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-scrim);
+  background: rgb(10 14 28 / 45%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
+  &.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

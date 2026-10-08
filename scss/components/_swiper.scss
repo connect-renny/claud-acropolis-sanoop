@@ -1,0 +1,84 @@
+@use "../abstracts" as *;
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  Swiper theming
+//  Swiper 8+ reads these custom properties, so there's no need to fight its
+//  stylesheet with !important.
+// ═══════════════════════════════════════════════════════════════════════════
+
+.swiper {
+  --swiper-theme-color: var(--color-brand);
+  --swiper-navigation-size: 20px;
+  --swiper-pagination-bullet-size: 10px;
+  --swiper-pagination-bullet-inactive-color: var(--color-brand);
+  --swiper-pagination-bullet-inactive-opacity: 0.3;
+
+  // A slider inside a container shouldn't spill past it.
+  width: 100%;
+}
+
+// Light controls for sliders on a dark background.
+.swiper--light {
+  --swiper-theme-color: var(--white);
+  --swiper-navigation-color: var(--white);
+  --swiper-pagination-color: var(--white);
+  --swiper-pagination-bullet-inactive-color: var(--white);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @include flex-center;
+  width: 48px;
+  height: 48px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-circle);
+  box-shadow: var(--shadow-sm);
+  @include transEase((background-color, color, border-color));
+
+  &::after {
+    font-size: var(--swiper-navigation-size);
+    font-weight: var(--fw-bold);
+  }
+
+  @include hover {
+    background: var(--color-brand);
+    color: var(--white);
+    border-color: var(--color-brand);
+  }
+
+  &.swiper-button-disabled {
+    opacity: 0.35;
+  }
+}
+
+.swiper-pagination-bullet {
+  @include transEase((width, opacity, background-color));
+
+  &-active {
+    width: 28px;
+    border-radius: var(--radius-pill);
+  }
+}
+
+// Thumbnail strip for the gallery pairing.
+.galleryThumbSwiper {
+  margin-top: var(--space-2xs);
+
+  .swiper-slide {
+    cursor: pointer;
+    opacity: 0.45;
+    @include transEase(opacity);
+    @include ratio(4, 3);
+
+    &-thumb-active {
+      opacity: 1;
+      outline: 2px solid var(--color-brand);
+      outline-offset: -2px;
+    }
+  }
+}
+
+.galleryBigSwiper .swiper-slide {
+  @include ratio(16, 9);
+}

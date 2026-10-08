@@ -1,0 +1,57 @@
+@use "../abstracts" as *;
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  Preloader
+//  Only include the markup if you genuinely need it — a preloader always
+//  makes the site feel slower than it is. main.js hides it on `load` and has
+//  a hard 5s failsafe so a stalled image can never trap the visitor behind it.
+// ═══════════════════════════════════════════════════════════════════════════
+
+.loader-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-loader);
+  @include flex-center;
+  background: var(--color-bg);
+  @include transEase(opacity, $duration: var(--transition-slow));
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  img {
+    width: 120px;
+    max-width: 40vw;
+    height: auto;
+    animation: dropAnim 0.8s var(--ease-out) both;
+  }
+}
+
+.loader-bar {
+  position: relative;
+  width: 140px;
+  height: 3px;
+  overflow: hidden;
+  background: var(--color-border);
+  border-radius: var(--radius-sm);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+    background: var(--color-brand);
+    border-radius: var(--radius-sm);
+    animation: loaderSlide 1.2s var(--ease-in-out) infinite;
+  }
+}

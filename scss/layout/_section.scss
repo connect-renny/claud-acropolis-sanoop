@@ -1,0 +1,88 @@
+@use "../abstracts" as *;
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  Section rhythm + heading blocks
+// ═══════════════════════════════════════════════════════════════════════════
+
+.section {
+  padding: 64px 0;
+
+  @include mq-up("xxxl") {
+    padding: 76px 0;
+  }
+
+  @media (width <= 768px) {
+    padding: 48px 0;
+  }
+}
+
+.section-alt {
+  background: var(--surface-alt);
+}
+
+.section-dark {
+  position: relative;
+  overflow: hidden;
+  background: var(--gradient-deep);
+  color: var(--white);
+
+  .section-title {
+    color: var(--white);
+  }
+
+  .section-intro {
+    color: rgb(255 255 255 / 82%);
+  }
+}
+
+.section-head {
+  margin-bottom: 36px;
+}
+
+// Title on the left, short aside on the right — one compact intro per section.
+.split-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px 48px;
+  margin-bottom: 32px;
+
+  > div:first-child {
+    flex: 1 1 440px;
+    max-width: 720px;
+  }
+
+  &--tabs {
+    align-items: flex-end;
+    margin-bottom: 28px;
+  }
+
+  @media (width <= 768px) {
+    margin-bottom: 24px;
+  }
+}
+
+.split-head-aside {
+  display: flex;
+  flex: 0 1 420px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+
+  .section-intro {
+    font-size: 1rem;
+  }
+
+  &--chips {
+    flex-flow: row wrap;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+
+    @media (width <= 1024px) {
+      justify-content: flex-start;
+    }
+  }
+}

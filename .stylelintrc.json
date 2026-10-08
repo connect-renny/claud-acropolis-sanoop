@@ -1,0 +1,30 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "ignoreFiles": ["assets/**"],
+  "rules": {
+    "color-function-notation": "modern",
+    "media-feature-range-notation": "context",
+    "alpha-value-notation": null,
+    "at-rule-empty-line-before": null,
+    "container-name-pattern": null,
+    "custom-property-empty-line-before": null,
+    "custom-property-pattern": null,
+    "declaration-block-single-line-max-declarations": null,
+    "declaration-empty-line-before": null,
+    "declaration-property-value-no-unknown": null,
+    "keyframes-name-pattern": null,
+    "no-descending-specificity": null,
+    "property-no-vendor-prefix": null,
+    "rule-empty-line-before": null,
+    "scss/at-mixin-argumentless-call-parentheses": null,
+    "scss/at-mixin-pattern": null,
+    "scss/comment-no-empty": null,
+    "scss/dollar-variable-empty-line-before": null,
+    "scss/dollar-variable-pattern": null,
+    "scss/double-slash-comment-empty-line-before": null,
+    "scss/load-partial-extension": null,
+    "selector-class-pattern": null,
+    "selector-not-notation": null,
+    "value-keyword-case": null
+  }
+}

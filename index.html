@@ -1,0 +1,831 @@
+<!doctype html>
+<!--
+  ═══════════════════════════════════════════════════════════════════════════
+   Cloud Acropolis — home page
+
+   Styles: scss/ → assets/css/style.css (npm run build).
+   Behaviour: assets/js/main.js — independent modules, each bails out if its
+   markup is missing. GSAP (vendored) loads first and is optional: without it
+   the page falls back to CSS reveals and plain hover states.
+  ═══════════════════════════════════════════════════════════════════════════
+-->
+<html lang="en" dir="ltr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloud Acropolis | Enterprise Cloud Infrastructure &amp; Marketplace in Oman</title>
+<meta name="description" content="Secure, scalable cloud infrastructure and digital services hosted in Oman. Linux and Windows cloud servers, colocation, GPU, and a full business marketplace — built in Oman, serving internationally.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cloud Acropolis | Enterprise Cloud Infrastructure &amp; Marketplace in Oman">
+<meta property="og:description" content="Secure, scalable cloud infrastructure and digital services hosted in Oman — built in Oman, serving internationally.">
+<meta property="og:image" content="assets/images/hero-slider-02.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/images/logo.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- The one font file, preloaded so text renders in it on first paint.
+     Keep in sync with scss/base/_fonts.scss. -->
+<link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner container">
+    <a href="/" class="brand" aria-label="Cloud Acropolis home">
+      <img src="assets/images/logo.png" alt="Cloud Acropolis" class="brand-mark">
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <ul>
+        <li><a class="nav-link is-current" href="/" aria-current="page">Home</a></li>
+        <li class="has-menu">
+          <button class="nav-link" aria-expanded="false" data-menu="services">Our Services <svg class="chev" viewBox="0 0 12 8" width="10" height="8"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+
+          <div class="mega-menu mega-menu--full" id="menu-services">
+            <div class="mega-cols">
+
+              <div class="mega-col">
+                <p class="mega-cat">Infrastructure</p>
+                <a class="mega-svc" href="linux-server.html">Linux Cloud Server<span class="mega-go">→</span></a>
+                <a class="mega-svc" href="windows-server.html">Windows Cloud Server<span class="mega-go">→</span></a>
+                <a class="mega-svc" href="colocation.html">Colocation<span class="mega-go">→</span></a>
+                <a class="mega-svc" href="gpu.html">GPU as a Service<span class="mega-go">→</span></a>
+              </div>
+
+              <div class="mega-col">
+                <p class="mega-cat">SaaS Solutions</p>
+                <a class="mega-svc" href="cloud-pbx.html">Cloud PBX<span class="mega-go">→</span></a>
+                <a class="mega-svc" href="email-hosting-plan.html">Email Hosting<span class="mega-go">→</span></a>
+                <a class="mega-svc" href="osos-erp-sme.html">OSOS ERP SME<span class="mega-go">→</span></a>
+                <a class="mega-svc" href="erp-enterprise.html">OSOS ERP Enterprise<span class="mega-go">→</span></a>
+                <a class="mega-svc" href="intercom.html">InterCom<span class="mega-go">→</span></a>
+              </div>
+
+              <div class="mega-col">
+                <p class="mega-cat">Bundles</p>
+                <a class="mega-svc" href="business-bundle.html">SME Starter<span class="mega-go">→</span></a>
+                <a class="mega-svc" href="business-bundle.html">Business Grow<span class="mega-go">→</span></a>
+                <a class="mega-svc" href="business-bundle.html">Professional<span class="mega-go">→</span></a>
+              </div>
+
+              <div class="mega-col">
+                <p class="mega-cat">Security Services</p>
+                <a class="mega-svc" href="ssl-certificates.html">SSL Certificates<span class="mega-go">→</span></a>
+                <a class="mega-svc" href="https://my.cloudacropolis.om/index.php?rp=/store/managed-security">Managed Security<span class="mega-go">→</span></a>
+                <a class="mega-svc" href="https://my.cloudacropolis.om/index.php?rp=/store/managed-security">Managed Network Security<span class="mega-go">→</span></a>
+              </div>
+
+            </div>
+            <div class="mega-featured">
+              <p class="mega-featured-label">Not sure what you need?</p>
+              <a class="mega-featured-link" href="mailto:info@cloudacropolis.om?subject=Inquiry%20Request">Talk to our cloud specialists <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </li>
+        <li><a class="nav-link" href="https://cloudacropolis.om/partner">Become a Partner</a></li>
+        <li><a class="nav-link" href="https://cloudacropolis.om/Contact_us">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm" href="https://my.cloudacropolis.om/clientarea.php">Client Area</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-inner">
+    <a class="mobile-top-link" href="/">Home</a>
+    <details class="mobile-services">
+      <summary>Our Services</summary>
+
+      <p class="mobile-cat">Infrastructure</p>
+      <a href="linux-server.html">Linux Cloud Server</a>
+      <a href="windows-server.html">Windows Cloud Server</a>
+      <a href="colocation.html">Colocation</a>
+      <a href="gpu.html">GPU as a Service</a>
+
+      <p class="mobile-cat">SaaS Solutions</p>
+      <a href="cloud-pbx.html">Cloud PBX</a>
+      <a href="email-hosting-plan.html">Email Hosting</a>
+      <a href="osos-erp-sme.html">OSOS ERP SME</a>
+      <a href="erp-enterprise.html">OSOS ERP Enterprise</a>
+      <a href="intercom.html">InterCom</a>
+
+      <p class="mobile-cat">Bundles</p>
+      <a href="business-bundle.html">SME Starter</a>
+      <a href="business-bundle.html">Business Grow</a>
+      <a href="business-bundle.html">Professional</a>
+
+      <p class="mobile-cat">Security Services</p>
+      <a href="ssl-certificates.html">SSL Certificates</a>
+      <a href="https://my.cloudacropolis.om/index.php?rp=/store/managed-security">Managed Security</a>
+      <a href="https://my.cloudacropolis.om/index.php?rp=/store/managed-security">Managed Network Security</a>
+    </details>
+    <a class="mobile-top-link" href="https://cloudacropolis.om/partner">Become a Partner</a>
+    <a class="mobile-top-link" href="https://cloudacropolis.om/Contact_us">Contact Us</a>
+    <div class="mobile-actions">
+      <a class="btn btn-primary btn-block" href="https://my.cloudacropolis.om/clientarea.php">Client Area</a>
+    </div>
+  </div>
+</div>
+<div class="nav-scrim" id="navScrim"></div>
+
+<!-- Section pager (desktop screen mode only; items are built by main.js from [data-screen]) -->
+<nav class="screen-pager" id="screenPager" aria-label="Page sections"></nav>
+
+<main id="main">
+
+  <!-- ============ HERO SLIDER ============ -->
+  <section class="hero" id="heroSlider" data-screen="Home">
+    <div class="hero-slides">
+
+      <div class="hero-slide is-active" data-slide="0">
+        <img src="assets/images/hero-slider-01.png" alt="" class="hero-slide-img">
+        <div class="hero-slide-overlay"></div>
+        <div class="hero-slide-content">
+          <p class="hero-kicker">DATA CENTER</p>
+          <h1>Cloud Infrastructure<br>Built for Business</h1>
+          <p>Secure, scalable and reliable infrastructure designed to power modern businesses in Oman.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="linux-server.html">Explore Infrastructure <span class="arrow">→</span></a>
+            <a class="btn btn-outline-light btn-lg" href="mailto:info@cloudacropolis.om?subject=Inquiry%20Request">Talk to an Expert</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-slide" data-slide="1">
+        <img src="assets/images/hero-slider-02.jpg" alt="" class="hero-slide-img">
+        <div class="hero-slide-overlay"></div>
+        <div class="hero-slide-content">
+          <p class="hero-kicker">DOMAIN REGISTRATION</p>
+          <h1>Start with the Right<br>Domain</h1>
+          <p>Find and register the perfect domain for your business and build your digital presence.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="https://cloudacropolis.om/services">Register Your Domain <span class="arrow">→</span></a>
+            <a class="btn btn-outline-light btn-lg" href="mailto:info@cloudacropolis.om?subject=Inquiry%20Request">Talk to an Expert</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-slide" data-slide="2">
+        <img src="assets/images/hero-slider-03.jpg" alt="" class="hero-slide-img">
+        <div class="hero-slide-overlay"></div>
+        <div class="hero-slide-content">
+          <p class="hero-kicker">OSOS ERP</p>
+          <h1>Run Your Business<br>Smarter</h1>
+          <p>Connect your business operations, finance, inventory and processes with OSOS ERP SME or OSOS ERP Enterprise.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="osos-erp-sme.html">OSOS ERP SME <span class="arrow">→</span></a>
+            <a class="btn btn-outline-light btn-lg" href="erp-enterprise.html">OSOS ERP Enterprise</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-slide" data-slide="3">
+        <img src="assets/images/hero-slider-04.jpg" alt="" class="hero-slide-img">
+        <div class="hero-slide-overlay"></div>
+        <div class="hero-slide-content">
+          <p class="hero-kicker">WECOM CLOUD PBX</p>
+          <h1>Smarter Business<br>Communication</h1>
+          <p>Connect your teams and customers through a flexible cloud-based communication platform.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="cloud-pbx.html">Explore Cloud PBX <span class="arrow">→</span></a>
+            <a class="btn btn-outline-light btn-lg" href="mailto:info@cloudacropolis.om?subject=Inquiry%20Request">Talk to an Expert</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="hero-arrow hero-arrow--prev" aria-label="Previous slide">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="hero-arrow hero-arrow--next" aria-label="Next slide">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+
+    <div class="hero-dots" role="tablist" aria-label="Hero slides">
+      <button class="hero-dot is-active" data-goto="0" role="tab" aria-label="Slide 1: Data Center"></button>
+      <button class="hero-dot" data-goto="1" role="tab" aria-label="Slide 2: Domain Registration"></button>
+      <button class="hero-dot" data-goto="2" role="tab" aria-label="Slide 3: OSOS ERP"></button>
+      <button class="hero-dot" data-goto="3" role="tab" aria-label="Slide 4: WeCom Cloud PBX"></button>
+    </div>
+
+    <a class="hero-scroll" href="#cloud-services" aria-label="Scroll to services"><span></span></a>
+  </section>
+
+  <!-- ============ CLOUD SERVICES ============ -->
+  <section class="section screen" id="cloud-services" data-screen="Cloud Services">
+    <div class="container">
+
+      <div class="split-head">
+        <div>
+          <p class="eyebrow">CORE SERVICES</p>
+          <h2 class="section-title">Infrastructure built for your business</h2>
+        </div>
+      </div>
+
+      <div class="cs-grid">
+        <a class="cs-card reveal" href="linux-server.html" style="--d:0ms">
+          <div class="cs-media"><img src="assets/images/card-vps.jpg" alt="" loading="lazy"></div>
+          <div class="cs-copy">
+            <span class="cs-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><line x1="7" y1="7.5" x2="7.01" y2="7.5"/><line x1="7" y1="16.5" x2="7.01" y2="16.5"/></svg></span>
+            <h3>Linux Cloud Server</h3>
+            <p>Flexible Linux virtual servers built for business-critical workloads.</p>
+            <ul class="cs-features">
+              <li>Linux Distributions</li>
+              <li>Scalable Resources</li>
+            </ul>
+            <span class="card-link">Explore Linux Server <span class="arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="cs-card reveal" href="windows-server.html" style="--d:60ms">
+          <div class="cs-media"><img src="assets/images/oman-network.jpg" alt="" loading="lazy"></div>
+          <div class="cs-copy">
+            <span class="cs-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg></span>
+            <h3>Windows Cloud Server</h3>
+            <p>Windows Server virtual machines for your business applications.</p>
+            <ul class="cs-features">
+              <li>Windows Server</li>
+              <li>Scalable Resources</li>
+            </ul>
+            <span class="card-link">Explore Windows Server <span class="arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="cs-card reveal" href="colocation.html" style="--d:120ms">
+          <div class="cs-media"><img src="assets/images/colocation.jpg" alt="" loading="lazy"></div>
+          <div class="cs-copy">
+            <span class="cs-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16"/><line x1="2" y1="21" x2="22" y2="21"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="16" y2="15"/></svg></span>
+            <h3>Colocation</h3>
+            <p>Host your infrastructure in a secure, professionally managed data center.</p>
+            <ul class="cs-features">
+              <li>Secure Facility</li>
+              <li>Local Support</li>
+            </ul>
+            <span class="card-link">Explore Colocation <span class="arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="cs-card reveal" href="gpu.html" style="--d:180ms">
+          <div class="cs-media"><img src="assets/images/card-infrastructure.jpg" alt="" loading="lazy"></div>
+          <div class="cs-copy">
+            <span class="cs-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></span>
+            <h3>GPU as a Service</h3>
+            <p>On-demand GPU computing for AI, analytics and high-performance workloads.</p>
+            <ul class="cs-features">
+              <li>AI Workloads</li>
+              <li>Scale on Demand</li>
+            </ul>
+            <span class="card-link">Explore GPU <span class="arrow">→</span></span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ BUSINESS SOLUTIONS (CLOUD MARKETPLACE) ============ -->
+  <section class="section section-alt screen" id="marketplace" data-screen="Business Solutions">
+    <div class="container">
+      <div class="split-head split-head--tabs">
+        <div>
+          <p class="eyebrow">CLOUD MARKETPLACE</p>
+          <h2 class="section-title">Business Solutions</h2>
+        </div>
+      <div class="filter-tabs filter-tabs--compact" id="filterTabs" role="tablist" aria-label="Marketplace categories">
+        <button class="filter-tab is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-tab" data-filter="Infrastructure" role="tab" aria-selected="false">Infrastructure</button>
+        <button class="filter-tab" data-filter="Communication" role="tab" aria-selected="false">Communication</button>
+        <button class="filter-tab" data-filter="Productivity" role="tab" aria-selected="false">Productivity</button>
+        <button class="filter-tab" data-filter="Bundles" role="tab" aria-selected="false">Bundles</button>
+        <button class="filter-tab" data-filter="Security" role="tab" aria-selected="false">Security</button>
+      </div>
+      </div>
+
+      <div class="marketplace-grid" id="marketplaceGrid">
+
+        <a class="mp-card reveal" data-category="Infrastructure" href="linux-server.html" style="--d:0ms">
+          <div class="mp-top"><span class="mp-label">Infrastructure</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><line x1="7" y1="7.5" x2="7.01" y2="7.5"/><line x1="7" y1="16.5" x2="7.01" y2="16.5"/></svg></span></div>
+          <h3>Linux Cloud Server</h3>
+          <p>Flexible Linux virtual servers for business workloads.</p>
+          <span class="card-link">Explore <span class="arrow">→</span></span>
+        </a>
+
+        <a class="mp-card reveal" data-category="Infrastructure" href="windows-server.html" style="--d:40ms">
+          <div class="mp-top"><span class="mp-label">Infrastructure</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg></span></div>
+          <h3>Windows Cloud Server</h3>
+          <p>Windows Server VMs for your business applications.</p>
+          <span class="card-link">Explore <span class="arrow">→</span></span>
+        </a>
+
+        <a class="mp-card reveal" data-category="Infrastructure" href="colocation.html" style="--d:80ms">
+          <div class="mp-top"><span class="mp-label">Infrastructure</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16"/><line x1="2" y1="21" x2="22" y2="21"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="16" y2="15"/></svg></span></div>
+          <h3>Colocation</h3>
+          <p>Host your hardware in our secure Muscat facility.</p>
+          <span class="card-link">Explore <span class="arrow">→</span></span>
+        </a>
+
+        <a class="mp-card reveal" data-category="Infrastructure" href="gpu.html" style="--d:120ms">
+          <div class="mp-top"><span class="mp-label">Infrastructure</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></span></div>
+          <h3>GPU as a Service</h3>
+          <p>On-demand GPU power for AI and analytics workloads.</p>
+          <span class="card-link">Explore <span class="arrow">→</span></span>
+        </a>
+
+        <a class="mp-card reveal" data-category="Infrastructure" href="https://my.cloudacropolis.om/index.php?rp=/store/database-as-a-service" style="--d:160ms">
+          <div class="mp-top"><span class="mp-label">Infrastructure</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg></span></div>
+          <h3>Managed Database</h3>
+          <p>Fully managed databases for your applications.</p>
+          <span class="card-link">Explore <span class="arrow">→</span></span>
+        </a>
+
+        <a class="mp-card reveal" data-category="Communication" href="cloud-pbx.html" style="--d:0ms">
+          <div class="mp-top"><span class="mp-label">Communication</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span></div>
+          <h3>Cloud PBX</h3>
+          <p>Flexible cloud communication for modern teams.</p>
+          <span class="card-link">Explore <span class="arrow">→</span></span>
+        </a>
+
+        <a class="mp-card reveal" data-category="Communication" href="email-hosting-plan.html" style="--d:40ms">
+          <div class="mp-top"><span class="mp-label">Communication</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg></span></div>
+          <h3>Email Hosting</h3>
+          <p>Secure professional business email hosted locally.</p>
+          <span class="card-link">Explore <span class="arrow">→</span></span>
+        </a>
+
+        <a class="mp-card reveal" data-category="Communication" href="intercom.html" style="--d:80ms">
+          <div class="mp-top"><span class="mp-label">Communication</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span></div>
+          <h3>InterCom</h3>
+          <p>Real-time internal messaging for connected teams.</p>
+          <span class="card-link">Explore <span class="arrow">→</span></span>
+        </a>
+
+        <a class="mp-card reveal" data-category="Productivity" href="osos-erp-sme.html" style="--d:120ms">
+          <div class="mp-top"><span class="mp-label">Productivity</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 21 8 12 13 3 8 12 3"/><polyline points="3 13 12 18 21 13"/><polyline points="3 17.5 12 22.5 21 17.5"/></svg></span></div>
+          <h3>OSOS ERP SME</h3>
+          <p>Run finance, inventory and operations on one ERP.</p>
+          <span class="card-link">Explore <span class="arrow">→</span></span>
+        </a>
+
+        <a class="mp-card reveal" data-category="Productivity" href="erp-enterprise.html" style="--d:160ms">
+          <div class="mp-top"><span class="mp-label">Productivity</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M17.5 14v7M14 17.5h7"/></svg></span></div>
+          <h3>OSOS ERP Enterprise</h3>
+          <p>Advanced ERP for larger, complex organisations.</p>
+          <span class="card-link">Explore <span class="arrow">→</span></span>
+        </a>
+
+        <a class="mp-card reveal" data-category="Bundles" href="business-bundle.html" style="--d:0ms">
+          <div class="mp-top"><span class="mp-label">Bundles</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="1.8"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="3" y1="13" x2="21" y2="13"/></svg></span></div>
+          <h3>Business Bundles</h3>
+          <p>Domain, email, PBX and hosting in one monthly plan.</p>
+          <span class="card-link">Explore <span class="arrow">→</span></span>
+        </a>
+
+        <a class="mp-card reveal" data-category="Security" href="https://my.cloudacropolis.om/index.php?rp=/store/managed-security" style="--d:40ms">
+          <div class="mp-top"><span class="mp-label">Security</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span></div>
+          <h3>Managed Security</h3>
+          <p>Managed infrastructure security against threats.</p>
+          <span class="card-link">Explore <span class="arrow">→</span></span>
+        </a>
+
+        <a class="mp-card reveal" data-category="Security" href="https://my.cloudacropolis.om/index.php?rp=/store/managed-security" style="--d:80ms">
+          <div class="mp-top"><span class="mp-label">Security</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M12 7v4M10 9h4"/></svg></span></div>
+          <h3>Managed Network Security</h3>
+          <p>Firewall and network protection, fully managed.</p>
+          <span class="card-link">Explore <span class="arrow">→</span></span>
+        </a>
+
+        <a class="mp-card reveal" data-category="Security" href="ssl-certificates.html" style="--d:120ms">
+          <div class="mp-top"><span class="mp-label">Security</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span></div>
+          <h3>SSL Certificates</h3>
+          <p>Trusted encryption for websites and customer data.</p>
+          <span class="card-link">Explore <span class="arrow">→</span></span>
+        </a>
+
+        <!-- Fills the last slot of the 5 x 3 grid; has no data-category so it stays visible under every filter -->
+        <a class="mp-card mp-card--cta reveal" href="mailto:info@cloudacropolis.om?subject=Inquiry%20Request" style="--d:160ms">
+          <p class="mp-cta-label">Not sure what you need?</p>
+          <h3>Talk to our cloud specialists</h3>
+          <span class="card-link card-link--light">Get expert advice <span class="arrow">→</span></span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ BUSINESS BUNDLES ============ -->
+  <section class="section screen" id="bundles" data-screen="Bundles">
+    <div class="container">
+      <div class="split-head">
+        <div>
+          <p class="eyebrow">BUSINESS BUNDLES</p>
+          <h2 class="section-title">One bundle to get your business online</h2>
+        </div>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <h3>SME Starter</h3>
+          <p class="price-tag">OMR 37<span>/month</span></p>
+          <p class="price-desc">Startup</p>
+          <ul class="price-features">
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Domain</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 5 Email Accounts</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 2 PBX Lines</li>
+          </ul>
+          <a class="btn btn-outline btn-block" href="business-bundle.html">Order Now</a>
+        </article>
+
+        <article class="price-card price-card--highlight reveal" style="--d:80ms">
+          <p class="price-badge">Recommended</p>
+          <h3>Business Grow</h3>
+          <p class="price-tag">OMR 55<span>/month</span></p>
+          <p class="price-desc">Startup to medium</p>
+          <ul class="price-features">
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Domain</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 10 Email Accounts</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Shared Web Hosting</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 5 PBX Lines</li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="business-bundle.html">Order Now</a>
+        </article>
+
+        <article class="price-card reveal" style="--d:160ms">
+          <h3>Professional</h3>
+          <p class="price-tag">Custom</p>
+          <p class="price-desc">Select your emails, VPBX and hosting</p>
+          <ul class="price-features">
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Domain</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Email Accounts</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> VPBX</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Shared Web Host</li>
+          </ul>
+          <a class="btn btn-outline btn-block" href="business-bundle.html">Request Service</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CLOUD ACROPOLIS — DATA CENTER ============ -->
+  <section class="section section-dark screen" id="why" data-screen="Data Center">
+    <div class="container">
+      <div class="split-head split-head--dark">
+        <div>
+          <p class="eyebrow eyebrow--light">WHY CLOUD ACROPOLIS</p>
+          <h2 class="section-title section-title--statement">Built in Oman, <span class="text-glow">Serving Internationally</span></h2>
+        </div>
+        <div class="split-head-aside split-head-aside--chips">
+          <span class="loc-chip"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>Muscat, Oman</span>
+          <span class="loc-chip"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>International reach</span>
+        </div>
+      </div>
+
+      <!--
+        FACILITY & TEAM PHOTOS
+        Swap these for real photographs of the Cloud Acropolis facility and team
+        (keep the same file names or update the src). Recommended:
+          - facility-main : data hall / rack aisle, landscape, min 1600x1000
+          - facility-2    : building exterior or entrance in Muscat, min 1000x800
+          - team          : NOC / support engineers at work, min 1000x800
+        The "team" tile below is a text card until a team photo is supplied —
+        to switch it to a photo, replace the <div class="facility-team"> with a
+        <figure class="facility-shot"> like the others.
+      -->
+      <div class="facility-grid">
+        <figure class="facility-shot facility-shot--main reveal">
+          <img src="assets/images/why-datacenter.jpg" alt="Rack aisle inside a Cloud Acropolis data hall" loading="lazy">
+          <figcaption><strong>Cloud Data Center</strong><span>Muscat</span></figcaption>
+        </figure>
+        <figure class="facility-shot reveal" style="--d:80ms">
+          <img src="assets/images/hero-datacenter.jpg" alt="Server racks in the Cloud Acropolis facility" loading="lazy">
+          <figcaption><strong>Carrier-neutral network</strong><span>Not tied to a single telecom provider</span></figcaption>
+        </figure>
+        <div class="facility-team reveal" style="--d:160ms">
+          <span class="brand-quad brand-quad--lg" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <p class="facility-team-title">A local team, on call 24/7</p>
+          <p class="facility-team-text">Engineers based in Muscat manage, monitor and support your services around the clock.</p>
+          <a class="link-arrow link-arrow--light" href="https://cloudacropolis.om/Contact_us">Talk to our team <span class="arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="why-benefits">
+        <div class="why-benefit reveal">
+          <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg></span>
+          <h3>Local setup</h3>
+          <p>Hosted in Oman, close to where your business operates.</p>
+        </div>
+        <div class="why-benefit reveal" style="--d:60ms">
+          <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
+          <h3>99.9% uptime</h3>
+          <p>Redundant infrastructure across our facilities.</p>
+        </div>
+        <div class="why-benefit reveal" style="--d:120ms">
+          <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
+          <h3>Telecom independent</h3>
+          <p>A low-latency enterprise network, not tied to one carrier.</p>
+        </div>
+        <div class="why-benefit reveal" style="--d:180ms">
+          <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H12L13 2z"/></svg></span>
+          <h3>Power redundancy</h3>
+          <p>Redundant power designed for continuous availability of critical workloads.</p>
+        </div>
+        <div class="why-benefit reveal" style="--d:240ms">
+          <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
+          <h3>Cloud consultancy</h3>
+          <p>Architecture and migration guidance from specialists.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CARRIER-NEUTRAL NETWORK ============ -->
+  <section class="section screen network-section" id="network" data-screen="Network">
+
+    <div class="container network-inner">
+      <div class="network-copy">
+        <p class="eyebrow">CARRIER-NEUTRAL NETWORK</p>
+        <h2 class="section-title">Connected to the world.<br><span class="text-gradient">Not tied to one carrier.</span></h2>
+        <p class="section-intro">Our Muscat facility is carrier-neutral, so your workloads can reach customers in Oman and internationally over the connectivity that suits your business.</p>
+
+        <ul class="network-points">
+          <li class="reveal">
+            <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="2.2"/><circle cx="19" cy="5" r="2.2"/><circle cx="19" cy="19" r="2.2"/><path d="M7 11l10-5M7 13l10 5"/></svg></span>
+            <div><h3>Carrier choice</h3><p>Connect through the telecom provider that fits your needs.</p></div>
+          </li>
+          <li class="reveal" style="--d:80ms">
+            <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
+            <div><h3>Low-latency enterprise network</h3><p>Built for performance and resilience.</p></div>
+          </li>
+          <li class="reveal" style="--d:160ms">
+            <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
+            <div><h3>Local base, global reach</h3><p>Serve Oman and international markets from one location.</p></div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Global connectivity visual: dot-matrix world map + animated routes from Muscat, drawn by the network-map module in assets/js/main.js -->
+      <div class="network-visual" aria-hidden="true">
+        <div class="network-map"><canvas class="network-canvas" id="networkCanvas"></canvas></div>
+        <p class="network-legend"><span class="network-legend-dot"></span>Muscat, Oman</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section section-dark screen" id="how-it-works" data-screen="How It Works">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--light center">HOW IT WORKS</p>
+        <h2 class="section-title center">From configuration to deployment in four steps</h2>
+      </div>
+
+      <div class="steps reveal" id="stepsTimeline">
+        <div class="steps-track" aria-hidden="true">
+          <span class="steps-track-base"></span>
+          <span class="steps-track-progress"></span>
+          <span class="steps-track-dot"></span>
+        </div>
+        <div class="step" data-step="1">
+          <span class="step-num">01</span>
+          <div class="step-body">
+            <h3>Choose your service</h3>
+            <p>Pick the infrastructure or business application that fits your needs.</p>
+          </div>
+        </div>
+        <div class="step" data-step="2">
+          <span class="step-num">02</span>
+          <div class="step-body">
+            <h3>Configure requirements</h3>
+            <p>Size compute, storage and add-ons to match your workload.</p>
+          </div>
+        </div>
+        <div class="step" data-step="3">
+          <span class="step-num">03</span>
+          <div class="step-body">
+            <h3>Order &amp; pay securely</h3>
+            <p>Complete your order through our secure client portal.</p>
+          </div>
+        </div>
+        <div class="step" data-step="4">
+          <span class="step-num">04</span>
+          <div class="step-body">
+            <h3>Deploy &amp; manage</h3>
+            <p>Get your credentials and start managing your service in minutes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section screen" id="faq" data-screen="FAQ">
+    <div class="container faq-grid">
+      <div class="faq-head">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="section-title">Questions businesses ask us</h2>
+        <p class="section-intro">Answers to the questions we hear most from businesses evaluating cloud and data center infrastructure in Oman.</p>
+      </div>
+
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="true">
+            <span>What services does Cloud Acropolis provide?</span>
+            <span class="faq-toggle"></span>
+          </button>
+          <div class="faq-a"><p>Cloud Acropolis offers Cloud Infrastructure, Private &amp; Public Cloud, Dedicated Servers, VPS Hosting, Colocation, Managed Hosting, Cybersecurity, Backup &amp; Disaster Recovery, AI Infrastructure, Cloud Migration, and IT Consulting.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>How can cloud solutions benefit my business?</span>
+            <span class="faq-toggle"></span>
+          </button>
+          <div class="faq-a"><p>Cloud solutions help businesses reduce IT complexity, improve scalability, enhance security, lower infrastructure costs, and enable teams to access critical resources anytime, anywhere. Start small and grow it as your business grows.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Do you offer data hosting within Oman?</span>
+            <span class="faq-toggle"></span>
+          </button>
+          <div class="faq-a"><p>Yes. Our secure data center facilities enable businesses to host applications and critical data locally while meeting performance, compliance, and business continuity requirements.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Can you help migrate our existing systems to the cloud?</span>
+            <span class="faq-toggle"></span>
+          </button>
+          <div class="faq-a"><p>In some cases, we can carry out the migration for an additional cost.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>What security measures do you have in place?</span>
+            <span class="faq-toggle"></span>
+          </button>
+          <div class="faq-a"><p>We employ multiple layers of security aligned with industry standards, including advanced monitoring, access controls, network protection, backup solutions, and best practices to safeguard your data and infrastructure.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Do you provide disaster recovery and backup solutions?</span>
+            <span class="faq-toggle"></span>
+          </button>
+          <div class="faq-a"><p>Yes. Our disaster recovery and business continuity solutions are designed to protect critical workloads, minimize downtime, and ensure rapid recovery in the event of an outage or disruption.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Is Cloud Acropolis suitable for small and medium-sized businesses?</span>
+            <span class="faq-toggle"></span>
+          </button>
+          <div class="faq-a"><p>Yes. Our solutions are scalable and flexible, allowing businesses of all sizes — from startups to large enterprises — to leverage secure and cost-effective cloud infrastructure.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>How do I get started?</span>
+            <span class="faq-toggle"></span>
+          </button>
+          <div class="faq-a"><p>Simply contact our team for a consultation. We&rsquo;ll assess your requirements, recommend the right solution, and help you build a cloud strategy tailored to your business objectives. You can also start online and receive your services immediately through the client portal.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOCATION / CONTACT ============ -->
+  <section class="section section-dark screen contact-section" id="contact" data-screen="Contact">
+    <div class="container">
+      <div class="final-cta contact-panel" id="finalCtaPanel">
+        <div class="final-cta-glow" aria-hidden="true"></div>
+        <div class="contact-split">
+          <div class="contact-copy">
+            <p class="eyebrow eyebrow--light">GET IN TOUCH</p>
+            <h2>Ready to move your business to the <span class="text-glow">cloud?</span></h2>
+            <p class="contact-lead">Talk to our cloud specialists and discover the right infrastructure, security and digital services for your organization.</p>
+            <div class="final-cta-actions">
+              <a class="btn btn-white" href="mailto:info@cloudacropolis.om?subject=Inquiry%20Request">Talk to an Expert <span class="arrow">→</span></a>
+              <a class="btn btn-outline-light" href="https://cloudacropolis.om/Contact_us">Request a Consultation</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <p class="contact-card-title">Reach our team directly</p>
+            <div class="contact-items">
+              <a class="contact-item" href="tel:+96892394675">
+                <span class="contact-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                <span class="contact-item-text"><span class="contact-item-label">Call us</span><span class="contact-item-value">+968 9239 4675</span></span>
+                <span class="contact-item-go" aria-hidden="true">→</span>
+              </a>
+              <a class="contact-item" href="mailto:Info@CloudAcropolis.om">
+                <span class="contact-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg></span>
+                <span class="contact-item-text"><span class="contact-item-label">Email</span><span class="contact-item-value">Info@CloudAcropolis.om</span></span>
+                <span class="contact-item-go" aria-hidden="true">→</span>
+              </a>
+              <a class="contact-item" href="https://api.whatsapp.com/send?phone=96892394675" target="_blank" rel="noopener">
+                <span class="contact-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
+                <span class="contact-item-text"><span class="contact-item-label">WhatsApp</span><span class="contact-item-value">Chat with our team</span></span>
+                <span class="contact-item-go" aria-hidden="true">↗</span>
+              </a>
+              <!-- TODO: replace with the exact Google Maps place URL for the data center -->
+              <a class="contact-item" href="https://www.google.com/maps/search/?api=1&amp;query=Cloud+Acropolis+Muscat+Oman" target="_blank" rel="noopener">
+                <span class="contact-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg></span>
+                <span class="contact-item-text"><span class="contact-item-label">Location</span><span class="contact-item-value">Muscat, Oman</span></span>
+                <span class="contact-item-go" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" id="siteFooter">
+  <div class="footer-glow" aria-hidden="true"></div>
+
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+      <img src="assets/images/logo.png" alt="Cloud Acropolis" class="footer-logo">
+      <p class="footer-brand-text">Cloud infrastructure and digital solutions, built in Oman and serving internationally.</p>
+      <p class="footer-brand-sub">Empowering Oman&rsquo;s Digital Future</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Cloud &amp; Solutions</h4>
+      <a href="linux-server.html">Linux Cloud Server</a>
+      <a href="windows-server.html">Windows Cloud Server</a>
+      <a href="colocation.html">Colocation</a>
+      <a href="gpu.html">GPU as a Service</a>
+      <a href="#marketplace">Business Solutions</a>
+      <a href="ssl-certificates.html">Security Services</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#why">Why Cloud Acropolis</a>
+      <a href="https://cloudacropolis.om/partner">Become a Partner</a>
+      <a href="https://cloudacropolis.om/Contact_us">Contact Us</a>
+      <a href="#faq">Support &amp; FAQs</a>
+      <a href="https://my.cloudacropolis.om/clientarea.php">Client Portal</a>
+    </div>
+
+    <div class="footer-col footer-contact">
+      <h4>Get in Touch</h4>
+
+      <div class="footer-contact-item">
+        <svg class="footer-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+        <span>Cloud Acropolis<br>Cloud Data Center<br>Building 2073, Way 6025<br>Muscat, Sultanate of Oman</span>
+      </div>
+
+      <a class="footer-contact-item" href="tel:+96892394675">
+        <svg class="footer-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>+968 9239 4675</span>
+      </a>
+
+      <a class="footer-contact-item" href="mailto:Info@CloudAcropolis.om">
+        <svg class="footer-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg>
+        <span>Info@CloudAcropolis.om</span>
+      </a>
+
+      <a class="footer-contact-item" href="https://api.whatsapp.com/send?phone=96892394675" target="_blank" rel="noopener">
+        <svg class="footer-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+
+      <!-- TODO: replace with the exact Google Maps place URL for the data center -->
+      <a class="footer-maps-link" href="https://www.google.com/maps/search/?api=1&amp;query=Cloud+Acropolis+Muscat+Oman" target="_blank" rel="noopener">
+        <svg class="footer-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+        View on Google Maps <span class="arrow">↗</span>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>&copy; <span class="year"></span> Cloud Acropolis. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/gsap.min.js" defer></script>
+<!-- main.js last: it reads window.gsap at init. -->
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

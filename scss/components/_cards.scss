@@ -1,0 +1,111 @@
+@use "../abstracts" as *;
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  Card
+//  The whole card is clickable via a stretched pseudo-element on the title
+//  link, so the markup keeps one real anchor — screen readers announce one
+//  link, not three.
+// ═══════════════════════════════════════════════════════════════════════════
+
+.card-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-none);
+  overflow: hidden;
+  @include transEase((transform, box-shadow, border-color));
+
+  @include hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-brand);
+  }
+}
+
+.card-media {
+  @include ratio(16, 9);
+
+  img {
+    @include transEase(transform, $duration: var(--transition-slow));
+  }
+
+  .card-item:hover & img {
+    transform: scale(1.05);
+  }
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--space-2xs);
+  padding: var(--space-md);
+}
+
+.card-title {
+  margin: 0;
+  font-size: var(--fs-fluid-xl);
+  font-weight: var(--fw-semibold);
+
+  a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+}
+
+.card-text {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  @include line-clamp(3);
+}
+
+.card-meta {
+  margin-top: auto;
+  padding-top: var(--space-2xs);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+// ─── Stat / counter ────────────────────────────────────────────────────────
+.stat {
+  text-align: center;
+
+  &-value {
+    display: block;
+    font-size: var(--fs-fluid-6xl);
+    font-weight: var(--fw-bold);
+    line-height: 1;
+    // Stops the number jittering as a counter animates through digits.
+    font-variant-numeric: tabular-nums;
+  }
+
+  &-label {
+    display: block;
+    margin-top: var(--space-2xs);
+    font-size: var(--fs-sm);
+    letter-spacing: var(--ls-wide);
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+}
+
+// ─── Grid helper ───────────────────────────────────────────────────────────
+// Wraps on its own — no breakpoints required.
+.auto-grid {
+  @include auto-grid(280px, var(--space-md));
+
+  &--sm {
+    @include auto-grid(200px, var(--space-md));
+  }
+  &--lg {
+    @include auto-grid(360px, var(--space-lg));
+  }
+}

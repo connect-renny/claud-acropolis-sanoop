@@ -1,0 +1,172 @@
+@use "../abstracts" as *;
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  Design tokens — Cloud Acropolis
+//  Change a brand colour here and it propagates everywhere, including at
+//  runtime from JS, which Sass vars can't do.
+// ═══════════════════════════════════════════════════════════════════════════
+
+:root {
+  // ─── Colours — base ──────────────────────────────────────────────────────
+  --white: #fff;
+  --black: #000;
+
+  // ─── Colours — ink & surfaces ────────────────────────────────────────────
+  --ink: #0e1220;
+  --navy: #0a0e1c;
+  --muted: #4a5368;
+  --muted-2: #6b7389;
+  --line: #e9ebf2;
+  --line-tint: #e3dff9;
+  --surface: #fff;
+  --surface-alt: #f7f7fb;
+  --surface-tint: #f5f3fc;
+
+  // ─── Colours — logo ──────────────────────────────────────────────────────
+  // Used for the brand bar and the four-square brand mark.
+  --brand-purple: #93278f;
+  --brand-green: #3fa34d;
+  --brand-sky: #29a3dd;
+  --brand-navy: #2e3192;
+  --brand-bar: linear-gradient(
+    90deg,
+    var(--brand-purple) 0 25%,
+    var(--brand-green) 25% 50%,
+    var(--brand-sky) 50% 75%,
+    var(--brand-navy) 75% 100%
+  );
+
+  // ─── Colours — accents ───────────────────────────────────────────────────
+  --blue: #3e6bf0;
+  --purple: #7c3aed;
+  --cyan: #4fd1e8;
+  --cyan-soft: #8fd9ee;
+  --green: #1fa971;
+  --gradient: linear-gradient(135deg, #3e6bf0 0%, #7c3aed 100%);
+  --gradient-deep: linear-gradient(
+    160deg,
+    #151a33 0%,
+    #241b4d 55%,
+    #3b2e8c 100%
+  );
+
+  // ─── Colours — semantic (kit names, mapped to the palette above) ─────────
+  --color-brand: var(--blue);
+  --color-brand-rgb: 62, 107, 240;
+  --color-accent: var(--purple);
+  --color-primary: var(--color-brand);
+  --color-text: var(--ink);
+  --color-text-muted: var(--muted);
+  --color-heading: var(--ink);
+  --color-bg: var(--surface);
+  --color-surface: var(--surface-alt);
+  --color-border: var(--line);
+  --color-link: inherit;
+  --color-link-hover: inherit;
+  --color-focus: var(--blue);
+
+  // ─── Colours — feedback ──────────────────────────────────────────────────
+  --color-success: var(--green);
+  --color-warning: #b7791f;
+  --color-danger: #c0392b;
+  --color-info: #2b6cb0;
+
+  // ─── Typography ──────────────────────────────────────────────────────────
+  --primary-font:
+    "Inter Variable", system-ui, -apple-system, "Segoe UI", roboto,
+    sans-serif;
+  --body-font: var(--primary-font);
+  --heading-font: var(--primary-font);
+  --mono-font: ui-monospace, sfmono-regular, "SF Mono", consolas, monospace;
+
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
+
+  // ─── Type scale ──────────────────────────────────────────────────────────
+  --fs-hero: clamp(2.6rem, 1.2rem + 2.9vw, 4.4rem);
+  --fs-h2: clamp(1.75rem, 1.3rem + 1.4vw, 2.375rem);
+  --fs-h3: clamp(1.4rem, 1.2rem + 0.8vw, 1.875rem);
+  --fs-statement: clamp(2rem, 1.3rem + 2vw, 3.1rem);
+  --fs-lead: 1.0625rem;
+  --fs-body: 1rem;
+  --fs-label: 0.8rem;
+
+  // Kit scale — read by the .fs-* helpers in utilities/_helpers.scss.
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 1.875rem;
+  --fs-3xl: 2rem;
+  --fs-4xl: 2.25rem;
+  --fs-5xl: 2.5rem;
+  --fs-6xl: 2.875rem;
+  --fs-7xl: 3rem;
+  --fs-8xl: 3.25rem;
+  --fs-9xl: 3.5rem;
+  --fs-10xl: 4rem;
+  --fs-fluid-md: #{fluid(16, 18)};
+  --fs-fluid-lg: #{fluid(18, 20)};
+  --fs-fluid-xl: #{fluid(20, 24)};
+  --fs-fluid-2xl: #{fluid(24, 30)};
+  --fs-fluid-3xl: #{fluid(26, 36)};
+  --fs-fluid-4xl: #{fluid(28, 44)};
+  --fs-fluid-5xl: #{fluid(32, 56)};
+  --fs-fluid-6xl: #{fluid(36, 72)};
+  --fs-fluid-7xl: #{fluid(40, 96)};
+
+  // ─── Layout ──────────────────────────────────────────────────────────────
+  --container: 1500px;
+  --container-pad: 56px;
+  --header-h: 76px;
+
+  // ─── Radius ──────────────────────────────────────────────────────────────
+  --radius-none: 0;
+  --radius-sm: 4px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;
+  --radius-circle: 50%;
+
+  // ─── Elevation ───────────────────────────────────────────────────────────
+  --shadow-sm: 0 2px 6px rgb(14 18 32 / 5%);
+  --shadow-md: 0 20px 44px rgb(14 18 32 / 10%);
+  --shadow-lg: 0 30px 70px rgb(14 18 32 / 16%);
+
+  // ─── Motion ──────────────────────────────────────────────────────────────
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out: var(--ease);
+
+  // ─── Layering ────────────────────────────────────────────────────────────
+  // Single source of truth. Never write a raw z-index outside this block.
+  --z-header: 200;
+  --z-pager: 150;
+  --z-scrim: 290;
+  --z-drawer: 300;
+  --z-skip: 1000;
+
+  color-scheme: light;
+
+  @include mq-up("xxxl") {
+    --container-pad: 80px;
+  }
+
+  @media (width <= 1024px) {
+    --container-pad: 32px;
+  }
+
+  @media (width <= 768px) {
+    --header-h: 68px;
+  }
+
+  @media (width <= 480px) {
+    --container-pad: 20px;
+  }
+}

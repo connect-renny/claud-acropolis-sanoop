@@ -1,0 +1,1914 @@
+{
+  "site": "https://cloudacropolis.om",
+  "pages": [
+    {
+      "slug": "linux-server",
+      "category": "infrastructure",
+      "image": "card-vps.jpg",
+      "h1": "Linux Server",
+      "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
+      "sidebarTitle": "Infrastructure",
+      "sidebar": [
+        {
+          "group": "Cloud Server",
+          "links": [
+            {
+              "label": "Linux Server",
+              "local": "linux-server.html"
+            },
+            {
+              "label": "Windows server",
+              "local": "windows-server.html"
+            }
+          ]
+        },
+        {
+          "group": "Colocation",
+          "links": [
+            {
+              "label": "Colocation",
+              "local": "colocation.html"
+            }
+          ]
+        },
+        {
+          "group": "GPU",
+          "links": [
+            {
+              "label": "GPU",
+              "local": "gpu.html"
+            }
+          ]
+        }
+      ],
+      "plans": [
+        {
+          "name": "Starter",
+          "price": "27",
+          "period": "/month",
+          "features": [
+            "2 CPU",
+            "4 GB RAM",
+            "50 GB SDD",
+            "20 OMR setup fee"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=145&skipconfig=1&configoption[51]=2&configoption[54]=4&configoption[55]=50&configoption[57]=1&configoption[61]=50&configoption[62]=Ubuntu-22"
+          }
+        },
+        {
+          "name": "Starter+",
+          "price": "44",
+          "period": "/month",
+          "features": [
+            "4 CPU",
+            "8 GB RAM",
+            "100 GB SDD",
+            "20 OMR setup fee"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=145&skipconfig=1&configoption[51]=4&configoption[54]=8&configoption[55]=100&configoption[57]=1&configoption[61]=50&configoption[62]=Ubuntu-22"
+          }
+        },
+        {
+          "name": "Special Requirement",
+          "features": [
+            "Availability 99.99%",
+            "High Performance",
+            "Premium Storage"
+          ],
+          "button": {
+            "label": "Build Your Server",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=145&carttpl=standard_cart"
+          }
+        }
+      ],
+      "features": {
+        "title": "Linux Server Features",
+        "intro": "See all features if you purchase Linux Server",
+        "items": [
+          {
+            "icon": "pulse",
+            "title": "99.99% Availability",
+            "text": "Built on resilient cloud infrastructure designed to ensure maximum uptime and uninterrupted access to your applications and services."
+          },
+          {
+            "icon": "layers",
+            "title": "High Availability",
+            "text": "Redundant systems and failover capabilities help minimize downtime and keep your workloads running smoothly even during unexpected events."
+          },
+          {
+            "icon": "gauge",
+            "title": "High Performance",
+            "text": "Powered by enterprise-grade infrastructure and premium storage to deliver fast processing, responsive applications, and consistent performance."
+          },
+          {
+            "icon": "terminal",
+            "title": "Support for All Linux Distributions",
+            "text": "Deploy your preferred Linux operating system, including popular distributions such as Ubuntu, CentOS, Debian, Rocky Linux, and more."
+          },
+          {
+            "icon": "headset",
+            "title": "24/7 Technical Support",
+            "text": "Our experienced support team is available around the clock to assist with technical issues, configuration guidance, and service-related inquiries."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "intro": "Everything You Need to Know About Linux Server",
+        "items": [
+          {
+            "q": "What is a Linux Cloud Server?",
+            "a": "A Linux Cloud Server is a virtual server hosted on cloud infrastructure that provides dedicated computing resources, flexibility, and scalability for websites, applications, databases, and business workloads."
+          },
+          {
+            "q": "Which Linux distributions do you support?",
+            "a": "We support a wide range of Linux distributions, including Ubuntu, Debian, CentOS, Rocky Linux, AlmaLinux, and other commonly used enterprise Linux operating systems."
+          },
+          {
+            "q": "Can I upgrade my server resources later?",
+            "a": "Yes. Cloud servers are designed to scale as your business grows, allowing you to increase CPU, RAM, and storage resources whenever required. Customers can easily upgrade their server directly through the client portal by selecting the desired resources and completing the payment. Once the payment is confirmed, the upgraded resources are automatically activated. ."
+          },
+          {
+            "q": "What types of applications can run on a Linux server?",
+            "a": "Linux servers can host websites, web applications, databases, ERP systems, e-commerce platforms, development environments, and other business-critical workloads."
+          },
+          {
+            "q": "Is my data secure?",
+            "a": "Yes. Our cloud infrastructure incorporates enterprise-grade security measures, network protection, and reliable storage systems to help safeguard your data and applications."
+          },
+          {
+            "q": "Do you provide server management support?",
+            "a": "Yes. Our technical team is available 24/7 to assist with server-related issues and ensure your environment operates efficiently."
+          },
+          {
+            "q": "What uptime can I expect?",
+            "a": "Our Linux Cloud Servers are designed to deliver up to 99.99% availability through resilient infrastructure and high-availability architecture."
+          },
+          {
+            "q": "How quickly can I get started?",
+            "a": "Once your order is confirmed, your Linux Cloud Server can be provisioned quickly, allowing you to deploy applications and workloads with minimal delay."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "windows-server",
+      "category": "infrastructure",
+      "image": "oman-network.jpg",
+      "h1": "Windows server",
+      "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
+      "sidebarTitle": "Infrastructure",
+      "sidebar": [
+        {
+          "group": "Cloud Server",
+          "links": [
+            {
+              "label": "Linux Server",
+              "local": "linux-server.html"
+            },
+            {
+              "label": "Windows server",
+              "local": "windows-server.html"
+            }
+          ]
+        },
+        {
+          "group": "Colocation",
+          "links": [
+            {
+              "label": "Colocation",
+              "local": "colocation.html"
+            }
+          ]
+        },
+        {
+          "group": "GPU",
+          "links": [
+            {
+              "label": "GPU",
+              "local": "gpu.html"
+            }
+          ]
+        }
+      ],
+      "plans": [
+        {
+          "name": "Starter",
+          "price": "32",
+          "period": "/month",
+          "features": [
+            "2 CPU",
+            "4 GB RAM",
+            "50 GB SDD",
+            "20 OMR setup fee"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=146&skipconfig=1&configoption[145]=2&configoption[141]=4&configoption[142]=50&configoption[138]=1&configoption[132]=50&configoption[133]=Windows"
+          }
+        },
+        {
+          "name": "Starter Plus",
+          "price": "54",
+          "period": "/month",
+          "features": [
+            "4 CPU",
+            "8 GB RAM",
+            "100 GB SDD",
+            "20 OMR setup fee"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=146&skipconfig=1&configoption[145]=4&configoption[141]=8&configoption[142]=100&configoption[138]=1&configoption[132]=50&configoption[133]=Windows"
+          }
+        },
+        {
+          "name": "Special Requirement",
+          "features": [
+            "Availability 99.99%",
+            "High Performance",
+            "Premium Storage"
+          ],
+          "button": {
+            "label": "Build Your Server",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=146&carttpl=standard_cart"
+          }
+        }
+      ],
+      "features": {
+        "title": "Windows Server Features",
+        "intro": "See all features if you purchase Windows Server",
+        "items": [
+          {
+            "icon": "pulse",
+            "title": "Availability 99.99%",
+            "text": "Our Windows Server infrastructure is designed for maximum uptime, ensuring your applications and services remain available whenever your business needs them."
+          },
+          {
+            "icon": "layers",
+            "title": "High Availability",
+            "text": "Built with redundancy and failover capabilities to minimize disruptions and maintain business continuity during unexpected events."
+          },
+          {
+            "icon": "gauge",
+            "title": "High Performance",
+            "text": "Powered by enterprise-grade computing resources and premium storage to deliver fast processing, reliable performance, and smooth application delivery."
+          },
+          {
+            "icon": "windows",
+            "title": "Windows Server Environment",
+            "text": "Run Microsoft-based applications and workloads with a familiar Windows Server platform, ideal for ASP.NET applications, SQL Server databases, and enterprise business software."
+          },
+          {
+            "icon": "headset",
+            "title": "24/7 Technical Support",
+            "text": "Our experienced technical team is available around the clock to provide assistance, monitoring, and support whenever you need it."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "intro": "Everything You Need to Know About Windows Server",
+        "items": [
+          {
+            "q": "What is a Windows Cloud Server?",
+            "a": "A Windows Cloud Server is a virtual server running Microsoft Windows Server operating systems, providing a secure and scalable environment for hosting business applications, websites, databases, and enterprise workloads."
+          },
+          {
+            "q": "What applications can I run on a Windows Server?",
+            "a": "Windows Servers are ideal for Microsoft-based applications such as ASP.NET websites, SQL Server databases, ERP systems, CRM platforms, and other Windows-dependent business applications."
+          },
+          {
+            "q": "Can I remotely access my Windows Server?",
+            "a": "Yes. You can securely access and manage your server remotely using Remote Desktop Protocol (RDP) and other management tools."
+          },
+          {
+            "q": "Is the server scalable?",
+            "a": "Absolutely. Resources such as CPU, RAM, and storage can be increased as your business requirements grow, ensuring optimal performance at all times."
+          },
+          {
+            "q": "How secure is the Windows Server environment?",
+            "a": "Our infrastructure incorporates multiple layers of security, including system monitoring, patch management, malware protection, and security best practices to safeguard your workloads."
+          },
+          {
+            "q": "Do you provide backups and disaster recovery options?",
+            "a": "Yes. Backup and disaster recovery solutions can be implemented to protect critical business data and ensure rapid recovery in case of an outage or unexpected event."
+          },
+          {
+            "q": "What level of support is available?",
+            "a": "Our technical support team is available 24/7 to assist with troubleshooting, monitoring, and operational guidance for your Windows Server environment."
+          },
+          {
+            "q": "Why choose a Windows Server over a Linux Server?",
+            "a": "Windows Servers are often preferred for organizations running Microsoft applications, .NET frameworks, SQL Server databases, Active Directory, and other Windows-based enterprise solutions."
+          },
+          {
+            "q": "Can I customize my server configuration?",
+            "a": "Yes. We offer flexible configurations that allow you to choose the resources and specifications that best match your business and application requirements."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "colocation",
+      "category": "infrastructure",
+      "image": "colocation.jpg",
+      "h1": "Colocation",
+      "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
+      "sidebarTitle": "Infrastructure",
+      "sidebar": [
+        {
+          "group": "Cloud Server",
+          "links": [
+            {
+              "label": "Linux Server",
+              "local": "linux-server.html"
+            },
+            {
+              "label": "Windows server",
+              "local": "windows-server.html"
+            }
+          ]
+        },
+        {
+          "group": "Colocation",
+          "links": [
+            {
+              "label": "Colocation",
+              "local": "colocation.html"
+            }
+          ]
+        },
+        {
+          "group": "GPU",
+          "links": [
+            {
+              "label": "GPU",
+              "local": "gpu.html"
+            }
+          ]
+        }
+      ],
+      "plans": [
+        {
+          "name": "Half Rack Colocation",
+          "desc": "21 Unit",
+          "price": "434",
+          "period": "/month",
+          "features": [
+            "3 KW Power",
+            "Fully Redundant Power",
+            "Fully Redundant Network",
+            "SLA 99.9%"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=33&skipconfig=1"
+          }
+        },
+        {
+          "name": "Full Rack Colocation",
+          "desc": "42 Unit",
+          "price": "543",
+          "period": "/month",
+          "features": [
+            "6 KW Power",
+            "Internet 10 MB",
+            "Fully Redundant Power",
+            "Fully Redundant Network",
+            "SLA 99.9%"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=32&skipconfig=1"
+          }
+        },
+        {
+          "name": "Special Requirement",
+          "desc": "Special Power , Special Internet",
+          "features": [
+            "Fully redundant Power",
+            "Fully redundant Network",
+            "SLA 99.9%"
+          ],
+          "button": {
+            "label": "Request Service",
+            "request": {
+              "plan": "Special Requirement",
+              "category": "Colocation"
+            }
+          }
+        }
+      ],
+      "features": {
+        "title": "Colocation Features",
+        "intro": "See all features if you purchase Colocation",
+        "items": [
+          {
+            "icon": "shield",
+            "title": "Secure Data Center Facility",
+            "text": "Host your critical IT infrastructure in a highly secure data center environment with controlled access, continuous monitoring, and advanced physical security measures."
+          },
+          {
+            "icon": "bolt",
+            "title": "Reliable Power Infrastructure",
+            "text": "Benefit from redundant power systems and backup generators designed to ensure uninterrupted operations and maximum uptime."
+          },
+          {
+            "icon": "gauge",
+            "title": "High-Speed Connectivity",
+            "text": "Access carrier-neutral connectivity and high-performance network infrastructure that delivers reliable and low-latency connections."
+          },
+          {
+            "icon": "headset",
+            "title": "24/7 Monitoring & Support",
+            "text": "Our technical experts monitor the facility around the clock and are available to provide assistance whenever required."
+          },
+          {
+            "icon": "building",
+            "title": "Scalable Rack Space",
+            "text": "Choose from flexible rack, cabinet, or custom colocation options that can easily grow alongside your business needs."
+          },
+          {
+            "icon": "thermo",
+            "title": "Climate-Controlled Environment",
+            "text": "Maintain optimal server performance with advanced cooling systems designed to protect equipment and ensure operational efficiency."
+          },
+          {
+            "icon": "database",
+            "title": "Business Continuity Ready",
+            "text": "Built with redundancy and resilience in mind, our colocation facilities help safeguard your infrastructure against disruptions and downtime."
+          },
+          {
+            "icon": "coins",
+            "title": "Cost-Effective Infrastructure Management",
+            "text": "Reduce the cost and complexity of maintaining an in-house data center while retaining full control over your hardware and applications."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "intro": "Everything You Need to Know About Colocation",
+        "items": [
+          {
+            "q": "What is colocation hosting?",
+            "a": "Colocation allows businesses to place their own servers and networking equipment within a professionally managed data center while benefiting from power, cooling, security, and connectivity services."
+          },
+          {
+            "q": "Who should use colocation services?",
+            "a": "Colocation is ideal for organizations that want to maintain ownership of their hardware while leveraging enterprise-grade infrastructure without investing in their own data center."
+          },
+          {
+            "q": "What are the benefits of colocation?",
+            "a": "Colocation provides enhanced security, reliable power, superior connectivity, reduced operational costs, improved uptime, and greater scalability compared to maintaining an in-house server room."
+          },
+          {
+            "q": "Can I access my equipment whenever needed?",
+            "a": "Yes. Authorized personnel can access hosted equipment according to the facility's access policies and security procedures."
+          },
+          {
+            "q": "Is my equipment secure?",
+            "a": "Absolutely. Our data center employs multiple layers of physical and environmental security, including surveillance systems, access controls, and continuous monitoring."
+          },
+          {
+            "q": "Can I scale my colocation space as my business grows?",
+            "a": "Yes. Additional rack space, power allocation, and connectivity options can be provisioned as your infrastructure requirements evolve."
+          },
+          {
+            "q": "Do you provide remote hands support?",
+            "a": "Yes. Our technical team can assist with routine maintenance, troubleshooting, equipment checks, and other support services when on-site access is not possible."
+          },
+          {
+            "q": "How does colocation support business continuity?",
+            "a": "By hosting your infrastructure in a secure, resilient environment with redundant power, cooling, and connectivity, colocation helps reduce the risk of downtime and ensures greater operational continuity."
+          },
+          {
+            "q": "What types of equipment can be colocated?",
+            "a": "Businesses can host servers, storage systems, networking devices, firewalls, and other mission-critical IT equipment within the facility."
+          },
+          {
+            "q": "Why choose Cloud Acropolis for colocation?",
+            "a": "Cloud Acropolis combines enterprise-grade infrastructure, local expertise, high availability, secure facilities, and dedicated support to provide a reliable foundation for your business operations."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "gpu",
+      "category": "infrastructure",
+      "image": "card-infrastructure.jpg",
+      "h1": "GPU",
+      "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
+      "sidebarTitle": "Infrastructure",
+      "sidebar": [
+        {
+          "group": "Cloud Server",
+          "links": [
+            {
+              "label": "Linux Server",
+              "local": "linux-server.html"
+            },
+            {
+              "label": "Windows server",
+              "local": "windows-server.html"
+            }
+          ]
+        },
+        {
+          "group": "Colocation",
+          "links": [
+            {
+              "label": "Colocation",
+              "local": "colocation.html"
+            }
+          ]
+        },
+        {
+          "group": "GPU",
+          "links": [
+            {
+              "label": "GPU",
+              "local": "gpu.html"
+            }
+          ]
+        }
+      ],
+      "plans": [
+        {
+          "name": "NVIDIA H200",
+          "desc": "NVIDIA H200",
+          "features": [
+            "NVIDIA H200 Tensor Core GPU",
+            "141GB HBM3e Memory",
+            "High-Performance AI & ML Workloads",
+            "Enterprise-Grade Infrastructure"
+          ],
+          "button": {
+            "label": "Request Service",
+            "request": {
+              "plan": "NVIDIA H200",
+              "category": "GPU"
+            }
+          }
+        },
+        {
+          "name": "GPU Builder",
+          "desc": "GPU Builder",
+          "features": [
+            "Choose GPU Model & Quantity",
+            "Select CPU, RAM & Storage",
+            "Custom Network & Bandwidth",
+            "AI / ML / HPC Optimized"
+          ],
+          "button": {
+            "label": "Request Service",
+            "request": {
+              "plan": "GPU Builder",
+              "category": "GPU"
+            }
+          }
+        }
+      ],
+      "features": {
+        "title": "GPU Features",
+        "intro": "See all features if you purchase GPU",
+        "items": [
+          {
+            "icon": "chip",
+            "title": "NVIDIA Hardware",
+            "text": "Leverage the power of advanced NVIDIA GPUs, including the latest NVIDIA H200 Tensor Core GPUs, designed to accelerate AI, machine learning, deep learning, and high-performance computing workloads."
+          },
+          {
+            "icon": "chip",
+            "title": "Deep Learning Ready",
+            "text": "Purpose-built for AI and ML applications, enabling organizations to train models, run inference, and deploy large language models efficiently using leading frameworks such as TensorFlow and PyTorch."
+          },
+          {
+            "icon": "gauge",
+            "title": "High Performance",
+            "text": "Benefit from enterprise-grade GPU infrastructure, ultra-fast storage, and low-latency networking to handle compute-intensive workloads with exceptional speed and reliability."
+          },
+          {
+            "icon": "headset",
+            "title": "24/7 Support",
+            "text": "Our dedicated technical team is available around the clock to assist with deployment, configuration, performance optimization, and ongoing operational support."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "intro": "Everything You Need to Know About GPU",
+        "items": [
+          {
+            "q": "What is GPU as a Service (GPUaaS)?",
+            "a": "GPU as a Service provides on-demand access to powerful GPU resources without the need to invest in expensive hardware, making it ideal for AI, ML, analytics, and high-performance computing projects."
+          },
+          {
+            "q": "What workloads are best suited for GPU servers?",
+            "a": "GPU servers are ideal for artificial intelligence, machine learning, deep learning, large language models (LLMs), computer vision, scientific simulations, data analytics, and 3D rendering."
+          },
+          {
+            "q": "Which GPU models are available?",
+            "a": "Cloud Acropolis offers enterprise-grade NVIDIA GPU options, including NVIDIA H200, or lower depending on workload requirements."
+          },
+          {
+            "q": "Can I customize my GPU configuration?",
+            "a": "Yes. You can select GPU type, quantity, CPU, RAM, storage, and networking requirements to create a solution tailored to your specific application needs."
+          },
+          {
+            "q": "What's the difference between dedicated GPU servers and GPU-attached virtual machines?",
+            "a": "Dedicated GPU servers provide exclusive access to physical GPU resources for maximum performance, while GPU-attached virtual machines offer a flexible and cost-effective option for AI inference and development workloads."
+          },
+          {
+            "q": "Can GPU resources be scaled as my project grows?",
+            "a": "Absolutely. GPU infrastructure can be expanded to accommodate increasing compute demands, ensuring your environment scales alongside your business and AI initiatives."
+          },
+          {
+            "q": "Is the infrastructure suitable for Large Language Models (LLMs)?",
+            "a": "Yes. The platform is optimized for training, fine-tuning, and deploying LLMs and generative AI applications in secure enterprise environments."
+          },
+          {
+            "q": "How secure is the GPU infrastructure?",
+            "a": "The infrastructure is hosted within enterprise-grade data centers featuring physical security controls, redundant systems, and high-availability architecture to protect critical workloads and data."
+          },
+          {
+            "q": "Do you provide technical assistance?",
+            "a": "Yes. Our experts provide 24/7 support to help with setup, troubleshooting, optimization, and ongoing management of your GPU environment."
+          },
+          {
+            "q": "How do I get started?",
+            "a": "Simply share your GPU, compute, storage, and networking requirements with our team, and we'll recommend the ideal configuration for your AI, ML, or HPC project."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "cloud-pbx",
+      "category": "saas",
+      "image": "hero-slider-04.jpg",
+      "h1": "Cloud PBX",
+      "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
+      "sidebarTitle": "SaaS Solutions",
+      "sidebar": [
+        {
+          "group": "Communication Solutions",
+          "links": [
+            {
+              "label": "Cloud PBX",
+              "local": "cloud-pbx.html"
+            },
+            {
+              "label": "Email Hosting Plan",
+              "local": "email-hosting-plan.html"
+            },
+            {
+              "label": "InterCom",
+              "local": "intercom.html"
+            }
+          ]
+        },
+        {
+          "group": "Managed database instance",
+          "links": [
+            {
+              "label": "Managed database instance",
+              "href": "https://cloudacropolis.om/services/saas/managed-database-instance-2"
+            }
+          ]
+        },
+        {
+          "group": "OSOS SME Solutions",
+          "links": [
+            {
+              "label": "OSOS ERP SME",
+              "local": "osos-erp-sme.html"
+            },
+            {
+              "label": "OSOS POS",
+              "href": "https://cloudacropolis.om/services/saas/osos-pos"
+            }
+          ]
+        },
+        {
+          "group": "OSOS Enterprise Solutions",
+          "links": [
+            {
+              "label": "ERP Enterprise",
+              "local": "erp-enterprise.html"
+            },
+            {
+              "label": "HRMS",
+              "href": "https://cloudacropolis.om/services/saas/hrms"
+            },
+            {
+              "label": "QHSE",
+              "href": "https://cloudacropolis.om/services/saas/qhse"
+            }
+          ]
+        }
+      ],
+      "plans": [
+        {
+          "name": "Small",
+          "price": "24",
+          "period": "/month",
+          "features": [
+            "5 Users",
+            "Call Analytics",
+            "Call Forwarding",
+            "Mobile Application"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=281&skipconfig=1&configoption[245]=710"
+          }
+        },
+        {
+          "name": "Medium",
+          "price": "47",
+          "period": "/month",
+          "features": [
+            "10 Users",
+            "Call Menu (IVR)",
+            "Call Analytics",
+            "Mobile Application"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=281&skipconfig=1&configoption[245]=712"
+          }
+        },
+        {
+          "name": "Customization",
+          "badge": "Recomended",
+          "desc": "Custom Configuration Plan",
+          "features": [
+            "Up to 100 Users",
+            "Call Menu (IVR)",
+            "Call Analytics",
+            "Mobility"
+          ],
+          "button": {
+            "label": "Request Service",
+            "request": {
+              "plan": "Customization",
+              "category": "Cloud PBX"
+            }
+          }
+        }
+      ],
+      "features": {
+        "title": "Cloud PBX Features",
+        "intro": "See all features if you purchase Cloud PBX",
+        "items": [
+          {
+            "icon": "phone",
+            "title": "Crystal-Clear Voice Quality",
+            "text": "Experience reliable, high-definition voice communication with enterprise-grade call quality that keeps your business connected without interruptions."
+          },
+          {
+            "icon": "chart",
+            "title": "Call Analytics",
+            "text": "Gain valuable insights into your business communications with real-time call reports, usage statistics, and performance analytics to help improve customer service and operational efficiency."
+          },
+          {
+            "icon": "forward",
+            "title": "Intelligent Call Forwarding",
+            "text": "Never miss an important call by automatically routing incoming calls to the right person, department, or device—whether you're in the office or working remotely."
+          },
+          {
+            "icon": "menu",
+            "title": "Auto Attendant (IVR)",
+            "text": "Create a professional first impression with an automated call menu that directs callers to the appropriate department quickly and efficiently."
+          },
+          {
+            "icon": "mobile",
+            "title": "Mobile Application",
+            "text": "Stay connected wherever business takes you. Make and receive business calls, manage extensions, and access PBX features directly from your smartphone."
+          },
+          {
+            "icon": "mobile",
+            "title": "Multi-Device Accessibility",
+            "text": "Use your business number across desktop phones, laptops, tablets, and mobile devices for seamless communication across your organization."
+          },
+          {
+            "icon": "scale",
+            "title": "Scalable User Management",
+            "text": "Easily add or remove users as your business grows, making Cloud PBX an ideal solution for startups, SMEs, and large enterprises alike."
+          },
+          {
+            "icon": "headset",
+            "title": "24/7 Technical Support",
+            "text": "Our dedicated support team is available around the clock to ensure your communication system operates reliably and efficiently."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "intro": "Everything You Need to Know About Cloud PBX",
+        "items": [
+          {
+            "q": "What is Cloud PBX?",
+            "a": "Cloud PBX is a cloud-based business telephone system that allows organizations to manage calls over the internet without the need for traditional on-premise PBX hardware, offering greater flexibility and lower maintenance costs."
+          },
+          {
+            "q": "What are the benefits of Cloud PBX?",
+            "a": "Cloud PBX reduces infrastructure costs, supports remote working, improves business mobility, and provides enterprise-grade calling features such as IVR, call forwarding, voicemail, analytics, and mobile access."
+          },
+          {
+            "q": "Can employees use Cloud PBX while working remotely?",
+            "a": "Yes. Employees can make and receive business calls from anywhere using desktop applications, IP phones, or the mobile app while keeping their business number."
+          },
+          {
+            "q": "Is Cloud PBX suitable for small businesses?",
+            "a": "Absolutely. Cloud PBX is designed for businesses of all sizes, with flexible plans that can scale as your communication requirements grow."
+          },
+          {
+            "q": "Can I keep my existing business phone number?",
+            "a": "Yes. Existing business numbers can typically be ported to the Cloud PBX platform, ensuring a smooth transition without disrupting your business communications."
+          },
+          {
+            "q": "Does Cloud PBX support call routing and IVR?",
+            "a": "Yes. You can configure automated attendants (IVR), call forwarding, hunt groups, call queues, and extension routing to efficiently manage incoming calls."
+          },
+          {
+            "q": "Is Cloud PBX secure?",
+            "a": "Yes. Cloud PBX operates on secure cloud infrastructure with enterprise-grade reliability and security measures to help protect your business communications."
+          },
+          {
+            "q": "How quickly can Cloud PBX be deployed?",
+            "a": "Cloud PBX can be provisioned quickly without installing complex on-site PBX hardware, enabling businesses to get started with minimal downtime."
+          },
+          {
+            "q": "Can the system grow with my business?",
+            "a": "Yes. You can easily add new users, extensions, and advanced communication features as your organization expands, making Cloud PBX a scalable long-term solution."
+          },
+          {
+            "q": "Do you provide technical support?",
+            "a": "Yes. Cloud Acropolis provides dedicated technical assistance to help with setup, configuration, troubleshooting, and ongoing support for your Cloud PBX solution."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "email-hosting-plan",
+      "category": "saas",
+      "image": "oman-network.jpg",
+      "h1": "Email Hosting Plan",
+      "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
+      "sidebarTitle": "SaaS Solutions",
+      "sidebar": [
+        {
+          "group": "Communication Solutions",
+          "links": [
+            {
+              "label": "Cloud PBX",
+              "local": "cloud-pbx.html"
+            },
+            {
+              "label": "Email Hosting Plan",
+              "local": "email-hosting-plan.html"
+            },
+            {
+              "label": "InterCom",
+              "local": "intercom.html"
+            }
+          ]
+        },
+        {
+          "group": "Managed database instance",
+          "links": [
+            {
+              "label": "Managed database instance",
+              "href": "https://cloudacropolis.om/services/saas/managed-database-instance-2"
+            }
+          ]
+        },
+        {
+          "group": "OSOS SME Solutions",
+          "links": [
+            {
+              "label": "OSOS ERP SME",
+              "local": "osos-erp-sme.html"
+            },
+            {
+              "label": "OSOS POS",
+              "href": "https://cloudacropolis.om/services/saas/osos-pos"
+            }
+          ]
+        },
+        {
+          "group": "OSOS Enterprise Solutions",
+          "links": [
+            {
+              "label": "ERP Enterprise",
+              "local": "erp-enterprise.html"
+            },
+            {
+              "label": "HRMS",
+              "href": "https://cloudacropolis.om/services/saas/hrms"
+            },
+            {
+              "label": "QHSE",
+              "href": "https://cloudacropolis.om/services/saas/qhse"
+            }
+          ]
+        }
+      ],
+      "plans": [
+        {
+          "name": "Build",
+          "desc": "10 Mail box",
+          "price": "15",
+          "period": "/month",
+          "features": [
+            "Local Hosting",
+            "Security",
+            "Premium Storage",
+            "Fully Redundant Infrastructure"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/index.php?rp=/store/acropolismail-cloud/mail10mailboxes"
+          }
+        },
+        {
+          "name": "Advance",
+          "desc": "20 Mail box",
+          "price": "30",
+          "period": "/month",
+          "features": [
+            "Local Hosting",
+            "Security",
+            "Premium Storage",
+            "10 GB per user"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=54&carttpl=standard_cart"
+          }
+        },
+        {
+          "name": "Enterprise +",
+          "features": [
+            "Local Hosting",
+            "Security",
+            "Premium Storage",
+            "Fully Redundant Infrastructure"
+          ],
+          "button": {
+            "label": "Customization",
+            "href": "https://my.cloudacropolis.om/index.php?rp=/store/acropolismail-cloud"
+          }
+        }
+      ],
+      "features": {
+        "title": "Email Hosting Features",
+        "intro": "See all features if you purchase Email Hosting Plan",
+        "items": [
+          {
+            "icon": "shield",
+            "title": "Enterprise-Grade Security",
+            "text": "Protect your business communications with advanced spam filtering, malware protection, SSL/TLS encryption, and multi-layer security features that keep your email environment safe."
+          },
+          {
+            "icon": "database",
+            "title": "Premium Storage",
+            "text": "Enjoy high-performance SSD storage that provides fast email access, reliable performance, and ample space for your growing business communications."
+          },
+          {
+            "icon": "mail",
+            "title": "10 GB Mailbox per User",
+            "text": "Provide each user with up to 10 GB of dedicated mailbox storage, allowing them to securely store emails, attachments, and business correspondence without worrying about space limitations."
+          },
+          {
+            "icon": "layers",
+            "title": "Fully Redundant Infrastructure",
+            "text": "Our highly available cloud infrastructure is designed with redundancy across critical systems, ensuring maximum uptime and uninterrupted email services for your business."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "intro": "Everything You Need to Know About Email Hosting Plan",
+        "items": [
+          {
+            "q": "What is business email hosting?",
+            "a": "Business email hosting is a professional email solution that allows organizations to use custom domain email addresses (e.g., name@yourcompany.com) while benefiting from secure, reliable, and enterprise-grade email services."
+          },
+          {
+            "q": "Why should I choose Cloud Acropolis Email Hosting?",
+            "a": "Our email hosting combines local hosting in Oman, enterprise-grade security, premium SSD storage, and highly available infrastructure to deliver a secure and reliable business communication platform."
+          },
+          {
+            "q": "Can I use my own domain name?",
+            "a": "Yes. You can use your existing business domain or register a new one from our website link <a href=\"https://my.cloudacropolis.om/cart.php?a=add&amp;domain=register\" target=\"_blank\" rel=\"noopener\">https://my.cloudacropolis.om</a> to create professional email addresses for your organization."
+          },
+          {
+            "q": "Which email clients are supported?",
+            "a": "Our email hosting supports Microsoft Outlook, Apple Mail, Android, iOS, webmail, and any standard IMAP/POP3-compatible email client."
+          },
+          {
+            "q": "Is my email data secure?",
+            "a": "Yes. Your emails are protected through advanced spam filtering, malware scanning, SSL/TLS encryption, and multiple layers of enterprise-grade security."
+          },
+          {
+            "q": "Can I access my email from multiple devices?",
+            "a": "Absolutely. Access and synchronize your email seamlessly across desktops, laptops, tablets, smartphones, and web browsers."
+          },
+          {
+            "q": "Are backups included?",
+            "a": "Yes. Daily backups and email archiving help protect your business communications and allow email recovery whenever required."
+          },
+          {
+            "q": "Can I upgrade my plan as my business grows?",
+            "a": "Yes. You can easily upgrade your mailbox capacity or increase the number of email accounts as your business expands."
+          },
+          {
+            "q": "How quickly can my email hosting be activated?",
+            "a": "Once your domain is verified, your business email service can typically be activated within a few hours, enabling your team to get started quickly."
+          },
+          {
+            "q": "Do you provide technical support?",
+            "a": "Yes. Our technical support team is available to assist with email setup."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "osos-erp-sme",
+      "category": "saas",
+      "image": "hero-slider-03.jpg",
+      "h1": "OSOS ERP SME",
+      "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
+      "sidebarTitle": "SaaS Solutions",
+      "sidebar": [
+        {
+          "group": "Communication Solutions",
+          "links": [
+            {
+              "label": "Cloud PBX",
+              "local": "cloud-pbx.html"
+            },
+            {
+              "label": "Email Hosting Plan",
+              "local": "email-hosting-plan.html"
+            },
+            {
+              "label": "InterCom",
+              "local": "intercom.html"
+            }
+          ]
+        },
+        {
+          "group": "Managed database instance",
+          "links": [
+            {
+              "label": "Managed database instance",
+              "href": "https://cloudacropolis.om/services/saas/managed-database-instance-2"
+            }
+          ]
+        },
+        {
+          "group": "OSOS SME Solutions",
+          "links": [
+            {
+              "label": "OSOS ERP SME",
+              "local": "osos-erp-sme.html"
+            },
+            {
+              "label": "OSOS POS",
+              "href": "https://cloudacropolis.om/services/saas/osos-pos"
+            }
+          ]
+        },
+        {
+          "group": "OSOS Enterprise Solutions",
+          "links": [
+            {
+              "label": "ERP Enterprise",
+              "local": "erp-enterprise.html"
+            },
+            {
+              "label": "HRMS",
+              "href": "https://cloudacropolis.om/services/saas/hrms"
+            },
+            {
+              "label": "QHSE",
+              "href": "https://cloudacropolis.om/services/saas/qhse"
+            }
+          ]
+        }
+      ],
+      "plans": [
+        {
+          "name": "Easy ERP",
+          "price": "20",
+          "period": "/month",
+          "features": [
+            "3 Users",
+            "Revenue & Receivables",
+            "Expenditure & Payables",
+            "Inventory & Asset Management",
+            "Financial Control & Reporting",
+            "VAT Reporting",
+            "Extra Implementation"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=286&skipconfig=1&configoption[247]=714"
+          }
+        },
+        {
+          "name": "Easy ERP Advance",
+          "price": "30",
+          "period": "/month",
+          "features": [
+            "3 Users",
+            "Revenue & Receivables",
+            "Expenditure & Payables",
+            "Inventory & Asset Management",
+            "Financial Control & Reporting",
+            "VAT Reporting",
+            "Extra Implementation"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=286&skipconfig=1&configoption[247]=715"
+          }
+        },
+        {
+          "name": "Easy ERP Profession",
+          "features": [
+            "3 Users",
+            "Total Financial Suite",
+            "Operations & Resources",
+            "HCM & Payroll System",
+            "Advanced Reporting Hub",
+            "VAT Reporting",
+            "Extra Implementation"
+          ],
+          "button": {
+            "label": "Request Service",
+            "request": {
+              "plan": "Easy ERP Profession",
+              "category": "OSOS ERP SME"
+            }
+          }
+        }
+      ],
+      "features": {
+        "title": "OSOS ERP SME Features",
+        "intro": "See all features if you purchase OSOS ERP SME",
+        "items": [
+          {
+            "icon": "cloud",
+            "title": "Cloud-Based ERP",
+            "text": "Access your business operations securely from anywhere with a cloud-based ERP solution that eliminates the need for costly on-premise infrastructure while ensuring flexibility and scalability."
+          },
+          {
+            "icon": "coins",
+            "title": "Financial Management",
+            "text": "Simplify accounting, invoicing, budgeting, and financial reporting with integrated tools that provide real-time visibility into your business finances."
+          },
+          {
+            "icon": "box",
+            "title": "Inventory Management",
+            "text": "Track stock levels, manage purchases and sales, and maintain accurate inventory records with automated inventory control and real-time updates."
+          },
+          {
+            "icon": "users",
+            "title": "Human Resource Management",
+            "text": "Manage employee records, attendance, leave, payroll, and other HR functions through a centralized platform that improves workforce efficiency."
+          },
+          {
+            "icon": "chart",
+            "title": "Real-Time Analytics & Reporting",
+            "text": "Generate insightful reports and interactive dashboards that help you monitor performance, identify trends, and make informed business decisions."
+          },
+          {
+            "icon": "scale",
+            "title": "Scalable Business Solution",
+            "text": "Designed to grow with your business, OSOS ERP SME allows you to add users, modules, and features as your operational requirements evolve."
+          },
+          {
+            "icon": "shield",
+            "title": "Secure Cloud Platform",
+            "text": "Protect your business data with enterprise-grade security, regular backups, and reliable cloud infrastructure that ensures business continuity."
+          },
+          {
+            "icon": "headset",
+            "title": "24/7 Technical Support",
+            "text": "Receive expert assistance for implementation, training, troubleshooting, and ongoing support to maximize the value of your ERP investment."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "intro": "Everything You Need to Know About OSOS ERP SME",
+        "items": [
+          {
+            "q": "What is OSOS ERP SME?",
+            "a": "OSOS ERP SME is a cloud-based Enterprise Resource Planning solution designed specifically for small and medium-sized businesses. It integrates core business functions such as finance, inventory, HR, CRM, and reporting into a single platform."
+          },
+          {
+            "q": "Which businesses can use OSOS ERP SME?",
+            "a": "The solution is suitable for businesses across industries including trading, retail, distribution, manufacturing, hospitality, and service-based organizations looking to streamline their operations."
+          },
+          {
+            "q": "Is OSOS ERP SME cloud-based?",
+            "a": "Yes. The platform is fully cloud-based, allowing authorized users to securely access business information anytime, anywhere, from any internet-enabled device."
+          },
+          {
+            "q": "Can the ERP system be customized?",
+            "a": "Yes. OSOS ERP SME can be configured with modules and workflows that align with your organization's unique operational requirements and business processes."
+          },
+          {
+            "q": "Does the system support multiple users?",
+            "a": "Absolutely. The platform supports multiple users with role-based access controls, ensuring each employee has appropriate permissions based on their responsibilities."
+          },
+          {
+            "q": "Can I monitor my business performance in real time?",
+            "a": "Yes. Interactive dashboards and real-time reports provide instant visibility into sales, inventory, finances, and overall business performance, helping you make data-driven decisions."
+          },
+          {
+            "q": "Is my business data secure?",
+            "a": "Yes. OSOS ERP SME is hosted on a secure cloud infrastructure with enterprise-grade security measures, regular backups, and controlled user access to safeguard your business information."
+          },
+          {
+            "q": "Can the system grow with my business?",
+            "a": "Yes. The solution is designed to scale with your organization, allowing you to add users, departments, and additional modules as your business expands."
+          },
+          {
+            "q": "How long does implementation take?",
+            "a": "Implementation timelines vary depending on the size of your business and the required modules. Our team works closely with you to ensure a smooth deployment with minimal disruption to your operations."
+          },
+          {
+            "q": "Do you provide implementation, training, and support?",
+            "a": "Yes. Cloud Acropolis provides end-to-end services including consultation, implementation, user training, system configuration, and ongoing technical support to ensure you get the most from your ERP solution."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "erp-enterprise",
+      "category": "saas",
+      "image": "hero-slider-03.jpg",
+      "h1": "ERP Enterprise",
+      "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
+      "sidebarTitle": "SaaS Solutions",
+      "sidebar": [
+        {
+          "group": "Communication Solutions",
+          "links": [
+            {
+              "label": "Cloud PBX",
+              "local": "cloud-pbx.html"
+            },
+            {
+              "label": "Email Hosting Plan",
+              "local": "email-hosting-plan.html"
+            },
+            {
+              "label": "InterCom",
+              "local": "intercom.html"
+            }
+          ]
+        },
+        {
+          "group": "Managed database instance",
+          "links": [
+            {
+              "label": "Managed database instance",
+              "href": "https://cloudacropolis.om/services/saas/managed-database-instance-2"
+            }
+          ]
+        },
+        {
+          "group": "OSOS SME Solutions",
+          "links": [
+            {
+              "label": "OSOS ERP SME",
+              "local": "osos-erp-sme.html"
+            },
+            {
+              "label": "OSOS POS",
+              "href": "https://cloudacropolis.om/services/saas/osos-pos"
+            }
+          ]
+        },
+        {
+          "group": "OSOS Enterprise Solutions",
+          "links": [
+            {
+              "label": "ERP Enterprise",
+              "local": "erp-enterprise.html"
+            },
+            {
+              "label": "HRMS",
+              "href": "https://cloudacropolis.om/services/saas/hrms"
+            },
+            {
+              "label": "QHSE",
+              "href": "https://cloudacropolis.om/services/saas/qhse"
+            }
+          ]
+        }
+      ],
+      "plans": [
+        {
+          "name": "EnterPrise",
+          "price": "200",
+          "period": "/month",
+          "features": [
+            "Users 4 to 10",
+            "Dashboard",
+            "Procurement",
+            "Inventory",
+            "Accounts Payable (A/P)",
+            "Accounts Receivable (A/R)",
+            "Sales",
+            "Finance / Bank Reconciliation",
+            "Assets Management",
+            "Treasury",
+            "Consignment Management",
+            "Mobile Application"
+          ],
+          "button": {
+            "label": "Order Now",
+            "request": {
+              "plan": "EnterPrise",
+              "category": "ERP Enterprise"
+            }
+          }
+        },
+        {
+          "name": "Advance",
+          "features": [
+            "Users 4 to 15",
+            "Includes all EnterPrise Plan features",
+            "Financial Management",
+            "Group Consolidation Management",
+            "Advance Reporting"
+          ],
+          "button": {
+            "label": "Order Now",
+            "request": {
+              "plan": "Advance",
+              "category": "ERP Enterprise"
+            }
+          }
+        }
+      ],
+      "features": {
+        "title": "ERP Enterprise Features",
+        "intro": "See all features if you purchase ERP Enterprise",
+        "items": [
+          {
+            "icon": "sliders",
+            "title": "End-to-End Business Management",
+            "text": "Manage finance, procurement, inventory, sales, human resources, and operations through a single, integrated platform that streamlines business processes and improves efficiency."
+          },
+          {
+            "icon": "coins",
+            "title": "Financial Management",
+            "text": "Gain complete control over your organization's finances with tools for accounting, budgeting, cash flow management, financial reporting, and compliance."
+          },
+          {
+            "icon": "box",
+            "title": "Supply Chain & Inventory Management",
+            "text": "Optimize procurement, warehouse operations, inventory tracking, and supply chain processes with real-time visibility across your business."
+          },
+          {
+            "icon": "users",
+            "title": "Human Capital Management (HCM)",
+            "text": "Simplify HR operations with integrated modules for employee management, payroll, attendance, leave management, and performance tracking."
+          },
+          {
+            "icon": "chart",
+            "title": "Business Intelligence & Analytics",
+            "text": "Access real-time dashboards, customizable reports, and actionable insights to support informed decision-making and improve business performance."
+          },
+          {
+            "icon": "scale",
+            "title": "Scalable Cloud Platform",
+            "text": "Built on secure cloud infrastructure, the ERP solution grows with your business, supporting multiple users, departments, branches, and locations."
+          },
+          {
+            "icon": "shield",
+            "title": "Secure & Reliable Infrastructure",
+            "text": "Protect your business data with enterprise-grade security, automated backups, role-based access controls, and high-availability infrastructure."
+          },
+          {
+            "icon": "link",
+            "title": "Seamless Integration",
+            "text": "Integrate effortlessly with CRM, POS, eCommerce platforms, banking systems, and third-party business applications to create a unified digital ecosystem."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "intro": "Everything You Need to Know About ERP Enterprise",
+        "items": [
+          {
+            "q": "What is ERP Enterprise?",
+            "a": "ERP Enterprise is a comprehensive business management solution that integrates core business functions such as finance, procurement, inventory, HR, sales, and reporting into a centralized platform, enabling organizations to improve productivity and operational efficiency."
+          },
+          {
+            "q": "Who is ERP Enterprise designed for?",
+            "a": "ERP Enterprise is ideal for medium and large organizations across industries such as manufacturing, retail, distribution, healthcare, logistics, hospitality, education, and professional services."
+          },
+          {
+            "q": "Is ERP Enterprise cloud-based?",
+            "a": "Yes. The solution is hosted on secure cloud infrastructure, allowing authorized users to access business information anytime, anywhere, from any internet-enabled device."
+          },
+          {
+            "q": "Can the ERP system be customized?",
+            "a": "Yes. The platform can be configured to match your organization's workflows, business processes, user roles, and reporting requirements."
+          },
+          {
+            "q": "Does ERP Enterprise support multiple branches or companies?",
+            "a": "Yes. The solution supports multi-branch and multi-company operations, enabling centralized management while maintaining visibility across different locations."
+          },
+          {
+            "q": "Can ERP Enterprise integrate with other business applications?",
+            "a": "Yes. The platform can integrate with CRM, POS systems, HR solutions, banking platforms, eCommerce websites, and other third-party applications to streamline operations."
+          },
+          {
+            "q": "Is my business data secure?",
+            "a": "Absolutely. ERP Enterprise is hosted on secure, enterprise-grade infrastructure with advanced security controls, role-based access, regular backups, and high availability to ensure data protection and business continuity."
+          },
+          {
+            "q": "Can the solution scale as my business grows?",
+            "a": "Yes. ERP Enterprise is designed to grow with your organization, allowing you to add users, departments, branches, and additional modules as your operational needs evolve."
+          },
+          {
+            "q": "How long does implementation take?",
+            "a": "Implementation timelines vary depending on the size of your organization and the required modules. Our implementation specialists ensure a structured deployment with minimal disruption to your operations."
+          },
+          {
+            "q": "Do you provide implementation, training, and support?",
+            "a": "Yes. Cloud Acropolis offers end-to-end services, including consultation, implementation, system configuration, user training, and ongoing technical support to help you maximize the value of your ERP solution."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "intercom",
+      "category": "saas",
+      "image": "hero-slider-04.jpg",
+      "h1": "InterCom",
+      "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
+      "sidebarTitle": "SaaS Solutions",
+      "sidebar": [
+        {
+          "group": "Communication Solutions",
+          "links": [
+            {
+              "label": "Cloud PBX",
+              "local": "cloud-pbx.html"
+            },
+            {
+              "label": "Email Hosting Plan",
+              "local": "email-hosting-plan.html"
+            },
+            {
+              "label": "InterCom",
+              "local": "intercom.html"
+            }
+          ]
+        },
+        {
+          "group": "Managed database instance",
+          "links": [
+            {
+              "label": "Managed database instance",
+              "href": "https://cloudacropolis.om/services/saas/managed-database-instance-2"
+            }
+          ]
+        },
+        {
+          "group": "OSOS SME Solutions",
+          "links": [
+            {
+              "label": "OSOS ERP SME",
+              "local": "osos-erp-sme.html"
+            },
+            {
+              "label": "OSOS POS",
+              "href": "https://cloudacropolis.om/services/saas/osos-pos"
+            }
+          ]
+        },
+        {
+          "group": "OSOS Enterprise Solutions",
+          "links": [
+            {
+              "label": "ERP Enterprise",
+              "local": "erp-enterprise.html"
+            },
+            {
+              "label": "HRMS",
+              "href": "https://cloudacropolis.om/services/saas/hrms"
+            },
+            {
+              "label": "QHSE",
+              "href": "https://cloudacropolis.om/services/saas/qhse"
+            }
+          ]
+        }
+      ],
+      "plans": [
+        {
+          "name": "Starter",
+          "price": "10",
+          "period": "/month",
+          "features": [
+            "Free internal calls",
+            "BYOD support",
+            "No SIM required",
+            "Simple mobile app"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=284&skipconfig=1&configoption[249]=720"
+          }
+        },
+        {
+          "name": "Starter +",
+          "price": "17",
+          "period": "/month",
+          "features": [
+            "Free internal calls",
+            "BYOD support",
+            "No SIM required",
+            "10 Users"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=284&skipconfig=1&configoption[249]=721"
+          }
+        },
+        {
+          "name": "Customization",
+          "features": [
+            "Free internal calls",
+            "BYOD support",
+            "No SIM required",
+            "Simple mobile app"
+          ],
+          "button": {
+            "label": "Request Service",
+            "request": {
+              "plan": "Customization",
+              "category": "InterCom"
+            }
+          }
+        }
+      ],
+      "features": {
+        "title": "Intercom Features",
+        "intro": "See all features if you purchase InterCom",
+        "items": [
+          {
+            "icon": "phone",
+            "title": "Crystal-Clear Audio Communication",
+            "text": "Ensure reliable and high-quality voice communication with advanced intercom technology that delivers clear audio for seamless internal and external communication."
+          },
+          {
+            "icon": "phone",
+            "title": "Hands-Free Communication",
+            "text": "Enable instant, hands-free communication between departments, reception areas, entrances, and security personnel to improve operational efficiency."
+          },
+          {
+            "icon": "network",
+            "title": "Multi-Location Connectivity",
+            "text": "Connect multiple offices, buildings, or departments through a centralized intercom system, ensuring seamless communication across your organization."
+          },
+          {
+            "icon": "link",
+            "title": "Easy Integration",
+            "text": "Integrate your intercom system with existing telephony, access control, and security systems for a unified communication experience."
+          },
+          {
+            "icon": "scale",
+            "title": "Scalable Solution",
+            "text": "Whether you're a small office or a large enterprise, the system can easily expand to accommodate additional users, devices, and locations as your business grows."
+          },
+          {
+            "icon": "shield",
+            "title": "Secure Communication",
+            "text": "Built with enterprise-grade security, the intercom system helps ensure private, reliable, and uninterrupted communication across your organization."
+          },
+          {
+            "icon": "sliders",
+            "title": "Remote Management",
+            "text": "Monitor and manage your intercom system remotely, allowing administrators to configure settings and oversee communication from virtually anywhere."
+          },
+          {
+            "icon": "headset",
+            "title": "24/7 Technical Support",
+            "text": "Our experienced support team is available around the clock to assist with installation, configuration, maintenance, and troubleshooting."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "intro": "Everything You Need to Know About InterCom",
+        "items": [
+          {
+            "q": "What is an Intercom system?",
+            "a": "An Intercom system is an internal communication solution that enables instant voice communication between employees, departments, reception areas, and building entrances, improving collaboration and security."
+          },
+          {
+            "q": "Who can benefit from an Intercom solution?",
+            "a": "Intercom systems are ideal for offices, hospitals, educational institutions, hotels, warehouses, residential buildings, manufacturing facilities, and commercial complexes that require efficient internal communication."
+          },
+          {
+            "q": "Can the Intercom system be integrated with access control?",
+            "a": "Yes. The system can integrate with access control, door entry, CCTV, and other security solutions to enhance safety and streamline visitor management."
+          },
+          {
+            "q": "Does the system support multiple locations?",
+            "a": "Yes. Multiple offices, floors, or buildings can be connected through a centralized platform, allowing seamless communication across different locations."
+          },
+          {
+            "q": "Is remote management available?",
+            "a": "Yes. Administrators can monitor, configure, and manage the intercom system remotely, providing greater flexibility and operational control."
+          },
+          {
+            "q": "Is the system scalable?",
+            "a": "Absolutely. Additional users, devices, and communication points can be added as your organization's requirements grow."
+          },
+          {
+            "q": "How secure is the Intercom solution?",
+            "a": "The platform incorporates enterprise-grade security measures and reliable infrastructure to help protect communications and ensure uninterrupted service."
+          },
+          {
+            "q": "How quickly can the system be deployed?",
+            "a": "Deployment depends on the size and complexity of the installation, but our team works to ensure a smooth implementation with minimal disruption to your operations."
+          },
+          {
+            "q": "Do you provide installation and maintenance services?",
+            "a": "Yes. Cloud Acropolis offers end-to-end services including consultation, installation, configuration, testing, maintenance, and ongoing technical support."
+          },
+          {
+            "q": "Why choose Cloud Acropolis for Intercom solutions?",
+            "a": "Cloud Acropolis delivers reliable communication solutions backed by enterprise expertise, scalable technology, local support, and a commitment to providing secure and high-performance business communication systems."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "business-bundle",
+      "category": "bundle",
+      "image": "hero-slider-02.jpg",
+      "h1": "SME Businesses Bundle",
+      "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
+      "sidebarTitle": "Business Bundle",
+      "sidebar": [
+        {
+          "group": "SME Businesses Bundle",
+          "links": [
+            {
+              "label": "SME Businesses Bundle",
+              "href": "https://cloudacropolis.om/services/business-bundle/sme-businesses-bundle"
+            }
+          ]
+        }
+      ],
+      "plans": [
+        {
+          "name": "SME Starter",
+          "desc": "Startup",
+          "price": "37",
+          "period": "/month",
+          "features": [
+            "Domain",
+            "5 Email Accounts",
+            "2 PBX"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/index.php?rp=/store/sme/sme-starter"
+          }
+        },
+        {
+          "name": "Business Grow",
+          "desc": "Startup to medium",
+          "price": "55",
+          "period": "/month",
+          "features": [
+            "Domain",
+            "10 Email Accounts",
+            "Shared Web Hosting",
+            "5 PBX"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/index.php?rp=/store/sme/business-grow"
+          }
+        },
+        {
+          "name": "Professional",
+          "desc": "Select the Emails, VPBX , and hosting",
+          "features": [
+            "Domain",
+            "Email accounts",
+            "VPBX",
+            "Shared web host"
+          ],
+          "button": {
+            "label": "Request Service",
+            "request": {
+              "plan": "Professional",
+              "category": "SME Businesses Bundle"
+            }
+          }
+        }
+      ],
+      "features": {
+        "title": "SME Business Bundle Features",
+        "intro": "See all features if you purchase SME Businesses Bundle",
+        "items": [
+          {
+            "icon": "mail",
+            "title": "Business Email Hosting",
+            "text": "Create a professional business identity with secure, domain-based email hosting that offers reliable performance, advanced security, and seamless accessibility across devices."
+          },
+          {
+            "icon": "phone",
+            "title": "Cloud PBX Communication",
+            "text": "Empower your team with a cloud-based phone system featuring call forwarding, auto-attendant, voicemail, and remote accessibility to keep your business connected from anywhere."
+          },
+          {
+            "icon": "globe",
+            "title": "Website & Domain Services",
+            "text": "Establish your online presence with a professional website and domain registration, helping your business build credibility and reach more customers."
+          },
+          {
+            "icon": "database",
+            "title": "Cloud Storage & Backup",
+            "text": "Keep your business data secure with cloud storage and automated backup solutions that ensure business continuity and quick data recovery when needed."
+          },
+          {
+            "icon": "grid",
+            "title": "Business Productivity Tools",
+            "text": "Enhance collaboration with integrated productivity applications that enable secure file sharing, communication, and efficient team workflows."
+          },
+          {
+            "icon": "shield",
+            "title": "Enterprise-Grade Security",
+            "text": "Protect your business with advanced security features including email protection, secure hosting, encrypted communications, and proactive threat monitoring."
+          },
+          {
+            "icon": "scale",
+            "title": "Scalable Solutions",
+            "text": "Start with what you need today and easily expand your services as your business grows, without investing in additional infrastructure."
+          },
+          {
+            "icon": "headset",
+            "title": "Dedicated Technical Support",
+            "text": "Our experienced support team is available to assist with setup, troubleshooting, and ongoing technical support to ensure your business operates smoothly."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "intro": "Everything You Need to Know About SME Businesses Bundle",
+        "items": [
+          {
+            "q": "What is the SME Business Bundle?",
+            "a": "The SME Business Bundle is an all-in-one solution that combines essential business services such as professional email hosting, Cloud PBX, website hosting, cloud storage, and business productivity tools into a single, cost-effective package."
+          },
+          {
+            "q": "Who is the SME Business Bundle designed for?",
+            "a": "The bundle is ideal for startups, small businesses, and growing enterprises looking for reliable IT and communication solutions without the complexity of managing multiple service providers."
+          },
+          {
+            "q": "What services are included in the bundle?",
+            "a": "Depending on your selected package, the bundle may include business email hosting, Cloud PBX, website and domain services, cloud storage, backup solutions, and technical support."
+          },
+          {
+            "q": "Can I customize the bundle to suit my business?",
+            "a": "Yes. The SME Business Bundle can be tailored to meet your organization's specific requirements, allowing you to select the services that best support your operations."
+          },
+          {
+            "q": "Can I upgrade my package as my business grows?",
+            "a": "Absolutely. The solution is designed to scale with your business, making it easy to add users, storage, communication features, and additional cloud services whenever needed."
+          },
+          {
+            "q": "Is my business data secure?",
+            "a": "Yes. All services are hosted on secure cloud infrastructure with enterprise-grade security, encrypted communications, regular backups, and continuous monitoring to safeguard your business data."
+          },
+          {
+            "q": "Can my employees work remotely using the bundle?",
+            "a": "Yes. The included cloud-based services allow your team to securely access emails, business communications, and productivity tools from virtually anywhere."
+          },
+          {
+            "q": "How quickly can the SME Business Bundle be deployed?",
+            "a": "Most services can be provisioned quickly, allowing your business to start using email, communications, and cloud services with minimal setup time."
+          },
+          {
+            "q": "Why choose Cloud Acropolis for your SME Business Bundle?",
+            "a": "Cloud Acropolis offers a complete business technology solution backed by secure local infrastructure, enterprise-grade reliability, scalable services, and dedicated technical support—helping SMEs focus on growing their business while we manage the technology."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "ssl-certificates",
+      "category": "security",
+      "image": "why-datacenter.jpg",
+      "h1": "SSL Certificates",
+      "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
+      "sidebarTitle": "Security Services",
+      "sidebar": [
+        {
+          "group": "AcropolisBox",
+          "links": [
+            {
+              "label": "AcropolisBox",
+              "href": "https://cloudacropolis.om/services/security-services/acropolisbox-2"
+            }
+          ]
+        },
+        {
+          "group": "Managed Network Security",
+          "links": [
+            {
+              "label": "Managed Network Security",
+              "href": "https://cloudacropolis.om/services/security-services/managed-network-security-2"
+            }
+          ]
+        },
+        {
+          "group": "Managed Security",
+          "links": [
+            {
+              "label": "Managed Security",
+              "href": "https://cloudacropolis.om/services/security-services/managed-security-2"
+            }
+          ]
+        },
+        {
+          "group": "Secure Sockets Layer",
+          "links": [
+            {
+              "label": "SSL Certificates",
+              "local": "ssl-certificates.html"
+            }
+          ]
+        }
+      ],
+      "plans": [
+        {
+          "name": "Comodo Essential SSL Certificate",
+          "price": "21",
+          "period": "/annually",
+          "features": [
+            "Affordable Price",
+            "Issue within 2-3 Minutes",
+            "99% Browser Compatibility",
+            "Securing With and Without www"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/index.php?rp=/store/ssl-certificates/comodo-essential-ssl-certificate"
+          }
+        },
+        {
+          "name": "GeoTrust QuickSSL Premium",
+          "price": "49",
+          "period": "/annually",
+          "features": [
+            "GeoTrust Premium",
+            "Issue within 8 Minutes",
+            "No Paperwork needed",
+            "99% Browser Compatibility"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=47&sld=whmcs&tld=.com"
+          }
+        },
+        {
+          "name": "Explore More",
+          "features": [
+            "GeoTrust Premium",
+            "No Paperwork needed",
+            "99% Browser Compatibility"
+          ],
+          "button": {
+            "label": "Other Certificates",
+            "href": "https://my.cloudacropolis.om/index.php?rp=/store/ssl-certificates"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+// 1500px column with a gutter that steps 80 → 56 → 32 → 20px
+// (--container-pad in _root.scss).
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}

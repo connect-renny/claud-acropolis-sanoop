@@ -1,0 +1,47 @@
+@use "../abstracts" as *;
+
+// V5 faded this in with an inline opacity style, which left an invisible but
+// still-clickable button covering the corner. It's a class + visibility now,
+// so it's genuinely gone until you've scrolled.
+.return-top {
+  @include flex-center;
+  position: fixed;
+  bottom: 1rem;
+  inset-inline-end: 1rem;
+  z-index: var(--z-sticky);
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  background: var(--color-brand);
+  border-radius: var(--radius-circle);
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  @include transEase((opacity, visibility, transform));
+  @include focus-ring;
+
+  img,
+  svg {
+    width: 20px;
+    height: 20px;
+    @include transEase(transform);
+  }
+
+  &.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  @include hover {
+    background: var(--color-accent);
+
+    img,
+    svg {
+      transform: translateY(-3px);
+    }
+  }
+}

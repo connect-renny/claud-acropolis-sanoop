@@ -1,0 +1,41 @@
+// ═══════════════════════════════════════════════════════════════════════════
+//  Main stylesheet
+//
+//  Compile:  npm run dev     (watch + sourcemaps)
+//            npm run build   (compressed, autoprefixed → assets/css/style.css)
+//
+//  Order matters — tokens must land before anything that reads them, and
+//  utilities go last so their !important actually wins.
+// ═══════════════════════════════════════════════════════════════════════════
+
+// 1. Toolbox — emits no CSS
+@use "abstracts";
+
+// 2. Base
+@use "base/root";
+@use "base/fonts";
+@use "base/reset";
+@use "base/typography";
+@use "base/accessibility";
+
+// 3. Layout
+@use "layout/container";
+@use "layout/header";
+@use "layout/navigation";
+@use "layout/section";
+@use "layout/footer";
+
+// 4. Components
+//    cards, forms, loader, swiper, smooth-scroll and back-to-top are still in
+//    components/ — the home page doesn't use them, so they aren't compiled.
+//    Re-add the @use when a page needs one.
+@use "components/animations";
+@use "components/buttons";
+
+// 5. Pages
+@use "pages/home";
+@use "pages/service";
+
+// 6. Utilities — last, so they can override anything above
+@use "utilities/spacing";
+@use "utilities/helpers";

@@ -1,0 +1,11 @@
+node_modules/
+
+# Compiled from scss/ — regenerate with `npm run build`, don't commit.
+assets/css/style.css
+assets/css/style.min.css
+assets/css/*.map
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
