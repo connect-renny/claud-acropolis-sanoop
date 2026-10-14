@@ -3,7 +3,7 @@
 //
 //  Inter Variable: one woff2 covers every weight the page uses (400–900), so
 //  nothing renders as a faux-bold. `font-display: swap` paints fallback text
-//  immediately; index.html preloads this file — keep the two in sync.
+//  immediately; includes/head.php preloads this file — keep the two in sync.
 //
 //  Vendored by `npm run vendor` from @fontsource-variable/inter.
 // ═══════════════════════════════════════════════════════════════════════════

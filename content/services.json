@@ -14,11 +14,11 @@
           "links": [
             {
               "label": "Linux Server",
-              "local": "linux-server.html"
+              "local": "linux-server.php"
             },
             {
               "label": "Windows server",
-              "local": "windows-server.html"
+              "local": "windows-server.php"
             }
           ]
         },
@@ -27,7 +27,7 @@
           "links": [
             {
               "label": "Colocation",
-              "local": "colocation.html"
+              "local": "colocation.php"
             }
           ]
         },
@@ -36,7 +36,7 @@
           "links": [
             {
               "label": "GPU",
-              "local": "gpu.html"
+              "local": "gpu.php"
             }
           ]
         }
@@ -168,11 +168,11 @@
           "links": [
             {
               "label": "Linux Server",
-              "local": "linux-server.html"
+              "local": "linux-server.php"
             },
             {
               "label": "Windows server",
-              "local": "windows-server.html"
+              "local": "windows-server.php"
             }
           ]
         },
@@ -181,7 +181,7 @@
           "links": [
             {
               "label": "Colocation",
-              "local": "colocation.html"
+              "local": "colocation.php"
             }
           ]
         },
@@ -190,7 +190,7 @@
           "links": [
             {
               "label": "GPU",
-              "local": "gpu.html"
+              "local": "gpu.php"
             }
           ]
         }
@@ -326,11 +326,11 @@
           "links": [
             {
               "label": "Linux Server",
-              "local": "linux-server.html"
+              "local": "linux-server.php"
             },
             {
               "label": "Windows server",
-              "local": "windows-server.html"
+              "local": "windows-server.php"
             }
           ]
         },
@@ -339,7 +339,7 @@
           "links": [
             {
               "label": "Colocation",
-              "local": "colocation.html"
+              "local": "colocation.php"
             }
           ]
         },
@@ -348,7 +348,7 @@
           "links": [
             {
               "label": "GPU",
-              "local": "gpu.html"
+              "local": "gpu.php"
             }
           ]
         }
@@ -510,11 +510,11 @@
           "links": [
             {
               "label": "Linux Server",
-              "local": "linux-server.html"
+              "local": "linux-server.php"
             },
             {
               "label": "Windows server",
-              "local": "windows-server.html"
+              "local": "windows-server.php"
             }
           ]
         },
@@ -523,7 +523,7 @@
           "links": [
             {
               "label": "Colocation",
-              "local": "colocation.html"
+              "local": "colocation.php"
             }
           ]
         },
@@ -532,7 +532,7 @@
           "links": [
             {
               "label": "GPU",
-              "local": "gpu.html"
+              "local": "gpu.php"
             }
           ]
         }
@@ -659,15 +659,15 @@
           "links": [
             {
               "label": "Cloud PBX",
-              "local": "cloud-pbx.html"
+              "local": "cloud-pbx.php"
             },
             {
               "label": "Email Hosting Plan",
-              "local": "email-hosting-plan.html"
+              "local": "email-hosting-plan.php"
             },
             {
               "label": "InterCom",
-              "local": "intercom.html"
+              "local": "intercom.php"
             }
           ]
         },
@@ -685,7 +685,7 @@
           "links": [
             {
               "label": "OSOS ERP SME",
-              "local": "osos-erp-sme.html"
+              "local": "osos-erp-sme.php"
             },
             {
               "label": "OSOS POS",
@@ -698,7 +698,7 @@
           "links": [
             {
               "label": "ERP Enterprise",
-              "local": "erp-enterprise.html"
+              "local": "erp-enterprise.php"
             },
             {
               "label": "HRMS",
@@ -867,15 +867,15 @@
           "links": [
             {
               "label": "Cloud PBX",
-              "local": "cloud-pbx.html"
+              "local": "cloud-pbx.php"
             },
             {
               "label": "Email Hosting Plan",
-              "local": "email-hosting-plan.html"
+              "local": "email-hosting-plan.php"
             },
             {
               "label": "InterCom",
-              "local": "intercom.html"
+              "local": "intercom.php"
             }
           ]
         },
@@ -893,7 +893,7 @@
           "links": [
             {
               "label": "OSOS ERP SME",
-              "local": "osos-erp-sme.html"
+              "local": "osos-erp-sme.php"
             },
             {
               "label": "OSOS POS",
@@ -906,7 +906,7 @@
           "links": [
             {
               "label": "ERP Enterprise",
-              "local": "erp-enterprise.html"
+              "local": "erp-enterprise.php"
             },
             {
               "label": "HRMS",
@@ -1052,15 +1052,15 @@
           "links": [
             {
               "label": "Cloud PBX",
-              "local": "cloud-pbx.html"
+              "local": "cloud-pbx.php"
             },
             {
               "label": "Email Hosting Plan",
-              "local": "email-hosting-plan.html"
+              "local": "email-hosting-plan.php"
             },
             {
               "label": "InterCom",
-              "local": "intercom.html"
+              "local": "intercom.php"
             }
           ]
         },
@@ -1078,7 +1078,7 @@
           "links": [
             {
               "label": "OSOS ERP SME",
-              "local": "osos-erp-sme.html"
+              "local": "osos-erp-sme.php"
             },
             {
               "label": "OSOS POS",
@@ -1091,7 +1091,7 @@
           "links": [
             {
               "label": "ERP Enterprise",
-              "local": "erp-enterprise.html"
+              "local": "erp-enterprise.php"
             },
             {
               "label": "HRMS",
@@ -1267,15 +1267,15 @@
           "links": [
             {
               "label": "Cloud PBX",
-              "local": "cloud-pbx.html"
+              "local": "cloud-pbx.php"
             },
             {
               "label": "Email Hosting Plan",
-              "local": "email-hosting-plan.html"
+              "local": "email-hosting-plan.php"
             },
             {
               "label": "InterCom",
-              "local": "intercom.html"
+              "local": "intercom.php"
             }
           ]
         },
@@ -1293,7 +1293,7 @@
           "links": [
             {
               "label": "OSOS ERP SME",
-              "local": "osos-erp-sme.html"
+              "local": "osos-erp-sme.php"
             },
             {
               "label": "OSOS POS",
@@ -1306,7 +1306,7 @@
           "links": [
             {
               "label": "ERP Enterprise",
-              "local": "erp-enterprise.html"
+              "local": "erp-enterprise.php"
             },
             {
               "label": "HRMS",
@@ -1470,15 +1470,15 @@
           "links": [
             {
               "label": "Cloud PBX",
-              "local": "cloud-pbx.html"
+              "local": "cloud-pbx.php"
             },
             {
               "label": "Email Hosting Plan",
-              "local": "email-hosting-plan.html"
+              "local": "email-hosting-plan.php"
             },
             {
               "label": "InterCom",
-              "local": "intercom.html"
+              "local": "intercom.php"
             }
           ]
         },
@@ -1496,7 +1496,7 @@
           "links": [
             {
               "label": "OSOS ERP SME",
-              "local": "osos-erp-sme.html"
+              "local": "osos-erp-sme.php"
             },
             {
               "label": "OSOS POS",
@@ -1509,7 +1509,7 @@
           "links": [
             {
               "label": "ERP Enterprise",
-              "local": "erp-enterprise.html"
+              "local": "erp-enterprise.php"
             },
             {
               "label": "HRMS",
@@ -1860,7 +1860,7 @@
           "links": [
             {
               "label": "SSL Certificates",
-              "local": "ssl-certificates.html"
+              "local": "ssl-certificates.php"
             }
           ]
         }

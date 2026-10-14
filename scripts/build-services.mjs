@@ -1,13 +1,14 @@
 // ═══════════════════════════════════════════════════════════════════════════
 //  npm run pages
 //
-//  Writes one page per service (linux-server.html, …) into the site root,
-//  next to index.html, from content/services.json — plus the company pages
-//  (contact.html, partner.html), whose copy lives at the bottom of this file.
+//  Writes one page per service (linux-server.php, …) into the site root,
+//  next to index.php, from content/services.json — plus the company pages
+//  (contact.php, partner.php), whose copy lives at the bottom of this file.
 //
-//  The header, mobile nav, contact panel and footer are lifted straight out
-//  of index.html, so the home page stays the single source for them — edit
-//  it there, then re-run this script. The current page is marked in the menus.
+//  Only each page's <main> is generated. The <head>, header, mobile nav,
+//  contact panel and footer are PHP includes in includes/, shared with
+//  index.php — edit them there; no re-run needed. The includes mark the
+//  current page in the menus from the $page array written at the top.
 //
 //  Page copy lives in content/services.json and is taken word for word from
 //  the live cloudacropolis.om service pages.
@@ -21,47 +22,14 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CONTACT_EMAIL = "info@cloudacropolis.om";
 
 const { pages } = JSON.parse(await readFile(join(root, "content/services.json"), "utf8"));
-const home = (await readFile(join(root, "index.html"), "utf8")).replace(/\r\n/g, "\n");
-
 // ─── Helpers ───────────────────────────────────────────────────────────────
 const esc = (s) =>
   String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-// Cut a block out of index.html between two markers (start included).
-function slice(from, to) {
-  const a = home.indexOf(from);
-  const b = home.indexOf(to, a + from.length);
-  if (a < 0 || b < 0) throw new Error(`index.html marker not found: ${a < 0 ? from : to}`);
-  return home.slice(a, b).trimEnd();
-}
+// A single-quoted PHP string literal.
+const php = (s) => `'${String(s).replace(/\\/g, "\\\\").replace(/'/g, "\\'")}'`;
 
-// Same folder as index.html, so only the home and in-page links change:
-// "#faq" on the home page means index.html#faq from here.
-function relink(html) {
-  return html
-    .replace(/href="\/"/g, 'href="index.html"')
-    .replace(/href="#(?!main")([a-z][\w-]*)"/g, 'href="index.html#$1"');
-}
-
-// Mark the page we're on in the desktop mega menu, the mobile list and the
-// top-level nav ("Our Services" instead of "Home").
-function markCurrent(html, file) {
-  return html
-    .replace(' class="nav-link is-current" href="index.html" aria-current="page"', ' class="nav-link" href="index.html"')
-    .replace('<button class="nav-link" aria-expanded="false" data-menu="services">', '<button class="nav-link is-current" aria-expanded="false" data-menu="services">')
-    .replace(new RegExp(`<a class="mega-svc" href="${file}">`, "g"), `<a class="mega-svc" href="${file}" aria-current="page">`)
-    .replace(new RegExp(`(<details class="mobile-services")>`), "$1 open>")
-    .replace(new RegExp(`<a href="${file}">`, "g"), `<a href="${file}" aria-current="page">`);
-}
-
-const header = slice("<!-- ============ HEADER ============ -->", "<!-- Section pager");
-// Drop .screen: inside pages don't snap (see the screen-mode block in _home.scss).
-const contact = slice("<!-- ============ LOCATION / CONTACT ============ -->", "\n</main>").replace(
-  " screen contact-section",
-  " contact-section"
-);
-const footer = slice("<!-- ============ FOOTER ============ -->", "\n<script");
-const scripts = slice('<script src="assets/js/gsap.min.js"', "\n</body>");
+const CONTACT_PANEL = "<?php include 'includes/contact-cta.php'; ?>";
 
 // ─── Icons ─────────────────────────────────────────────────────────────────
 // Same line-icon style as the home page (24×24, 1.8 stroke).
@@ -117,12 +85,12 @@ const CHECK =
 // Top-level service categories (the live site's sub-nav). Category URLs show
 // their first service, so the tabs link straight to it.
 const CATEGORIES = [
-  { key: "infrastructure", label: "Infrastructure", href: "linux-server.html", icon: "server" },
+  { key: "infrastructure", label: "Infrastructure", href: "linux-server.php", icon: "server" },
   { key: "domain", label: "Domain", href: "https://my.cloudacropolis.om/cart.php?a=add&domain=register", icon: "globe", external: true },
-  { key: "saas", label: "SaaS", href: "cloud-pbx.html", icon: "layers" },
-  { key: "bundle", label: "Business Bundle", href: "business-bundle.html", icon: "briefcase" },
-  { key: "security", label: "Security Services", href: "ssl-certificates.html", icon: "shield" },
-  { key: "gpu", label: "GPU", href: "gpu.html", icon: "chip" },
+  { key: "saas", label: "SaaS", href: "cloud-pbx.php", icon: "layers" },
+  { key: "bundle", label: "Business Bundle", href: "business-bundle.php", icon: "briefcase" },
+  { key: "security", label: "Security Services", href: "ssl-certificates.php", icon: "shield" },
+  { key: "gpu", label: "GPU", href: "gpu.php", icon: "chip" },
 ];
 
 const linkHref = (l) => l.local || l.href;
@@ -147,7 +115,7 @@ function hero(p, cat) {
     <div class="container page-hero-inner">
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li>Our Services</li>
           <li><a href="${esc(cat.href)}">${esc(cat.label)}</a></li>
           <li aria-current="page">${esc(p.h1)}</li>
@@ -173,7 +141,7 @@ function sidebar(p) {
       const links = g.links
         .map((l) => {
           const href = linkHref(l);
-          const current = l.local && l.local === `${p.slug}.html`;
+          const current = l.local && l.local === `${p.slug}.php`;
           return `              <a class="mega-svc" href="${esc(href)}"${current ? ' aria-current="page"' : ""}${extAttrs(href)}>${esc(l.label)}<span class="mega-go">${/^https?:/.test(href) ? "↗" : "→"}</span></a>`;
         })
         .join("\n");
@@ -310,71 +278,49 @@ ${items}
 }
 
 // ─── Document shell ────────────────────────────────────────────────────────
-function documentHtml({ title, description, image, source, chrome, main }) {
-  return `<!doctype html>
-<!--
-  Generated by \`npm run pages\` (scripts/build-services.mjs)${source ? ` from\n  ${source}. Edit those` : ". Edit that"}, not this file — it is overwritten.
--->
-<html lang="en" dir="ltr" class="no-js">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${esc(title)}</title>
-<meta name="description" content="${esc(description)}">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="${esc(title)}">
-<meta property="og:description" content="${esc(description)}">
-<meta property="og:image" content="assets/images/${esc(image)}">
-<meta name="twitter:card" content="summary_large_image">
-
-<link rel="icon" href="assets/images/logo.png">
-<meta name="theme-color" content="#ffffff">
-
-<link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-<a class="skip-link" href="#main">Skip to content</a>
-
-${chrome(header)}
+// $page drives includes/head.php (title, meta) and includes/header.php
+// (which menu item is current) — see includes/config.php.
+function phpPage({ file, section, title, description, image, source, main }) {
+  const fields = { file, section, title, description, image };
+  return `<?php
+// Generated by \`npm run pages\` (scripts/build-services.mjs)${source ? ` from\n// ${source}. Edit those` : ". Edit that"}, not this file — it is overwritten.
+$page = [
+${Object.entries(fields).map(([k, v]) => `    ${php(k)} => ${php(v)},`).join("\n")}
+];
+include 'includes/head.php';
+include 'includes/header.php';
+?>
 
 ${main}
 
-${chrome(footer)}
-
-${relink(scripts)}
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>
 `;
 }
 
 // ─── Service page ──────────────────────────────────────────────────────────
 function page(p) {
-  const file = `${p.slug}.html`;
   const cat = CATEGORIES.find((c) => c.key === p.category);
-  const chrome = (html) => markCurrent(relink(html), file);
 
-  return documentHtml({
+  return phpPage({
+    file: `${p.slug}.php`,
+    section: "services",
     title: `${p.h1} | Cloud Acropolis`,
     description: p.description,
     image: p.image,
     source: "content/services.json",
-    chrome,
     main: `<main id="main" class="service-page">
 
 ${hero(p, cat)}
 
 ${plans(p)}
 ${features(p)}${faq(p)}
-${chrome(contact)}
+${CONTACT_PANEL}
 
 </main>`,
   });
 }
 
-// ═══ COMPANY PAGES (contact.html, partner.html) ════════════════════════════
+// ═══ COMPANY PAGES (contact.php, partner.php) ══════════════════════════════
 // Copy is taken word for word from cloudacropolis.om/Contact_us and /partner;
 // the layout is ours. Forms have no backend — main.js turns a submit into a
 // pre-filled email to CONTACT_EMAIL (form[data-mailto]).
@@ -386,14 +332,6 @@ const MAPS_QUERY = "Cloud Acropolis, Building 2073, Way 6025, Ghala Industrial A
 const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(MAPS_QUERY)}`;
 const MAPS_EMBED = `https://www.google.com/maps?q=${encodeURIComponent(MAPS_QUERY)}&output=embed`;
 
-// Top-level nav: drop "Home" as current and mark this page's own link.
-function markCompany(html, file) {
-  return html
-    .replace(' class="nav-link is-current" href="index.html" aria-current="page"', ' class="nav-link" href="index.html"')
-    .replace(`<a class="nav-link" href="${file}">`, `<a class="nav-link is-current" href="${file}" aria-current="page">`)
-    .replace(`<a class="mobile-top-link" href="${file}">`, `<a class="mobile-top-link" href="${file}" aria-current="page">`);
-}
-
 function pageHero({ image, crumb, kicker, h1, lead, chips }) {
   return `  <!-- ============ PAGE HERO ============ -->
   <section class="page-hero page-hero--company">
@@ -402,7 +340,7 @@ function pageHero({ image, crumb, kicker, h1, lead, chips }) {
     <div class="container page-hero-inner">
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li aria-current="page">${esc(crumb)}</li>
         </ol>
       </nav>
@@ -466,9 +404,6 @@ function infoCard({ ic, label, lines, href, cta }) {
 }
 
 function contactPage() {
-  const file = "contact.html";
-  const chrome = (html) => markCompany(relink(html), file);
-
   const main = `<main id="main" class="service-page company-page">
 
 ${pageHero({
@@ -545,11 +480,12 @@ ${HONEYPOT}
 
 </main>`;
 
-  return documentHtml({
+  return phpPage({
+    file: "contact.php",
+    section: "contact",
     title: "Contact Us | Cloud Acropolis",
     description: "Get in touch with Cloud Acropolis — Cloud Data Center, Building 2073, Way 6025, Ghala Industrial Area, Muscat. Call +968 9239 4675 or email Info@CloudAcropolis.om.",
     image: "oman-network.jpg",
-    chrome,
     main,
   });
 }
@@ -583,9 +519,6 @@ const COUNTRIES = [
 ];
 
 function partnerPage() {
-  const file = "partner.html";
-  const chrome = (html) => markCompany(relink(html), file);
-
   const ways = PARTNER_WAYS.map(
     (w, i) => `          <li class="partner-way reveal" style="--d:${i * 80}ms">
             <span class="partner-way-num">0${i + 1}</span>
@@ -743,19 +676,20 @@ ${HONEYPOT}
 
 </main>`;
 
-  return documentHtml({
+  return phpPage({
+    file: "partner.php",
+    section: "partner",
     title: "Become a Partner | Cloud Acropolis",
     description: "Partner with Cloud Acropolis — a Rating IV data center in Oman. Harness our infrastructure, facilities and expert support to deliver exceptional services to your customers.",
     image: "hero-datacenter.jpg",
-    chrome,
     main,
   });
 }
 
 // ─── Write ─────────────────────────────────────────────────────────────────
 for (const p of pages) {
-  await writeFile(join(root, `${p.slug}.html`), page(p));
+  await writeFile(join(root, `${p.slug}.php`), page(p));
 }
-await writeFile(join(root, "contact.html"), contactPage());
-await writeFile(join(root, "partner.html"), partnerPage());
-console.log(`Wrote ${pages.length + 2} pages:\n${[...pages.map((p) => `${p.slug}.html`), "contact.html", "partner.html"].map((f) => `  ${f}`).join("\n")}`);
+await writeFile(join(root, "contact.php"), contactPage());
+await writeFile(join(root, "partner.php"), partnerPage());
+console.log(`Wrote ${pages.length + 2} pages:\n${[...pages.map((p) => `${p.slug}.php`), "contact.php", "partner.php"].map((f) => `  ${f}`).join("\n")}`);
