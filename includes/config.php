@@ -17,6 +17,7 @@ const MANAGED_SECURITY = 'https://my.cloudacropolis.om/index.php?rp=/store/manag
 // The "Our Services" menu: desktop mega menu and mobile list share it.
 const SERVICE_MENU = [
     'Infrastructure' => [
+        ['Domain Registration', 'domain-registration.php'],
         ['Linux Cloud Server', 'linux-server.php'],
         ['Windows Cloud Server', 'windows-server.php'],
         ['Colocation', 'colocation.php'],

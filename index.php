@@ -45,10 +45,10 @@ include 'includes/header.php';
         <img src="assets/images/hero-slider-02.jpg" alt="" class="hero-slide-img">
         <div class="hero-slide-content">
           <p class="hero-kicker">DOMAIN REGISTRATION</p>
-          <h1>Start with the Right<br>Domain</h1>
-          <p>Find and register the perfect domain for your business and build your digital presence.</p>
+          <h1>Your <span class="text-glow">.om</span> Domain.<br>Your Digital Identity.</h1>
+          <p>Build your digital presence with a .om domain that reflects your business in Oman. We also support popular international extensions including .com, .net, .org, and more.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary btn-lg" href="https://cloudacropolis.om/services">Register Your Domain <span class="arrow">→</span></a>
+            <a class="btn btn-primary btn-lg" href="domain-registration.php">Register Your Domain <span class="arrow">→</span></a>
             <a class="btn btn-outline-light btn-lg" href="mailto:info@cloudacropolis.om?subject=Inquiry%20Request">Talk to an Expert</a>
           </div>
         </div>
@@ -181,6 +181,7 @@ include 'includes/header.php';
         </div>
       <div class="filter-tabs filter-tabs--compact" id="filterTabs" role="tablist" aria-label="Marketplace categories">
         <button class="filter-tab is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-tab" data-filter="Domains" role="tab" aria-selected="false">Domains</button>
         <button class="filter-tab" data-filter="Infrastructure" role="tab" aria-selected="false">Infrastructure</button>
         <button class="filter-tab" data-filter="Communication" role="tab" aria-selected="false">Communication</button>
         <button class="filter-tab" data-filter="Productivity" role="tab" aria-selected="false">Productivity</button>
@@ -190,6 +191,13 @@ include 'includes/header.php';
       </div>
 
       <div class="marketplace-grid" id="marketplaceGrid">
+
+        <a class="mp-card reveal" data-category="Domains" href="domain-registration.php" style="--d:0ms">
+          <div class="mp-top"><span class="mp-label">Domains</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span></div>
+          <h3>Domain Registration</h3>
+          <p>Your .om domain, plus .com, .net, .org and more.</p>
+          <span class="card-link">Register Domain <span class="arrow">→</span></span>
+        </a>
 
         <a class="mp-card reveal" data-category="Infrastructure" href="linux-server.php" style="--d:0ms">
           <div class="mp-top"><span class="mp-label">Infrastructure</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><line x1="7" y1="7.5" x2="7.01" y2="7.5"/><line x1="7" y1="16.5" x2="7.01" y2="16.5"/></svg></span></div>
@@ -289,7 +297,7 @@ include 'includes/header.php';
           <span class="card-link">Explore <span class="arrow">→</span></span>
         </a>
 
-        <!-- Fills the last slot of the 5 x 3 grid; has no data-category so it stays visible under every filter -->
+        <!-- Last card in the grid; has no data-category so it stays visible under every filter -->
         <a class="mp-card mp-card--cta reveal" href="mailto:info@cloudacropolis.om?subject=Inquiry%20Request" style="--d:160ms">
           <p class="mp-cta-label">Not sure what you need?</p>
           <h3>Talk to our cloud specialists</h3>
@@ -351,6 +359,7 @@ include 'includes/header.php';
           <a class="btn btn-outline btn-block" href="business-bundle.php">Request Service</a>
         </article>
       </div>
+      <p class="bundles-note">Domain registration options include .om and popular international extensions. Availability and applicable charges may vary depending on the selected package.</p>
     </div>
   </section>
 
@@ -521,6 +530,13 @@ include 'includes/header.php';
             <span class="faq-toggle"></span>
           </button>
           <div class="faq-a"><p>Cloud Acropolis offers Cloud Infrastructure, Private &amp; Public Cloud, Dedicated Servers, VPS Hosting, Colocation, Managed Hosting, Cybersecurity, Backup &amp; Disaster Recovery, AI Infrastructure, Cloud Migration, and IT Consulting.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Can I register a .om domain with Cloud Acropolis?</span>
+            <span class="faq-toggle"></span>
+          </button>
+          <div class="faq-a"><p>Cloud Acropolis can assist with .om domain registration enquiries and popular international extensions such as .com, .net, and .org. Registration is subject to availability and applicable requirements.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">

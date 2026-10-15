@@ -398,6 +398,176 @@ html:has(.service-page) {
   }
 }
 
+// ═══ DOMAIN REGISTRATION ═══════════════════════════════════════════════════
+// Search on a tinted panel beside the TLD price table, in one card.
+.domain-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  overflow: hidden;
+  background: var(--white);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 12px 32px rgb(14 18 32 / 6%);
+}
+
+.domain-search,
+.domain-pricing {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(28px, 4vw, 48px);
+}
+
+.domain-search {
+  justify-content: center;
+  background: var(--surface-tint);
+  border-right: 1px solid var(--line);
+
+  .section-title {
+    margin-bottom: 12px;
+  }
+
+  .section-intro {
+    margin-bottom: 24px;
+  }
+}
+
+.tld-accent {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.domain-form {
+  display: flex;
+  gap: 8px;
+  padding: 6px;
+  background: var(--white);
+  border: 1.5px solid var(--line);
+  border-radius: 16px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:focus-within {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 4px rgb(var(--color-brand-rgb) / 12%);
+  }
+
+  // The form carries the border, so the input sits flat inside it.
+  .ca-input {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .btn {
+    flex-shrink: 0;
+  }
+}
+
+.domain-hint {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: var(--muted-2);
+}
+
+.domain-pricing {
+  .eyebrow {
+    margin-bottom: 16px;
+  }
+
+  .card-link {
+    align-self: flex-end;
+    margin-top: 16px;
+  }
+}
+
+.tld-table-wrap {
+  overflow-x: auto;
+}
+
+.tld-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+
+  th,
+  td {
+    padding: 14px 12px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  thead th {
+    font-size: 0.78rem;
+    font-weight: var(--fw-semibold);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--surface-alt);
+    border-bottom: 2px solid var(--line-tint);
+
+    &:first-child {
+      border-radius: 12px 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 12px 0 0;
+    }
+  }
+
+  th:first-child {
+    text-align: left;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid var(--line);
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: var(--surface-tint);
+    }
+  }
+
+  tbody th {
+    font-size: 1.02rem;
+    font-weight: var(--fw-extrabold);
+    color: var(--ink);
+  }
+}
+
+.tld-price,
+.tld-term {
+  display: block;
+}
+
+.tld-price {
+  font-weight: var(--fw-semibold);
+  color: var(--ink);
+}
+
+.tld-term {
+  font-size: 0.78rem;
+  color: var(--muted-2);
+}
+
+.tld-new {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 7px;
+  font-size: 0.66rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: var(--white);
+  background: var(--green);
+  border-radius: var(--radius-pill);
+}
+
 // ═══ RESPONSIVE ════════════════════════════════════════════════════════════
 @media (width <= 1200px) {
   .feature-grid,
@@ -435,6 +605,15 @@ html:has(.service-page) {
   .pricing-grid--2 {
     max-width: none;
   }
+
+  .domain-panel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .domain-search {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
 }
 
 @media (width <= 768px) {
@@ -460,6 +639,31 @@ html:has(.service-page) {
 }
 
 @media (width <= 480px) {
+  .domain-search,
+  .domain-pricing {
+    padding: 24px 18px;
+  }
+
+  .tld-table {
+    font-size: 0.85rem;
+
+    th,
+    td {
+      padding: 12px 4px;
+      white-space: normal;
+    }
+
+    thead th {
+      font-size: 0.68rem;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  .tld-new {
+    display: table;
+    margin: 4px 0 0;
+  }
+
   // Tabs scroll sideways instead of wrapping into a tall block.
   .service-tabs {
     flex-wrap: nowrap;

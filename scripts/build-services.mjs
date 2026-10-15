@@ -86,7 +86,7 @@ const CHECK =
 // their first service, so the tabs link straight to it.
 const CATEGORIES = [
   { key: "infrastructure", label: "Infrastructure", href: "linux-server.php", icon: "server" },
-  { key: "domain", label: "Domain", href: "https://my.cloudacropolis.om/cart.php?a=add&domain=register", icon: "globe", external: true },
+  { key: "domain", label: "Domain", href: "domain-registration.php", icon: "globe" },
   { key: "saas", label: "SaaS", href: "cloud-pbx.php", icon: "layers" },
   { key: "bundle", label: "Business Bundle", href: "business-bundle.php", icon: "briefcase" },
   { key: "security", label: "Security Services", href: "ssl-certificates.php", icon: "shield" },
@@ -233,10 +233,14 @@ function features(p) {
         <div>
           <p class="eyebrow">Features</p>
           <h2 class="section-title">${esc(f.title)}</h2>
-        </div>
+        </div>${
+          f.intro
+            ? `
         <div class="split-head-aside">
           <p class="section-intro">${esc(f.intro)}</p>
-        </div>
+        </div>`
+            : ""
+        }
       </div>
       <div class="${grid}">
 ${cards}
@@ -686,10 +690,134 @@ ${HONEYPOT}
   });
 }
 
+// ═══ DOMAIN REGISTRATION (domain-registration.php) ═════════════════════════
+// Layout follows the client's brief: a search box beside a TLD price table.
+// Search and checkout happen in the client area (WHMCS): the form hands the
+// query to its domain cart, so this page never claims availability itself.
+const DOMAIN_CART = "https://my.cloudacropolis.om/cart.php";
+const DOMAIN_CART_URL = `${DOMAIN_CART}?a=add&domain=register`;
+
+// Prices per year, OMR, as supplied by the client. Keep in sync with WHMCS.
+const DOMAIN_PRICES = [
+  { tld: ".om", register: "10.00", transfer: "10.00", renew: "10.00" },
+  { tld: ".me.om", register: "10.00", transfer: "10.00", renew: "10.00", isNew: true },
+  { tld: ".com.om", register: "10.00", transfer: "10.00", renew: "10.00" },
+  { tld: ".edu.om", register: "10.00", transfer: "10.00", renew: "10.00" },
+];
+
+const DOMAIN_FEATURES = [
+  { icon: "globe", title: ".om Domain Registration", text: "Give your business an Omani identity with a .om domain, or one of .me.om, .com.om and .edu.om." },
+  { icon: "network", title: "International Domain Extensions", text: "Reach a wider audience with popular global extensions including .com, .net, .org, and more." },
+  { icon: "refresh", title: "Domain Renewal & Management", text: "Renew, transfer and manage your domains from one client area, alongside your other Cloud Acropolis services." },
+];
+
+const DOMAIN_FAQ = [
+  {
+    q: "Can I register a .om domain with Cloud Acropolis?",
+    a: "Cloud Acropolis can assist with .om domain registration enquiries and popular international extensions such as .com, .net, and .org. Registration is subject to availability and applicable requirements.",
+  },
+  {
+    q: "Can I transfer an existing domain to Cloud Acropolis?",
+    a: "Yes. Search for your domain and choose the transfer option in the client area. Transfers are subject to the current registrar&rsquo;s requirements, including the domain&rsquo;s authorisation code.",
+  },
+  {
+    q: "Is a domain included in the Business Bundles?",
+    a: "Each Business Bundle includes a domain. Domain registration options include .om and popular international extensions. Availability and applicable charges may vary depending on the selected package.",
+  },
+];
+
+function domainPrice(v) {
+  return `<span class="tld-price">OMR ${esc(v)}</span><span class="tld-term">1 Year</span>`;
+}
+
+function domainPage() {
+  const cat = CATEGORIES.find((c) => c.key === "domain");
+  const rows = DOMAIN_PRICES.map(
+    (d) => `              <tr>
+                <th scope="row">${esc(d.tld)}${d.isNew ? ' <span class="tld-new">New</span>' : ""}</th>
+                <td>${domainPrice(d.register)}</td>
+                <td>${domainPrice(d.transfer)}</td>
+                <td>${domainPrice(d.renew)}</td>
+              </tr>`
+  ).join("\n");
+
+  const main = `<main id="main" class="service-page domain-page">
+
+${hero({ image: "hero-slider-02.jpg", h1: "Domain Registration", sidebarTitle: "Domain", category: "domain" }, cat)}
+
+  <!-- ============ SEARCH + PRICING ============ -->
+  <section class="section" id="register" data-screen="Register">
+    <div class="container">
+      <div class="domain-panel reveal">
+        <div class="domain-search">
+          <p class="eyebrow">Register Domain</p>
+          <h2 class="section-title">Your <span class="tld-accent">.om</span> domain. Your digital identity.</h2>
+          <p class="section-intro">Search for the name you want. We also support popular international extensions including .com, .net, .org, and more.</p>
+          <form class="domain-form" action="${DOMAIN_CART}" method="get" role="search">
+            <input type="hidden" name="a" value="add">
+            <input type="hidden" name="domain" value="register">
+            <label class="visually-hidden" for="domain-query">Domain name</label>
+            <input class="ca-input" id="domain-query" name="query" type="text" placeholder="eg. example.om" autocomplete="off" autocapitalize="off" spellcheck="false" required>
+            <button class="btn btn-primary" type="submit">Search <span class="arrow">→</span></button>
+          </form>
+          <p class="domain-hint">Search and checkout continue in the Cloud Acropolis client area.</p>
+        </div>
+
+        <div class="domain-pricing">
+          <p class="eyebrow">Domain Pricing</p>
+          <div class="tld-table-wrap">
+            <table class="tld-table">
+              <thead>
+                <tr>
+                  <th scope="col">Domain TLD</th>
+                  <th scope="col">New Price</th>
+                  <th scope="col">Transfer</th>
+                  <th scope="col">Renewal</th>
+                </tr>
+              </thead>
+              <tbody>
+${rows}
+              </tbody>
+            </table>
+          </div>
+          <a class="card-link" href="${esc(DOMAIN_CART_URL)}" target="_blank" rel="noopener">View all pricing <span class="arrow">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+${features({
+  features: {
+    title: "One home for your domains",
+    intro: "Register a new name, bring an existing one over, and keep every renewal in one place.",
+    items: DOMAIN_FEATURES,
+  },
+})}${faq({
+  faq: {
+    title: "Domain registration questions",
+    intro: "The essentials on .om and international domains.",
+    items: DOMAIN_FAQ,
+  },
+})}
+${CONTACT_PANEL}
+
+</main>`;
+
+  return phpPage({
+    file: "domain-registration.php",
+    section: "services",
+    title: "Domain Registration | Cloud Acropolis",
+    description: "Register your .om domain with Cloud Acropolis — plus .me.om, .com.om, .edu.om and popular international extensions including .com, .net and .org.",
+    image: "hero-slider-02.jpg",
+    main,
+  });
+}
+
 // ─── Write ─────────────────────────────────────────────────────────────────
 for (const p of pages) {
   await writeFile(join(root, `${p.slug}.php`), page(p));
 }
+await writeFile(join(root, "domain-registration.php"), domainPage());
 await writeFile(join(root, "contact.php"), contactPage());
 await writeFile(join(root, "partner.php"), partnerPage());
-console.log(`Wrote ${pages.length + 2} pages:\n${[...pages.map((p) => `${p.slug}.php`), "contact.php", "partner.php"].map((f) => `  ${f}`).join("\n")}`);
+const written = [...pages.map((p) => `${p.slug}.php`), "domain-registration.php", "contact.php", "partner.php"];
+console.log(`Wrote ${written.length} pages:\n${written.map((f) => `  ${f}`).join("\n")}`);

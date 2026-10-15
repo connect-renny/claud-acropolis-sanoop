@@ -87,7 +87,6 @@
       ],
       "features": {
         "title": "Linux Server Features",
-        "intro": "See all features if you purchase Linux Server",
         "items": [
           {
             "icon": "pulse",
@@ -241,7 +240,6 @@
       ],
       "features": {
         "title": "Windows Server Features",
-        "intro": "See all features if you purchase Windows Server",
         "items": [
           {
             "icon": "pulse",
@@ -406,7 +404,6 @@
       ],
       "features": {
         "title": "Colocation Features",
-        "intro": "See all features if you purchase Colocation",
         "items": [
           {
             "icon": "shield",
@@ -575,7 +572,6 @@
       ],
       "features": {
         "title": "GPU Features",
-        "intro": "See all features if you purchase GPU",
         "items": [
           {
             "icon": "chip",
@@ -763,7 +759,6 @@
       ],
       "features": {
         "title": "Cloud PBX Features",
-        "intro": "See all features if you purchase Cloud PBX",
         "items": [
           {
             "icon": "phone",
@@ -968,7 +963,6 @@
       ],
       "features": {
         "title": "Email Hosting Features",
-        "intro": "See all features if you purchase Email Hosting Plan",
         "items": [
           {
             "icon": "shield",
@@ -1163,7 +1157,6 @@
       ],
       "features": {
         "title": "OSOS ERP SME Features",
-        "intro": "See all features if you purchase OSOS ERP SME",
         "items": [
           {
             "icon": "cloud",
@@ -1366,7 +1359,6 @@
       ],
       "features": {
         "title": "ERP Enterprise Features",
-        "intro": "See all features if you purchase ERP Enterprise",
         "items": [
           {
             "icon": "sliders",
@@ -1572,7 +1564,6 @@
       ],
       "features": {
         "title": "Intercom Features",
-        "intro": "See all features if you purchase InterCom",
         "items": [
           {
             "icon": "phone",
@@ -1733,7 +1724,6 @@
       ],
       "features": {
         "title": "SME Business Bundle Features",
-        "intro": "See all features if you purchase SME Businesses Bundle",
         "items": [
           {
             "icon": "mail",

@@ -581,6 +581,16 @@
   gap: 24px;
 }
 
+// Small print under the bundle cards (domain options).
+.bundles-note {
+  max-width: 720px;
+  margin: 20px auto 0;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--muted-2);
+}
+
 .price-card {
   display: flex;
   flex-direction: column;
@@ -1773,6 +1783,12 @@
     padding: 14px 0;
   }
 
+  .bundles-note {
+    margin-top: 8px;
+    font-size: 0.78rem;
+    line-height: 1.4;
+  }
+
   // The whole card is a link, so "Explore" can go when space is tight.
   .mp-card:not(.mp-card--cta) .card-link {
     display: none;
@@ -1788,6 +1804,71 @@
 
   .facility-grid {
     margin-bottom: 16px;
+  }
+}
+
+// The marketplace has a fourth row (16 cards + the CTA card). On laptop and
+// smaller desktop heights the cards drop "Explore" — the whole card is the
+// link — and on laptops they tighten, so the section still fits one screen.
+@media (width >= 1025px) and (height <= 960px), (1025px <= width <= 1366px) {
+  .mp-card:not(.mp-card--cta) .card-link {
+    display: none;
+  }
+
+  .mp-card p {
+    margin-bottom: 0;
+  }
+}
+
+@media (width >= 1025px) and (600px <= height <= 800px) {
+  #marketplace.screen {
+    padding: 14px 0;
+  }
+
+  #marketplace .split-head {
+    margin-bottom: 12px;
+  }
+
+  .marketplace-grid {
+    gap: 8px;
+  }
+
+  .mp-card {
+    padding: 9px 14px;
+
+    h3 {
+      margin-bottom: 2px;
+      font-size: 0.95rem;
+    }
+
+    p {
+      font-size: 0.82rem;
+      line-height: 1.4;
+    }
+  }
+
+  .mp-top {
+    margin-bottom: 4px;
+  }
+
+  .mp-icon {
+    width: 24px;
+    height: 24px;
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .mp-card--cta {
+    .mp-cta-label {
+      margin-bottom: 2px;
+    }
+
+    h3 {
+      margin-bottom: 6px;
+    }
   }
 }
 
