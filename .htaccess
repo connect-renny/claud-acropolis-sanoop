@@ -1,0 +1,7 @@
+# Clean URLs for the Google Ads landing pages: /infrastructure-oman serves
+# infrastructure-oman.php (any page.php works the same way).
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([a-z0-9-]+)$ $1.php [L]

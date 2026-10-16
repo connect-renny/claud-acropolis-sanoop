@@ -6,7 +6,7 @@ $page = [
     'section' => 'services',
     'title' => 'Cloud PBX | Cloud Acropolis',
     'description' => 'Cloud Acropolis is Oman\'s premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.',
-    'image' => 'hero-slider-04.jpg',
+    'image' => 'page-hero-cloud-pbx.jpg',
 ];
 include 'includes/head.php';
 include 'includes/header.php';
@@ -16,7 +16,7 @@ include 'includes/header.php';
 
   <!-- ============ PAGE HERO ============ -->
   <section class="page-hero">
-    <img src="assets/images/hero-slider-04.jpg" alt="" class="page-hero-img">
+    <img src="assets/images/page-hero-cloud-pbx.jpg" alt="" class="page-hero-img">
     <div class="page-hero-overlay"></div>
     <div class="container page-hero-inner">
       <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -62,13 +62,13 @@ include 'includes/header.php';
             <div class="side-group">
               <p class="mega-cat">OSOS SME Solutions</p>
               <a class="mega-svc" href="osos-erp-sme.php">OSOS ERP SME<span class="mega-go">→</span></a>
-              <a class="mega-svc" href="https://cloudacropolis.om/services/saas/osos-pos" target="_blank" rel="noopener">OSOS POS<span class="mega-go">↗</span></a>
+              <a class="mega-svc" href="osos-pos.php">OSOS POS<span class="mega-go">→</span></a>
             </div>
             <div class="side-group">
               <p class="mega-cat">OSOS Enterprise Solutions</p>
               <a class="mega-svc" href="erp-enterprise.php">ERP Enterprise<span class="mega-go">→</span></a>
-              <a class="mega-svc" href="https://cloudacropolis.om/services/saas/hrms" target="_blank" rel="noopener">HRMS<span class="mega-go">↗</span></a>
-              <a class="mega-svc" href="https://cloudacropolis.om/services/saas/qhse" target="_blank" rel="noopener">QHSE<span class="mega-go">↗</span></a>
+              <a class="mega-svc" href="hrms.php">HRMS<span class="mega-go">→</span></a>
+              <a class="mega-svc" href="qhse.php">QHSE<span class="mega-go">→</span></a>
             </div>
               </div>
             </div>

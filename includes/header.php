@@ -14,7 +14,7 @@ $mobile_link = function ($section, $href, $label) use ($page) {
 <header class="site-header" id="siteHeader">
   <div class="header-inner container">
     <a href="index.php" class="brand" aria-label="Cloud Acropolis home">
-      <img src="assets/images/logo.png" alt="Cloud Acropolis" class="brand-mark">
+      <img src="assets/images/logo-header.png" alt="Cloud Acropolis" class="brand-mark" width="323" height="80">
     </a>
 
     <nav class="main-nav" id="mainNav" aria-label="Primary">

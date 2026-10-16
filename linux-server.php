@@ -105,7 +105,7 @@ include 'includes/header.php';
           <article class="price-card reveal" style="--d:160ms">
             <h3>Special Requirement</h3>
             <ul class="price-features">
-              <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Availability 99.99%</li>
+              <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Uptime 99.99%</li>
               <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> High Performance</li>
               <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Premium Storage</li>
             </ul>
@@ -128,7 +128,7 @@ include 'includes/header.php';
       <div class="feature-grid feature-grid--3">
         <div class="feature-card reveal" style="--d:0ms">
           <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
-          <h3>99.99% Availability</h3>
+          <h3>99.99% Uptime</h3>
           <p>Built on resilient cloud infrastructure designed to ensure maximum uptime and uninterrupted access to your applications and services.</p>
         </div>
         <div class="feature-card reveal" style="--d:60ms">
@@ -212,7 +212,7 @@ include 'includes/header.php';
             <span>What uptime can I expect?</span>
             <span class="faq-toggle"></span>
           </button>
-          <div class="faq-a"><p>Our Linux Cloud Servers are designed to deliver up to 99.99% availability through resilient infrastructure and high-availability architecture.</p></div>
+          <div class="faq-a"><p>Our Linux Cloud Servers are designed to deliver up to 99.99% uptime through resilient infrastructure and high-availability architecture.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">

@@ -743,7 +743,7 @@ function domainPage() {
 
   const main = `<main id="main" class="service-page domain-page">
 
-${hero({ image: "hero-slider-02.jpg", h1: "Domain Registration", sidebarTitle: "Domain", category: "domain" }, cat)}
+${hero({ image: "page-hero-domain.jpg", h1: "Domain Registration", sidebarTitle: "Domain", category: "domain" }, cat)}
 
   <!-- ============ SEARCH + PRICING ============ -->
   <section class="section" id="register" data-screen="Register">
@@ -807,7 +807,7 @@ ${CONTACT_PANEL}
     section: "services",
     title: "Domain Registration | Cloud Acropolis",
     description: "Register your .om domain with Cloud Acropolis — plus .me.om, .com.om, .edu.om and popular international extensions including .com, .net and .org.",
-    image: "hero-slider-02.jpg",
+    image: "page-hero-domain.jpg",
     main,
   });
 }

@@ -5,7 +5,7 @@ $page = [
     'section' => 'services',
     'title' => 'Domain Registration | Cloud Acropolis',
     'description' => 'Register your .om domain with Cloud Acropolis — plus .me.om, .com.om, .edu.om and popular international extensions including .com, .net and .org.',
-    'image' => 'hero-slider-02.jpg',
+    'image' => 'page-hero-domain.jpg',
 ];
 include 'includes/head.php';
 include 'includes/header.php';
@@ -15,7 +15,7 @@ include 'includes/header.php';
 
   <!-- ============ PAGE HERO ============ -->
   <section class="page-hero">
-    <img src="assets/images/hero-slider-02.jpg" alt="" class="page-hero-img">
+    <img src="assets/images/page-hero-domain.jpg" alt="" class="page-hero-img">
     <div class="page-hero-overlay"></div>
     <div class="container page-hero-inner">
       <nav class="breadcrumb" aria-label="Breadcrumb">

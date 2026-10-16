@@ -29,7 +29,7 @@ include 'includes/header.php';
     <div class="hero-slides">
 
       <div class="hero-slide is-active" data-slide="0">
-        <img src="assets/images/hero-slider-01.png" alt="" class="hero-slide-img">
+        <img src="assets/images/hero-slider-01.jpg" alt="" class="hero-slide-img">
         <div class="hero-slide-content">
           <p class="hero-kicker">DATA CENTER</p>
           <h1>Cloud Infrastructure<br>Built for Business</h1>

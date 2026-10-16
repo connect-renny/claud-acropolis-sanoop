@@ -62,13 +62,13 @@ include 'includes/header.php';
             <div class="side-group">
               <p class="mega-cat">OSOS SME Solutions</p>
               <a class="mega-svc" href="osos-erp-sme.php">OSOS ERP SME<span class="mega-go">→</span></a>
-              <a class="mega-svc" href="https://cloudacropolis.om/services/saas/osos-pos" target="_blank" rel="noopener">OSOS POS<span class="mega-go">↗</span></a>
+              <a class="mega-svc" href="osos-pos.php">OSOS POS<span class="mega-go">→</span></a>
             </div>
             <div class="side-group">
               <p class="mega-cat">OSOS Enterprise Solutions</p>
               <a class="mega-svc" href="erp-enterprise.php">ERP Enterprise<span class="mega-go">→</span></a>
-              <a class="mega-svc" href="https://cloudacropolis.om/services/saas/hrms" target="_blank" rel="noopener">HRMS<span class="mega-go">↗</span></a>
-              <a class="mega-svc" href="https://cloudacropolis.om/services/saas/qhse" target="_blank" rel="noopener">QHSE<span class="mega-go">↗</span></a>
+              <a class="mega-svc" href="hrms.php">HRMS<span class="mega-go">→</span></a>
+              <a class="mega-svc" href="qhse.php">QHSE<span class="mega-go">→</span></a>
             </div>
               </div>
             </div>

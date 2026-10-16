@@ -9,3 +9,6 @@ assets/css/*.map
 Thumbs.db
 .vscode/
 .idea/
+
+# Landing-page leads (SQLite) and the form-token secret.
+storage/

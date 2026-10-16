@@ -75,7 +75,7 @@
         {
           "name": "Special Requirement",
           "features": [
-            "Availability 99.99%",
+            "Uptime 99.99%",
             "High Performance",
             "Premium Storage"
           ],
@@ -90,7 +90,7 @@
         "items": [
           {
             "icon": "pulse",
-            "title": "99.99% Availability",
+            "title": "99.99% Uptime",
             "text": "Built on resilient cloud infrastructure designed to ensure maximum uptime and uninterrupted access to your applications and services."
           },
           {
@@ -145,7 +145,7 @@
           },
           {
             "q": "What uptime can I expect?",
-            "a": "Our Linux Cloud Servers are designed to deliver up to 99.99% availability through resilient infrastructure and high-availability architecture."
+            "a": "Our Linux Cloud Servers are designed to deliver up to 99.99% uptime through resilient infrastructure and high-availability architecture."
           },
           {
             "q": "How quickly can I get started?",
@@ -228,7 +228,7 @@
         {
           "name": "Special Requirement",
           "features": [
-            "Availability 99.99%",
+            "Uptime 99.99%",
             "High Performance",
             "Premium Storage"
           ],
@@ -243,7 +243,7 @@
         "items": [
           {
             "icon": "pulse",
-            "title": "Availability 99.99%",
+            "title": "99.99% Uptime",
             "text": "Our Windows Server infrastructure is designed for maximum uptime, ensuring your applications and services remain available whenever your business needs them."
           },
           {
@@ -497,7 +497,7 @@
     {
       "slug": "gpu",
       "category": "infrastructure",
-      "image": "card-infrastructure.jpg",
+      "image": "page-hero-gpu.jpg",
       "h1": "GPU",
       "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
       "sidebarTitle": "Infrastructure",
@@ -645,7 +645,7 @@
     {
       "slug": "cloud-pbx",
       "category": "saas",
-      "image": "hero-slider-04.jpg",
+      "image": "page-hero-cloud-pbx.jpg",
       "h1": "Cloud PBX",
       "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
       "sidebarTitle": "SaaS Solutions",
@@ -685,7 +685,7 @@
             },
             {
               "label": "OSOS POS",
-              "href": "https://cloudacropolis.om/services/saas/osos-pos"
+              "local": "osos-pos.php"
             }
           ]
         },
@@ -698,11 +698,11 @@
             },
             {
               "label": "HRMS",
-              "href": "https://cloudacropolis.om/services/saas/hrms"
+              "local": "hrms.php"
             },
             {
               "label": "QHSE",
-              "href": "https://cloudacropolis.om/services/saas/qhse"
+              "local": "qhse.php"
             }
           ]
         }
@@ -892,7 +892,7 @@
             },
             {
               "label": "OSOS POS",
-              "href": "https://cloudacropolis.om/services/saas/osos-pos"
+              "local": "osos-pos.php"
             }
           ]
         },
@@ -905,11 +905,11 @@
             },
             {
               "label": "HRMS",
-              "href": "https://cloudacropolis.om/services/saas/hrms"
+              "local": "hrms.php"
             },
             {
               "label": "QHSE",
-              "href": "https://cloudacropolis.om/services/saas/qhse"
+              "local": "qhse.php"
             }
           ]
         }
@@ -1036,7 +1036,7 @@
     {
       "slug": "osos-erp-sme",
       "category": "saas",
-      "image": "hero-slider-03.jpg",
+      "image": "page-hero-osos-erp-sme.jpg",
       "h1": "OSOS ERP SME",
       "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
       "sidebarTitle": "SaaS Solutions",
@@ -1076,7 +1076,7 @@
             },
             {
               "label": "OSOS POS",
-              "href": "https://cloudacropolis.om/services/saas/osos-pos"
+              "local": "osos-pos.php"
             }
           ]
         },
@@ -1089,11 +1089,11 @@
             },
             {
               "label": "HRMS",
-              "href": "https://cloudacropolis.om/services/saas/hrms"
+              "local": "hrms.php"
             },
             {
               "label": "QHSE",
-              "href": "https://cloudacropolis.om/services/saas/qhse"
+              "local": "qhse.php"
             }
           ]
         }
@@ -1248,6 +1248,214 @@
       }
     },
     {
+      "slug": "osos-pos",
+      "category": "saas",
+      "image": "hero-slider-03.jpg",
+      "h1": "OSOS POS",
+      "description": "OSOS POS by Cloud Acropolis — a cloud-based point of sale for retail, restaurants and cafés in Oman, with inventory, customer management, multi-branch control and real-time reporting.",
+      "sidebarTitle": "SaaS Solutions",
+      "sidebar": [
+        {
+          "group": "Communication Solutions",
+          "links": [
+            {
+              "label": "Cloud PBX",
+              "local": "cloud-pbx.php"
+            },
+            {
+              "label": "Email Hosting Plan",
+              "local": "email-hosting-plan.php"
+            },
+            {
+              "label": "InterCom",
+              "local": "intercom.php"
+            }
+          ]
+        },
+        {
+          "group": "Managed database instance",
+          "links": [
+            {
+              "label": "Managed database instance",
+              "href": "https://cloudacropolis.om/services/saas/managed-database-instance-2"
+            }
+          ]
+        },
+        {
+          "group": "OSOS SME Solutions",
+          "links": [
+            {
+              "label": "OSOS ERP SME",
+              "local": "osos-erp-sme.php"
+            },
+            {
+              "label": "OSOS POS",
+              "local": "osos-pos.php"
+            }
+          ]
+        },
+        {
+          "group": "OSOS Enterprise Solutions",
+          "links": [
+            {
+              "label": "ERP Enterprise",
+              "local": "erp-enterprise.php"
+            },
+            {
+              "label": "HRMS",
+              "local": "hrms.php"
+            },
+            {
+              "label": "QHSE",
+              "local": "qhse.php"
+            }
+          ]
+        }
+      ],
+      "plans": [
+        {
+          "name": "POS Basic",
+          "price": "20",
+          "period": "/month",
+          "features": [
+            "POS Terminal (Restaurant / Trading)",
+            "Table management",
+            "Dashboard and Financial reports",
+            "Sales & Financial Reports",
+            "Extra Implementation"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=287&skipconfig=1&configoption[248]=717"
+          }
+        },
+        {
+          "name": "POS Advance",
+          "price": "50",
+          "period": "/month",
+          "features": [
+            "Smart Service & Kitchen Ops",
+            "Advanced Recipe & Menu Engineering",
+            "Total Inventory Control",
+            "Business Insights & Customization",
+            "Extra Implementation"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=287&skipconfig=1&configoption[248]=718"
+          }
+        },
+        {
+          "name": "POS Profession",
+          "features": [
+            "Loyalty Experience Management",
+            "Smart Rewards & Coupons Engine",
+            "Targeted Marketing & Insights",
+            "Digital Integration & Branding",
+            "Extra Implementation"
+          ],
+          "button": {
+            "label": "Request Service",
+            "request": {
+              "plan": "POS Profession",
+              "category": "OSOS POS"
+            }
+          }
+        }
+      ],
+      "features": {
+        "title": "OSOS POS Features",
+        "items": [
+          {
+            "icon": "bolt",
+            "title": "Fast & Intuitive Point of Sale",
+            "text": "Process sales quickly and efficiently with an easy-to-use POS interface designed to enhance the checkout experience and improve operational efficiency."
+          },
+          {
+            "icon": "box",
+            "title": "Inventory Management",
+            "text": "Track inventory levels in real time, manage stock movements, and receive accurate inventory updates to reduce stock discrepancies and improve control."
+          },
+          {
+            "icon": "users",
+            "title": "Customer Management",
+            "text": "Build stronger customer relationships by maintaining customer profiles, purchase history, and loyalty information to deliver personalized service."
+          },
+          {
+            "icon": "chart",
+            "title": "Real-Time Reporting & Analytics",
+            "text": "Access live dashboards and detailed reports on sales, inventory, and business performance to make informed decisions and identify growth opportunities."
+          },
+          {
+            "icon": "building",
+            "title": "Multi-Branch Management",
+            "text": "Manage multiple stores or branches from a centralized platform with synchronized inventory, pricing, and reporting across all locations."
+          },
+          {
+            "icon": "cloud",
+            "title": "Cloud-Based Access",
+            "text": "Operate your business anytime, anywhere with a secure cloud-based platform that provides access from desktops, tablets, or mobile devices."
+          },
+          {
+            "icon": "lock",
+            "title": "Secure Payment Processing",
+            "text": "Support multiple payment methods while ensuring secure transaction processing for a smooth and reliable checkout experience."
+          },
+          {
+            "icon": "headset",
+            "title": "24/7 Technical Support",
+            "text": "Our dedicated support team is available to assist with implementation, training, troubleshooting, and ongoing technical assistance to keep your business running smoothly."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "intro": "Everything You Need to Know About OSOS POS",
+        "items": [
+          {
+            "q": "What is OSOS POS?",
+            "a": "OSOS POS is a cloud-based Point of Sale solution that helps businesses manage sales, inventory, customers, and reporting through a single, easy-to-use platform. It is suitable for retail stores, restaurants, cafés, and other service-based businesses."
+          },
+          {
+            "q": "Which businesses can use OSOS POS?",
+            "a": "OSOS POS is designed for a wide range of businesses, including retail stores, supermarkets, restaurants, cafés, pharmacies, fashion outlets, hospitality businesses, and multi-branch operations."
+          },
+          {
+            "q": "Can I manage multiple branches from one system?",
+            "a": "Yes. The platform allows you to manage multiple locations from a centralized dashboard with synchronized inventory, sales data, and reporting."
+          },
+          {
+            "q": "Does OSOS POS work in the cloud?",
+            "a": "Yes. Being cloud-based, the system allows you to securely access your business data from any location using an internet-connected device."
+          },
+          {
+            "q": "Can I monitor inventory in real time?",
+            "a": "Absolutely. The system automatically updates inventory with every transaction, helping you maintain accurate stock levels and reduce manual effort."
+          },
+          {
+            "q": "Does the system generate reports?",
+            "a": "Yes. OSOS POS provides real-time reports and analytics covering sales performance, inventory, customer activity, and business trends to support informed decision-making."
+          },
+          {
+            "q": "Is the system secure?",
+            "a": "Yes. OSOS POS is hosted on secure cloud infrastructure with enterprise-grade security measures, user access controls, and data protection to safeguard your business information."
+          },
+          {
+            "q": "Can the solution grow with my business?",
+            "a": "Yes. The platform is scalable, allowing you to add users, branches, products, and additional features as your business expands."
+          },
+          {
+            "q": "Does OSOS POS integrate with other business solutions?",
+            "a": "Yes. OSOS POS can integrate with ERP, accounting, inventory, CRM, and other business applications to provide a unified business management platform."
+          },
+          {
+            "q": "Do you provide implementation and support?",
+            "a": "Yes. Cloud Acropolis offers end-to-end services including consultation, deployment, user training, system configuration, and ongoing technical support to ensure you get the maximum value from your POS solution."
+          }
+        ]
+      }
+    },
+    {
       "slug": "erp-enterprise",
       "category": "saas",
       "image": "hero-slider-03.jpg",
@@ -1290,7 +1498,7 @@
             },
             {
               "label": "OSOS POS",
-              "href": "https://cloudacropolis.om/services/saas/osos-pos"
+              "local": "osos-pos.php"
             }
           ]
         },
@@ -1303,11 +1511,11 @@
             },
             {
               "label": "HRMS",
-              "href": "https://cloudacropolis.om/services/saas/hrms"
+              "local": "hrms.php"
             },
             {
               "label": "QHSE",
-              "href": "https://cloudacropolis.om/services/saas/qhse"
+              "local": "qhse.php"
             }
           ]
         }
@@ -1450,6 +1658,432 @@
       }
     },
     {
+      "slug": "hrms",
+      "category": "saas",
+      "image": "hero-slider-03.jpg",
+      "h1": "HRMS",
+      "description": "Cloud-based HRMS from Cloud Acropolis — employee records, attendance and leave, payroll, self-service and HR reporting in one secure platform for businesses in Oman.",
+      "sidebarTitle": "SaaS Solutions",
+      "sidebar": [
+        {
+          "group": "Communication Solutions",
+          "links": [
+            {
+              "label": "Cloud PBX",
+              "local": "cloud-pbx.php"
+            },
+            {
+              "label": "Email Hosting Plan",
+              "local": "email-hosting-plan.php"
+            },
+            {
+              "label": "InterCom",
+              "local": "intercom.php"
+            }
+          ]
+        },
+        {
+          "group": "Managed database instance",
+          "links": [
+            {
+              "label": "Managed database instance",
+              "href": "https://cloudacropolis.om/services/saas/managed-database-instance-2"
+            }
+          ]
+        },
+        {
+          "group": "OSOS SME Solutions",
+          "links": [
+            {
+              "label": "OSOS ERP SME",
+              "local": "osos-erp-sme.php"
+            },
+            {
+              "label": "OSOS POS",
+              "local": "osos-pos.php"
+            }
+          ]
+        },
+        {
+          "group": "OSOS Enterprise Solutions",
+          "links": [
+            {
+              "label": "ERP Enterprise",
+              "local": "erp-enterprise.php"
+            },
+            {
+              "label": "HRMS",
+              "local": "hrms.php"
+            },
+            {
+              "label": "QHSE",
+              "local": "qhse.php"
+            }
+          ]
+        }
+      ],
+      "plans": [
+        {
+          "name": "Light",
+          "price": "100",
+          "period": "/month",
+          "features": [
+            "Up to 50 Employees",
+            "Employee Self Service",
+            "Leave Management",
+            "Paysheet",
+            "Expense Claim",
+            "Document Expiry Management"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=288&skipconfig=1&configoption[250]=722"
+          }
+        },
+        {
+          "name": "EnterPrise",
+          "price": "200",
+          "period": "/month",
+          "features": [
+            "Up to 100 Employees",
+            "Employee Self Service",
+            "Leave Management",
+            "Payroll Management",
+            "Shift Management",
+            "Overtime Management"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=288&skipconfig=1&configoption[250]=723"
+          }
+        },
+        {
+          "name": "Professional",
+          "features": [
+            "100-300 Employees",
+            "Employee Self Service",
+            "Leave Management",
+            "Payroll Management",
+            "Shift Management",
+            "Overtime Management",
+            "Final Settlement",
+            "Employee Offboarding"
+          ],
+          "button": {
+            "label": "Request Service",
+            "request": {
+              "plan": "Professional",
+              "category": "HRMS"
+            }
+          }
+        }
+      ],
+      "features": {
+        "title": "HRMS Features",
+        "items": [
+          {
+            "icon": "users",
+            "title": "Employee Information Management",
+            "text": "Centralize employee records, personal information, employment history, and documents in one secure platform for easy access and efficient workforce management."
+          },
+          {
+            "icon": "check",
+            "title": "Attendance & Leave Management",
+            "text": "Automate attendance tracking, leave requests, approvals, and work schedules to improve accuracy while reducing manual administrative tasks."
+          },
+          {
+            "icon": "coins",
+            "title": "Payroll Management",
+            "text": "Simplify payroll processing with automated salary calculations, deductions, benefits management, and payroll reports to ensure timely and accurate payments."
+          },
+          {
+            "icon": "mobile",
+            "title": "Employee Self-Service (ESS)",
+            "text": "Empower employees to access payslips, apply for leave, update personal information, and manage HR requests through a secure self-service portal."
+          },
+          {
+            "icon": "award",
+            "title": "Performance Management",
+            "text": "Monitor employee performance, set goals, conduct appraisals, and support professional development through structured performance management tools."
+          },
+          {
+            "icon": "chart",
+            "title": "Analytics & HR Reporting",
+            "text": "Generate real-time HR reports and dashboards to monitor workforce trends, attendance, payroll, and employee performance, enabling better decision-making."
+          },
+          {
+            "icon": "scale",
+            "title": "Cloud-Based & Scalable",
+            "text": "Access your HR system securely from anywhere while easily scaling users and features as your organization grows."
+          },
+          {
+            "icon": "shield",
+            "title": "Secure & Compliant",
+            "text": "Protect sensitive employee information with role-based access controls, secure cloud infrastructure, and automated backups for enhanced data security."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "intro": "Everything You Need to Know About HRMS",
+        "items": [
+          {
+            "q": "What is HRMS?",
+            "a": "A Human Resource Management System (HRMS) is a comprehensive software solution that automates HR functions such as employee management, payroll, attendance, leave, performance, and reporting within a single platform."
+          },
+          {
+            "q": "Which businesses can benefit from HRMS?",
+            "a": "HRMS is suitable for businesses of all sizes across industries including retail, manufacturing, healthcare, hospitality, logistics, education, finance, and professional services."
+          },
+          {
+            "q": "Can employees access the system remotely?",
+            "a": "Yes. Employees can securely access the HRMS through a web portal or mobile device to manage leave requests, view payslips, update personal information, and perform other self-service functions."
+          },
+          {
+            "q": "Does HRMS support payroll processing?",
+            "a": "Yes. The system automates payroll calculations, deductions, allowances, and salary processing while generating payroll reports to improve accuracy and efficiency."
+          },
+          {
+            "q": "Can HRMS track attendance and leave?",
+            "a": "Absolutely. The platform automates attendance tracking, leave management, approvals, and work schedules, helping organizations streamline workforce management."
+          },
+          {
+            "q": "Is the HRMS cloud-based?",
+            "a": "Yes. The solution is hosted on secure cloud infrastructure, enabling authorized users to access HR information anytime and from any location."
+          },
+          {
+            "q": "Is employee data secure?",
+            "a": "Yes. HRMS uses enterprise-grade security measures, role-based permissions, encrypted data storage, and regular backups to protect sensitive employee information."
+          },
+          {
+            "q": "Can the solution grow with my organization?",
+            "a": "Yes. HRMS is designed to scale with your business, allowing you to add employees, departments, branches, and additional HR modules as your workforce expands."
+          },
+          {
+            "q": "Can HRMS integrate with other business systems?",
+            "a": "Yes. The platform can integrate with ERP, payroll, accounting, attendance devices, and other enterprise applications to create a unified business management environment."
+          },
+          {
+            "q": "Do you provide implementation and support?",
+            "a": "Yes. Cloud Acropolis provides end-to-end services including consultation, implementation, system configuration, user training, and ongoing technical support to ensure a smooth HRMS deployment."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qhse",
+      "category": "saas",
+      "image": "hero-slider-03.jpg",
+      "h1": "QHSE",
+      "description": "Cloud-based QHSE management from Cloud Acropolis — quality, health, safety and environmental compliance, incident reporting, audits and dashboards for organizations in Oman.",
+      "sidebarTitle": "SaaS Solutions",
+      "sidebar": [
+        {
+          "group": "Communication Solutions",
+          "links": [
+            {
+              "label": "Cloud PBX",
+              "local": "cloud-pbx.php"
+            },
+            {
+              "label": "Email Hosting Plan",
+              "local": "email-hosting-plan.php"
+            },
+            {
+              "label": "InterCom",
+              "local": "intercom.php"
+            }
+          ]
+        },
+        {
+          "group": "Managed database instance",
+          "links": [
+            {
+              "label": "Managed database instance",
+              "href": "https://cloudacropolis.om/services/saas/managed-database-instance-2"
+            }
+          ]
+        },
+        {
+          "group": "OSOS SME Solutions",
+          "links": [
+            {
+              "label": "OSOS ERP SME",
+              "local": "osos-erp-sme.php"
+            },
+            {
+              "label": "OSOS POS",
+              "local": "osos-pos.php"
+            }
+          ]
+        },
+        {
+          "group": "OSOS Enterprise Solutions",
+          "links": [
+            {
+              "label": "ERP Enterprise",
+              "local": "erp-enterprise.php"
+            },
+            {
+              "label": "HRMS",
+              "local": "hrms.php"
+            },
+            {
+              "label": "QHSE",
+              "local": "qhse.php"
+            }
+          ]
+        }
+      ],
+      "plans": [
+        {
+          "name": "Light",
+          "price": "100",
+          "period": "/month",
+          "features": [
+            "Up to 50",
+            "Dashboard",
+            "Observation / Risk Identification",
+            "Accident Management",
+            "Audit",
+            "Inspection",
+            "Action Tracker"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/index.php?rp=/store/osos/qhse"
+          }
+        },
+        {
+          "name": "Advance",
+          "price": "250",
+          "period": "/month",
+          "features": [
+            "Up to 100",
+            "Includes all Light Plan features",
+            "Permit to Work",
+            "Journey Management",
+            "Management Visit",
+            "SOS Emergency",
+            "Mobile Application"
+          ],
+          "button": {
+            "label": "Order Now",
+            "href": "https://my.cloudacropolis.om/cart.php?a=add&pid=291&carttpl=standard_cart"
+          }
+        },
+        {
+          "name": "Profession",
+          "features": [
+            "Employees 100 to 300",
+            "Includes all Advance Plan features",
+            "Succession Planning Matrix",
+            "Training Management",
+            "Non-conformance Reporting",
+            "Mobile Application"
+          ],
+          "button": {
+            "label": "Request Service",
+            "request": {
+              "plan": "Profession",
+              "category": "QHSE"
+            }
+          }
+        }
+      ],
+      "features": {
+        "title": "QHSE Features",
+        "items": [
+          {
+            "icon": "award",
+            "title": "Quality Management",
+            "text": "Standardize processes, monitor quality objectives, and ensure compliance with industry standards to consistently deliver high-quality products and services."
+          },
+          {
+            "icon": "shield",
+            "title": "Health & Safety Management",
+            "text": "Promote a safer workplace by managing incidents, risk assessments, safety audits, corrective actions, and regulatory compliance from a centralized platform."
+          },
+          {
+            "icon": "globe",
+            "title": "Environmental Management",
+            "text": "Track environmental performance, manage sustainability initiatives, monitor compliance, and reduce your organization's environmental impact through structured processes."
+          },
+          {
+            "icon": "pulse",
+            "title": "Incident & Risk Management",
+            "text": "Identify, report, investigate, and resolve incidents while proactively assessing risks to minimize operational disruptions and improve workplace safety."
+          },
+          {
+            "icon": "check",
+            "title": "Audit & Compliance Management",
+            "text": "Simplify internal audits, inspections, compliance tracking, and document management to ensure your organization meets regulatory and industry requirements."
+          },
+          {
+            "icon": "layers",
+            "title": "Document Control",
+            "text": "Store, organize, and manage policies, procedures, manuals, and compliance documents in a secure, centralized repository with version control."
+          },
+          {
+            "icon": "chart",
+            "title": "Real-Time Reporting & Dashboards",
+            "text": "Monitor key QHSE performance indicators through interactive dashboards and customizable reports, enabling informed decision-making and continuous improvement."
+          },
+          {
+            "icon": "lock",
+            "title": "Secure Cloud-Based Platform",
+            "text": "Access your QHSE system anytime, anywhere through a secure cloud platform with role-based access, automated backups, and enterprise-grade data protection."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "intro": "Everything You Need to Know About QHSE",
+        "items": [
+          {
+            "q": "What is a QHSE Management System?",
+            "a": "A QHSE Management System is an integrated software solution that helps organizations manage Quality, Health, Safety, and Environmental processes from a single platform, improving compliance, reducing risks, and enhancing operational performance."
+          },
+          {
+            "q": "Which industries can benefit from QHSE?",
+            "a": "QHSE solutions are suitable for construction, manufacturing, oil & gas, logistics, healthcare, utilities, hospitality, transportation, and any organization that requires compliance and risk management."
+          },
+          {
+            "q": "Can the system help with regulatory compliance?",
+            "a": "Yes. The platform helps organizations manage compliance requirements, audits, inspections, corrective actions, and documentation to support adherence to industry standards and regulations."
+          },
+          {
+            "q": "Does the system support incident reporting?",
+            "a": "Yes. Employees can quickly record incidents, hazards, near misses, and corrective actions, enabling faster investigations and improved workplace safety."
+          },
+          {
+            "q": "Can I generate compliance reports?",
+            "a": "Absolutely. The system provides customizable reports and dashboards that give real-time visibility into audits, incidents, risks, compliance status, and overall QHSE performance."
+          },
+          {
+            "q": "Is the solution cloud-based?",
+            "a": "Yes. The QHSE platform is securely hosted in the cloud, allowing authorized users to access information from anywhere while maintaining data security and availability."
+          },
+          {
+            "q": "Is my data secure?",
+            "a": "Yes. Your QHSE data is protected through enterprise-grade security, role-based user access, regular backups, and secure cloud infrastructure designed to ensure business continuity."
+          },
+          {
+            "q": "Can the system be customized?",
+            "a": "Yes. Workflows, forms, approval processes, dashboards, and reports can be tailored to align with your organization's operational and compliance requirements."
+          },
+          {
+            "q": "Can the solution scale as my business grows?",
+            "a": "Yes. The platform is designed to support organizations of all sizes and can easily accommodate additional users, departments, sites, and business units as your organization expands."
+          },
+          {
+            "q": "Do you provide implementation and support?",
+            "a": "Yes. Cloud Acropolis provides complete implementation services, system configuration, user training, and ongoing technical support to help your organization successfully deploy and maximize the value of its QHSE solution."
+          }
+        ]
+      }
+    },
+    {
       "slug": "intercom",
       "category": "saas",
       "image": "hero-slider-04.jpg",
@@ -1492,7 +2126,7 @@
             },
             {
               "label": "OSOS POS",
-              "href": "https://cloudacropolis.om/services/saas/osos-pos"
+              "local": "osos-pos.php"
             }
           ]
         },
@@ -1505,11 +2139,11 @@
             },
             {
               "label": "HRMS",
-              "href": "https://cloudacropolis.om/services/saas/hrms"
+              "local": "hrms.php"
             },
             {
               "label": "QHSE",
-              "href": "https://cloudacropolis.om/services/saas/qhse"
+              "local": "qhse.php"
             }
           ]
         }

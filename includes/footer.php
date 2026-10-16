@@ -6,7 +6,7 @@
   <div class="container footer-grid">
 
     <div class="footer-brand">
-      <img src="assets/images/logo.png" alt="Cloud Acropolis" class="footer-logo">
+      <img src="assets/images/logo-footer-white.png" alt="Cloud Acropolis" class="footer-logo" width="323" height="80">
       <p class="footer-brand-text">Cloud infrastructure and digital solutions, built in Oman and serving internationally.</p>
       <p class="footer-brand-sub">Empowering Oman&rsquo;s Digital Future</p>
     </div>
