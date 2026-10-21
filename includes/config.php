@@ -54,6 +54,7 @@ const SERVICE_MENU = [
         ['HRMS', 'hrms.php'],
         ['QHSE', 'qhse.php'],
         ['InterCom', 'intercom.php'],
+        ['Call Center', 'call-center.php'],
     ],
     'Bundles' => [
         ['SME Starter', 'business-bundle.php'],

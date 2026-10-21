@@ -108,6 +108,16 @@ include 'includes/header.php';
           <p class="eyebrow">CORE SERVICES</p>
           <h2 class="section-title">Infrastructure built for your business</h2>
         </div>
+        <div class="split-head-aside cs-domain">
+          <p class="section-intro">Find your .om or international domain and run it on cloud infrastructure hosted in Oman.</p>
+          <form class="domain-form" action="<?= e(DOMAIN_SEARCH_URL) ?>" method="get" target="_blank" role="search">
+            <input type="hidden" name="a" value="add">
+            <input type="hidden" name="domain" value="register">
+            <label class="visually-hidden" for="cs-domain-query">Domain name</label>
+            <input class="ca-input" id="cs-domain-query" name="query" type="text" placeholder="yourcompany.om" autocomplete="off" autocapitalize="off" spellcheck="false" required>
+            <button class="btn btn-primary" type="submit">Search Domain <span class="arrow">→</span></button>
+          </form>
+        </div>
       </div>
 
       <div class="cs-grid">
@@ -252,6 +262,13 @@ include 'includes/header.php';
           <div class="mp-top"><span class="mp-label">Communication</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span></div>
           <h3>InterCom</h3>
           <p>Real-time internal messaging for connected teams.</p>
+          <span class="card-link">Explore <span class="arrow">→</span></span>
+        </a>
+
+        <a class="mp-card reveal" data-category="Communication" href="call-center.php" style="--d:120ms">
+          <div class="mp-top"><span class="mp-label">Communication</span><span class="mp-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2.5" y="14" width="4" height="6" rx="1.5"/><rect x="17.5" y="14" width="4" height="6" rx="1.5"/><path d="M19.5 20a3 3 0 0 1-3 2H13"/></svg></span></div>
+          <h3>Call Center</h3>
+          <p>Omnichannel cloud contact center for customer teams.</p>
           <span class="card-link">Explore <span class="arrow">→</span></span>
         </a>
 

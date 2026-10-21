@@ -259,6 +259,23 @@
 }
 
 // ═══ CLOUD SERVICES ════════════════════════════════════════════════════════
+// Domain search in the section head's aside; the form stretches to the aside.
+.cs-domain {
+  flex-basis: 460px;
+  align-items: stretch;
+
+  @media (width <= 1024px) {
+    flex-basis: 100%;
+    max-width: 560px;
+  }
+
+  @media (width <= 480px) {
+    .domain-form {
+      flex-direction: column;
+    }
+  }
+}
+
 .cs-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

@@ -664,6 +664,10 @@
             {
               "label": "InterCom",
               "local": "intercom.php"
+            },
+            {
+              "label": "Call Center",
+              "local": "call-center.php"
             }
           ]
         },
@@ -871,6 +875,10 @@
             {
               "label": "InterCom",
               "local": "intercom.php"
+            },
+            {
+              "label": "Call Center",
+              "local": "call-center.php"
             }
           ]
         },
@@ -1055,6 +1063,10 @@
             {
               "label": "InterCom",
               "local": "intercom.php"
+            },
+            {
+              "label": "Call Center",
+              "local": "call-center.php"
             }
           ]
         },
@@ -1269,6 +1281,10 @@
             {
               "label": "InterCom",
               "local": "intercom.php"
+            },
+            {
+              "label": "Call Center",
+              "local": "call-center.php"
             }
           ]
         },
@@ -1477,6 +1493,10 @@
             {
               "label": "InterCom",
               "local": "intercom.php"
+            },
+            {
+              "label": "Call Center",
+              "local": "call-center.php"
             }
           ]
         },
@@ -1679,6 +1699,10 @@
             {
               "label": "InterCom",
               "local": "intercom.php"
+            },
+            {
+              "label": "Call Center",
+              "local": "call-center.php"
             }
           ]
         },
@@ -1892,6 +1916,10 @@
             {
               "label": "InterCom",
               "local": "intercom.php"
+            },
+            {
+              "label": "Call Center",
+              "local": "call-center.php"
             }
           ]
         },
@@ -2105,6 +2133,10 @@
             {
               "label": "InterCom",
               "local": "intercom.php"
+            },
+            {
+              "label": "Call Center",
+              "local": "call-center.php"
             }
           ]
         },
@@ -2284,6 +2316,210 @@
           {
             "q": "Why choose Cloud Acropolis for Intercom solutions?",
             "a": "Cloud Acropolis delivers reliable communication solutions backed by enterprise expertise, scalable technology, local support, and a commitment to providing secure and high-performance business communication systems."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "call-center",
+      "category": "saas",
+      "image": "page-hero-cloud-pbx.jpg",
+      "h1": "Call Center",
+      "description": "Smart cloud contact center solutions in Oman from Cloud Acropolis — omnichannel voice and digital engagement, auto-routing, priority queuing, CRM integration and speech analytics.",
+      "sidebarTitle": "SaaS Solutions",
+      "sidebar": [
+        {
+          "group": "Communication Solutions",
+          "links": [
+            {
+              "label": "Cloud PBX",
+              "local": "cloud-pbx.php"
+            },
+            {
+              "label": "Email Hosting Plan",
+              "local": "email-hosting-plan.php"
+            },
+            {
+              "label": "InterCom",
+              "local": "intercom.php"
+            },
+            {
+              "label": "Call Center",
+              "local": "call-center.php"
+            }
+          ]
+        },
+        {
+          "group": "Managed database instance",
+          "links": [
+            {
+              "label": "Managed database instance",
+              "href": "https://cloudacropolis.om/services/saas/managed-database-instance-2"
+            }
+          ]
+        },
+        {
+          "group": "OSOS SME Solutions",
+          "links": [
+            {
+              "label": "OSOS ERP SME",
+              "local": "osos-erp-sme.php"
+            },
+            {
+              "label": "OSOS POS",
+              "local": "osos-pos.php"
+            }
+          ]
+        },
+        {
+          "group": "OSOS Enterprise Solutions",
+          "links": [
+            {
+              "label": "ERP Enterprise",
+              "local": "erp-enterprise.php"
+            },
+            {
+              "label": "HRMS",
+              "local": "hrms.php"
+            },
+            {
+              "label": "QHSE",
+              "local": "qhse.php"
+            }
+          ]
+        }
+      ],
+      "plans": [
+        {
+          "name": "Inbound Contact Center",
+          "features": [
+            "Auto-routing & priority queuing",
+            "Seamless CRM integrations",
+            "Flexible license model",
+            "Manage many agents from one interface"
+          ],
+          "button": {
+            "label": "Request Service",
+            "request": {
+              "plan": "Inbound Contact Center",
+              "category": "Call Center"
+            }
+          }
+        },
+        {
+          "name": "Outbound Contact Center",
+          "features": [
+            "Outbound campaigns",
+            "Seamless CRM integrations",
+            "Swap between packages anytime",
+            "No additional cost per interface"
+          ],
+          "button": {
+            "label": "Request Service",
+            "request": {
+              "plan": "Outbound Contact Center",
+              "category": "Call Center"
+            }
+          }
+        },
+        {
+          "name": "Omnichannel Contact Center",
+          "features": [
+            "Voice and digital channels",
+            "Speech analytics (Speechminer)",
+            "Bring your own API",
+            "Real-time engagement insights"
+          ],
+          "button": {
+            "label": "Request Service",
+            "request": {
+              "plan": "Omnichannel Contact Center",
+              "category": "Call Center"
+            }
+          }
+        }
+      ],
+      "features": {
+        "title": "Smart Contact Center Features",
+        "intro": "Incorporate cloud communication, centralize data, and ensure stability of communication through different modes and across a variety of channels.",
+        "items": [
+          {
+            "icon": "scale",
+            "title": "Scale Your Business",
+            "text": "Scale your business rapidly and easily, adding agents, channels and locations as your customer base grows."
+          },
+          {
+            "icon": "link",
+            "title": "Seamless CRM Integrations",
+            "text": "Anticipate client needs and ensure protected data through enriched communications that connect directly with your CRM."
+          },
+          {
+            "icon": "bolt",
+            "title": "Minimal Downtime",
+            "text": "Avoid endless onboarding and maximize your system functionality with no installation downtime."
+          },
+          {
+            "icon": "chart",
+            "title": "Speechminer Speech Analytics",
+            "text": "A web application that merges with your existing applications and CRM to turn every conversation into actionable insight."
+          },
+          {
+            "icon": "chat",
+            "title": "Omnichannel Engagement",
+            "text": "Support all channels — voice and digital — across your entire enterprise from a single contact center platform."
+          },
+          {
+            "icon": "forward",
+            "title": "Auto-Routing & Priority Queuing",
+            "text": "Accomplish seamless communication and enable automation in auto-routing and priority queuing through multiple channels."
+          },
+          {
+            "icon": "grid",
+            "title": "Bring Your Own API",
+            "text": "Bring your own API and we can customize and integrate your apps into your contact center workflows."
+          },
+          {
+            "icon": "headset",
+            "title": "Up-to-Date Services",
+            "text": "Timeless service with maintenance around the clock — made to fit your needs."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "intro": "Everything You Need to Know About Call Center",
+        "items": [
+          {
+            "q": "What is a Smart Contact Center Solution?",
+            "a": "A Smart Contact Center is a cloud-based platform that centralizes your customer communication across voice and digital channels, with auto-routing, priority queuing, CRM integration and analytics built in."
+          },
+          {
+            "q": "Does it support both inbound and outbound calls?",
+            "a": "Yes. The packages cover inbound and outbound contact centers through different features, and you have the option to swap between packages as your needs change."
+          },
+          {
+            "q": "Can the contact center integrate with our CRM?",
+            "a": "Yes. The solution offers seamless CRM integrations, and Speechminer merges with your existing applications and CRM. You can also bring your own API and we will customize and integrate your apps."
+          },
+          {
+            "q": "Which channels are supported?",
+            "a": "We provide omnichannel contact center features to support all channels — voice and digital — across your entire enterprise."
+          },
+          {
+            "q": "How is the solution licensed?",
+            "a": "You only pay for a flexible license model while basic communication requirements are all covered for you, and you can manage many agents from the same interface without additional costs."
+          },
+          {
+            "q": "Which engagement tools are included?",
+            "a": "We use the best tools to ensure seamless operations, including Genesys Workspace, Pulse, CX Insights, MicroStrategy and many more engagement management tools."
+          },
+          {
+            "q": "Will deployment disrupt our operations?",
+            "a": "No. The solution is designed for minimal downtime — avoid endless onboarding and maximize your system functionality with no installation downtime."
+          },
+          {
+            "q": "Do you provide support and maintenance?",
+            "a": "Yes. Our services stay up to date with maintenance around the clock, made to fit your needs."
           }
         ]
       }

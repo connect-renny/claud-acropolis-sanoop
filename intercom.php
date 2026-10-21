@@ -55,6 +55,7 @@ include 'includes/header.php';
               <a class="mega-svc" href="cloud-pbx.php">Cloud PBX<span class="mega-go">→</span></a>
               <a class="mega-svc" href="email-hosting-plan.php">Email Hosting Plan<span class="mega-go">→</span></a>
               <a class="mega-svc" href="intercom.php" aria-current="page">InterCom<span class="mega-go">→</span></a>
+              <a class="mega-svc" href="call-center.php">Call Center<span class="mega-go">→</span></a>
             </div>
             <div class="side-group side-group--solo">
               <a class="mega-svc" href="https://cloudacropolis.om/services/saas/managed-database-instance-2" target="_blank" rel="noopener">Managed database instance<span class="mega-go">↗</span></a>
