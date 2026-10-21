@@ -39,6 +39,18 @@ const LEAD_FORMS = [
             'message' => ['Requirements', false, 3000, 'text'],
         ],
     ],
+    // Short "call me back" form in the infrastructure page hero.
+    'callback' => [
+        'label' => 'Infrastructure callback',
+        'page' => 'infrastructure-oman.php',
+        'anchor' => 'hero',
+        'services' => [],
+        'fields' => [
+            'name' => ['Name', true, 120, 'text'],
+            'phone' => ['Phone', true, 40, 'phone'],
+            'message' => ['Message', false, 3000, 'text'],
+        ],
+    ],
     'domain' => [
         'label' => 'Domain enquiry',
         'page' => 'domain-registration-oman.php',
@@ -226,12 +238,14 @@ function lead_store(array $row)
 
 function lead_notify($id, array $form, array $values, array $row)
 {
-    $service = $form['services'][$values['service']] ?? $values['service'];
-    $subject = $form['label'] . ': ' . $service;
+    $service = $form['services'][$values['service'] ?? ''] ?? ($values['service'] ?? '');
+    $subject = $form['label'] . ($service !== '' ? ': ' . $service : '');
     if (!empty($values['company'])) {
         $subject .= ' (' . $values['company'] . ')';
     } elseif (!empty($values['domain'])) {
         $subject .= ' (' . $values['domain'] . ')';
+    } elseif ($service === '') {
+        $subject .= ': ' . $values['name'];
     }
 
     $lines = ['New ' . strtolower($form['label']) . ' from the Google Ads landing page.', ''];
@@ -252,12 +266,13 @@ function lead_notify($id, array $form, array $values, array $row)
 
     // Header values come from validated input, but strip line breaks anyway.
     $nl = ["\r", "\n"];
-    $headers = [
-        'From: Cloud Acropolis Website <' . LEAD_FROM . '>',
-        'Reply-To: ' . str_replace($nl, '', $values['name']) . ' <' . str_replace($nl, '', $values['email']) . '>',
-        'Content-Type: text/plain; charset=UTF-8',
-        'MIME-Version: 1.0',
-    ];
+    $headers = ['From: Cloud Acropolis Website <' . LEAD_FROM . '>'];
+    // The callback form collects no email, so there's no one to reply to.
+    if (!empty($values['email'])) {
+        $headers[] = 'Reply-To: ' . str_replace($nl, '', $values['name']) . ' <' . str_replace($nl, '', $values['email']) . '>';
+    }
+    $headers[] = 'Content-Type: text/plain; charset=UTF-8';
+    $headers[] = 'MIME-Version: 1.0';
     $encoded = '=?UTF-8?B?' . base64_encode(str_replace($nl, ' ', $subject)) . '?=';
 
     return @mail(implode(', ', LEAD_NOTIFY), $encoded, implode("\n", $lines), implode("\r\n", $headers));

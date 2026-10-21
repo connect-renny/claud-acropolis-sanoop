@@ -3,9 +3,11 @@
 //  Lead form, rendered from LEAD_FORMS (includes/leads.php).
 //
 //  Set before including:
-//    $lead_form    key in LEAD_FORMS ("infrastructure" | "domain")
+//    $lead_form    key in LEAD_FORMS ("infrastructure" | "domain" | "callback")
 //    $lead_full    field names that span both columns
 //    $lead_submit  submit button label
+//    $lead_compact optional; true for the short hero form (2-row message,
+//                  no privacy note)
 //
 //  ?service=<key> in the URL preselects the service (ad sitelinks can use it);
 //  CTA buttons with data-service do the same in place via landing.js.
@@ -25,9 +27,16 @@ $lf_ui = [
     'domain' => ['type' => 'text', 'autocomplete' => 'off', 'placeholder' => 'yourcompany.om'],
 ];
 $lf_id = fn($name) => $lead_form . '-' . $name;
+$lf_error = ($_GET['lead_error'] ?? '') === $lead_form;
+$lf_compact = $lead_compact ?? false;
+$lf_placeholder = [
+    'infrastructure' => 'Workload, CPU / RAM / storage, operating system, rack space, timeline…',
+    'domain' => 'Anything we should know?',
+    'callback' => 'What do you need? e.g. Linux VM, GPU server, colocation…',
+][$lead_form];
 ?>
-<form class="ca-form lp-form" action="lead.php" method="post" data-lead="<?= e($lead_form) ?>" novalidate>
-  <p class="form-status" role="status" aria-live="polite"<?= isset($_GET['lead_error']) ? ' data-state="error"' : '' ?>><?= isset($_GET['lead_error']) ? 'We couldn&rsquo;t send your request. Please check the details below and try again, or call us on ' . PHONE_DISPLAY . '.' : '' ?></p>
+<form class="ca-form lp-form<?= $lf_compact ? ' lp-form--compact' : '' ?>" action="lead.php" method="post" data-lead="<?= e($lead_form) ?>" novalidate>
+  <p class="form-status" role="status" aria-live="polite"<?= $lf_error ? ' data-state="error"' : '' ?>><?= $lf_error ? 'We couldn&rsquo;t send your request. Please check the details below and try again, or call us on ' . PHONE_DISPLAY . '.' : '' ?></p>
   <div class="ca-grid">
 <?php foreach ($lf['fields'] as $name => [$label, $required, $max, $type]):
     $id = $lf_id($name);
@@ -44,7 +53,7 @@ $lf_id = fn($name) => $lead_form . '-' . $name;
 <?php endforeach; ?>
       </select>
 <?php elseif ($name === 'message'): ?>
-      <textarea class="ca-input" id="<?= $id ?>" name="<?= $name ?>" rows="4" maxlength="<?= $max ?>"<?= $req ?> placeholder="<?= $lead_form === 'domain' ? 'Anything we should know?' : 'Workload, CPU / RAM / storage, operating system, rack space, timeline…' ?>"></textarea>
+      <textarea class="ca-input" id="<?= $id ?>" name="<?= $name ?>" rows="<?= $lf_compact ? 2 : 4 ?>" maxlength="<?= $max ?>"<?= $req ?> placeholder="<?= e($lf_placeholder) ?>"></textarea>
 <?php else:
     $ui = $lf_ui[$name];
 ?>
@@ -64,5 +73,7 @@ $lf_id = fn($name) => $lead_form . '-' . $name;
   <div class="form-hp" aria-hidden="true"><label for="<?= $lf_id('website') ?>">Website</label><input id="<?= $lf_id('website') ?>" name="website" type="text" tabindex="-1" autocomplete="off"></div>
 
   <button class="btn btn-primary btn-lg btn-block" type="submit"><?= e($lead_submit) ?> <span class="arrow">→</span></button>
+<?php if (!$lf_compact): ?>
   <p class="ca-form-note">We use your details only to respond to this enquiry. See our <a href="<?= PRIVACY_URL ?>">Privacy Policy</a>.</p>
+<?php endif; ?>
 </form>

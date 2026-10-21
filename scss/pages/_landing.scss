@@ -482,6 +482,54 @@ p.lp-svc-kicker {
     color 0.25s ease;
 }
 
+// ─── Hero callback form ────────────────────────────────────────────────────
+// A short card that overlaps the bottom of the hero photo. The photo's badge
+// moves to the top-left so the card doesn't cover it.
+.lp-hero-aside {
+  .lp-hero-media {
+    aspect-ratio: 16 / 11;
+  }
+
+  .lp-hero-badge {
+    top: 20px;
+    bottom: auto;
+  }
+}
+
+.lp-hero-form {
+  position: relative;
+  z-index: 3;
+  margin: -72px 24px 0;
+  padding: 22px 24px 24px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.lp-hero-form-title {
+  margin: 0 0 14px;
+  font-size: 1.15rem;
+  font-weight: var(--fw-extrabold);
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.lp-form--compact {
+  .ca-grid {
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .form-status {
+    margin: 0 0 12px;
+
+    &:empty {
+      display: none;
+    }
+  }
+}
+
 // ═══ FORM SECTION ══════════════════════════════════════════════════════════
 .lp-form-layout {
   display: grid;
@@ -1074,6 +1122,11 @@ p.lp-tld-note {
     left: 12px;
     right: 12px;
     bottom: 12px;
+  }
+
+  .lp-hero-form {
+    margin: -48px 10px 0;
+    padding: 18px 16px 20px;
   }
 
   .lp-search-alt .btn {

@@ -5,7 +5,7 @@
 //  fetch() callers send Accept: application/json and get JSON back:
 //    200 { ok: true, redirect }      422 { ok: false, errors, message }
 //  Plain form posts (no JS) are redirected: to the thank-you page on success,
-//  back to the form with ?lead_error=1 otherwise.
+//  back to the form with ?lead_error=<form id> otherwise.
 //
 //  The conversion event is not fired here. The thank-you page fires it once,
 //  from the session flag set below, so a refresh can't count a lead twice.
@@ -40,7 +40,7 @@ if (!isset(LEAD_FORMS[$form_id])) {
     exit;
 }
 $form = LEAD_FORMS[$form_id];
-$back = $form['page'] . '?lead_error=1#' . $form['anchor'];
+$back = $form['page'] . '?lead_error=' . $form_id . '#' . $form['anchor'];
 $generic = 'Sorry, we couldn\'t send your request. Please try again, or call us on ' . PHONE_DISPLAY . '.';
 
 // Bots: honeypot filled or token missing/forged/too fast. Pretend it worked so
@@ -64,10 +64,10 @@ try {
     $row = [
         'created_at' => gmdate('Y-m-d H:i:s'),
         'form' => $form_id,
-        'service' => $values['service'],
+        'service' => $values['service'] ?? '',
         'name' => $values['name'],
         'company' => $values['company'] ?? '',
-        'email' => $values['email'],
+        'email' => $values['email'] ?? '',
         'phone' => $values['phone'],
         'domain' => $values['domain'] ?? '',
         'message' => $values['message'] ?? '',
@@ -97,7 +97,7 @@ session_start();
 $_SESSION['lead_conversion'] = [
     'id' => $id,
     'form' => $form_id,
-    'service' => $values['service'],
+    'service' => $values['service'] ?? '',
 ];
 
 $thanks = 'thank-you.php?for=' . $form_id;

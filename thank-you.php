@@ -30,9 +30,11 @@ include 'includes/head.php';
 require 'includes/lp-icons.php';
 include 'includes/lp-header.php';
 
-$copy = $for === 'domain'
-    ? ['Your domain enquiry is on its way', 'Thanks for getting in touch. Our domain team will review your request and contact you to confirm availability, eligibility and pricing.']
-    : ['Your quote request is on its way', 'Thanks for getting in touch. Our infrastructure team will review your requirements and contact you to prepare your quotation.'];
+$copy = match ($for) {
+    'domain' => ['Your domain enquiry is on its way', 'Thanks for getting in touch. Our domain team will review your request and contact you to confirm availability, eligibility and pricing.'],
+    'callback' => ['We’ll call you back shortly', 'Thanks for getting in touch. A member of our infrastructure team will call you on the number you gave us to talk through your requirements.'],
+    default => ['Your quote request is on its way', 'Thanks for getting in touch. Our infrastructure team will review your requirements and contact you to prepare your quotation.'],
+};
 ?>
 
 <main id="main" class="lp-page">

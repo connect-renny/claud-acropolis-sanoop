@@ -71,18 +71,32 @@ $faqs = [
         </div>
       </div>
 
-      <div class="lp-hero-media">
-        <img src="assets/images/oman-network.jpg" alt="Network racks inside the Cloud Acropolis data center in Muscat" width="1920" height="1282" fetchpriority="high">
-        <div class="lp-hero-badge">
-          <span class="brand-quad" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-          <span><strong>Cloud Data Center</strong>Ghala, Muscat &middot; Sultanate of Oman</span>
+      <div class="lp-hero-aside">
+        <div class="lp-hero-media">
+          <img src="assets/images/oman-network.jpg" alt="Network racks inside the Cloud Acropolis data center in Muscat" width="1920" height="1282" fetchpriority="high">
+          <div class="lp-hero-badge">
+            <span class="brand-quad" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span><strong>Cloud Data Center</strong>Ghala, Muscat &middot; Sultanate of Oman</span>
+          </div>
+          <ul class="lp-hero-tags" aria-label="Infrastructure services">
+            <li><?= icon('terminal', 16) ?>Linux VM</li>
+            <li><?= icon('windows', 16) ?>Windows VM</li>
+            <li><?= icon('chip', 16) ?>GPU Servers</li>
+            <li><?= icon('rack', 16) ?>Colocation</li>
+          </ul>
         </div>
-        <ul class="lp-hero-tags" aria-label="Infrastructure services">
-          <li><?= icon('terminal', 16) ?>Linux VM</li>
-          <li><?= icon('windows', 16) ?>Windows VM</li>
-          <li><?= icon('chip', 16) ?>GPU Servers</li>
-          <li><?= icon('rack', 16) ?>Colocation</li>
-        </ul>
+
+        <div class="lp-hero-form">
+          <h2 class="lp-hero-form-title">Get a quick call back</h2>
+<?php
+$lead_form = 'callback';
+$lead_full = ['message'];
+$lead_submit = 'Call Me Back';
+$lead_compact = true;
+include 'includes/lp-form.php';
+$lead_compact = false;
+?>
+        </div>
       </div>
     </div>
   </section>
