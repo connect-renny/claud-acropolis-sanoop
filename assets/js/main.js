@@ -9,7 +9,7 @@
 
      1. Boot          no-js class, copyright year
      2. Header        shadow once the page scrolls
-     3. Mega menu     desktop "Our Services" dropdown
+     3. Mega menu     desktop "Our Offerings" dropdown
      4. Mobile nav    drawer + scrim
      5. Marketplace   category filter tabs
      6. Hero slider   autoplay, arrows, dots

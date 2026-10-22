@@ -103,20 +103,21 @@ include 'includes/header.php';
   <section class="section screen" id="cloud-services" data-screen="Cloud Services">
     <div class="container">
 
+      <div class="cs-domain">
+        <p class="section-intro">Find your .om or international domain and run it on cloud infrastructure hosted in Oman.</p>
+        <form class="domain-form" action="<?= e(DOMAIN_SEARCH_URL) ?>" method="get" target="_blank" role="search">
+          <input type="hidden" name="a" value="add">
+          <input type="hidden" name="domain" value="register">
+          <label class="visually-hidden" for="cs-domain-query">Domain name</label>
+          <input class="ca-input" id="cs-domain-query" name="query" type="text" placeholder="Type the domain you want" autocomplete="off" autocapitalize="off" spellcheck="false" required>
+          <button class="btn btn-primary" type="submit">Search Domain <span class="arrow">→</span></button>
+        </form>
+      </div>
+
       <div class="split-head">
         <div>
           <p class="eyebrow">CORE SERVICES</p>
           <h2 class="section-title">Infrastructure built for your business</h2>
-        </div>
-        <div class="split-head-aside cs-domain">
-          <p class="section-intro">Find your .om or international domain and run it on cloud infrastructure hosted in Oman.</p>
-          <form class="domain-form" action="<?= e(DOMAIN_SEARCH_URL) ?>" method="get" target="_blank" role="search">
-            <input type="hidden" name="a" value="add">
-            <input type="hidden" name="domain" value="register">
-            <label class="visually-hidden" for="cs-domain-query">Domain name</label>
-            <input class="ca-input" id="cs-domain-query" name="query" type="text" placeholder="yourcompany.om" autocomplete="off" autocapitalize="off" spellcheck="false" required>
-            <button class="btn btn-primary" type="submit">Search Domain <span class="arrow">→</span></button>
-          </form>
         </div>
       </div>
 

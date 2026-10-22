@@ -261,12 +261,30 @@
 // ═══ CLOUD SERVICES ════════════════════════════════════════════════════════
 // Domain search in the section head's aside; the form stretches to the aside.
 .cs-domain {
-  flex-basis: 460px;
-  align-items: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+  margin-bottom: 32px;
+
+  .section-intro {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: var(--fw-bold);
+    color: var(--ink);
+  }
+
+  .domain-form {
+    flex: 0 1 520px;
+  }
 
   @media (width <= 1024px) {
-    flex-basis: 100%;
-    max-width: 560px;
+    flex-direction: column;
+    align-items: stretch;
+
+    .domain-form {
+      flex-basis: auto;
+    }
   }
 
   @media (width <= 480px) {
@@ -323,7 +341,7 @@
 .cs-media {
   position: relative;
   flex-shrink: 0;
-  height: clamp(140px, 24vh, 240px);
+  height: clamp(100px, 14vh, 160px);
   overflow: hidden;
 
   img {
@@ -1670,6 +1688,10 @@
     margin-bottom: 8px;
   }
 
+  .cs-media {
+    height: 12vh;
+  }
+
   .cs-icon {
     width: 46px;
     height: 46px;
@@ -1779,7 +1801,7 @@
   }
 
   .cs-media {
-    height: 20vh;
+    height: 10vh;
   }
 
   .marketplace-grid {
@@ -1935,7 +1957,7 @@
   }
 
   .cs-media {
-    height: 200px;
+    height: 150px;
   }
 
   .marketplace-grid {
@@ -2067,6 +2089,10 @@
 
   .cs-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cs-media {
+    height: 130px;
   }
 
   .contact-copy .final-cta-actions {

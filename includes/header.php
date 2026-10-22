@@ -21,7 +21,7 @@ $mobile_link = function ($section, $href, $label) use ($page) {
       <ul>
         <li><?= $nav_link('home', 'index.php', 'Home') ?></li>
         <li class="has-menu">
-          <button class="nav-link<?= $page['section'] === 'services' ? ' is-current' : '' ?>" aria-expanded="false" data-menu="services">Our Services <svg class="chev" viewBox="0 0 12 8" width="10" height="8"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button class="nav-link<?= $page['section'] === 'services' ? ' is-current' : '' ?>" aria-expanded="false" data-menu="services">Our Offerings <svg class="chev" viewBox="0 0 12 8" width="10" height="8"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
 
           <div class="mega-menu mega-menu--full" id="menu-services">
             <div class="mega-cols">
@@ -62,7 +62,7 @@ $mobile_link = function ($section, $href, $label) use ($page) {
     <?= $mobile_link('home', 'index.php', 'Home') ?>
 
     <details class="mobile-services"<?= $page['section'] === 'services' ? ' open' : '' ?>>
-      <summary>Our Services</summary>
+      <summary>Our Offerings</summary>
 <?php foreach (SERVICE_MENU as $cat => $links): ?>
 
       <p class="mobile-cat"><?= e($cat) ?></p>

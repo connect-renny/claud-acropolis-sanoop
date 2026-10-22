@@ -4,7 +4,7 @@
     {
       "slug": "linux-server",
       "category": "infrastructure",
-      "image": "card-vps.jpg",
+      "image": "page-hero-linux-server.jpg",
       "h1": "Linux Server",
       "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
       "sidebarTitle": "Infrastructure",
@@ -2683,7 +2683,7 @@
     {
       "slug": "ssl-certificates",
       "category": "security",
-      "image": "why-datacenter.jpg",
+      "image": "page-hero-ssl-certificates.jpg",
       "h1": "SSL Certificates",
       "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
       "sidebarTitle": "Security Services",

@@ -22,7 +22,7 @@ include 'includes/header.php';
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol>
           <li><a href="index.php">Home</a></li>
-          <li>Our Services</li>
+          <li>Our Offerings</li>
           <li><a href="linux-server.php">Infrastructure</a></li>
           <li aria-current="page">GPU</li>
         </ol>

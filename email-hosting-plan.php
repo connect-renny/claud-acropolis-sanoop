@@ -22,7 +22,7 @@ include 'includes/header.php';
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol>
           <li><a href="index.php">Home</a></li>
-          <li>Our Services</li>
+          <li>Our Offerings</li>
           <li><a href="cloud-pbx.php">SaaS</a></li>
           <li aria-current="page">Email Hosting Plan</li>
         </ol>

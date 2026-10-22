@@ -21,7 +21,7 @@ include 'includes/header.php';
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol>
           <li><a href="index.php">Home</a></li>
-          <li>Our Services</li>
+          <li>Our Offerings</li>
           <li><a href="domain-registration.php">Domain</a></li>
           <li aria-current="page">Domain Registration</li>
         </ol>

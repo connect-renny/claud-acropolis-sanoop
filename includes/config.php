@@ -36,7 +36,7 @@ const DOMAIN_SEARCH_URL = 'https://my.cloudacropolis.om/cart.php';
 const LEAD_NOTIFY = ['info@cloudacropolis.om'];
 const LEAD_FROM = 'no-reply@cloudacropolis.om';
 
-// The "Our Services" menu: desktop mega menu and mobile list share it.
+// The "Our Offerings" menu: desktop mega menu and mobile list share it.
 const SERVICE_MENU = [
     'Infrastructure' => [
         ['Domain Registration', 'domain-registration.php'],
@@ -46,13 +46,15 @@ const SERVICE_MENU = [
         ['GPU as a Service', 'gpu.php'],
     ],
     'SaaS Solutions' => [
-        ['Cloud PBX', 'cloud-pbx.php'],
-        ['Email Hosting', 'email-hosting-plan.php'],
         ['OSOS ERP SME', 'osos-erp-sme.php'],
         ['OSOS POS', 'osos-pos.php'],
         ['OSOS ERP Enterprise', 'erp-enterprise.php'],
         ['HRMS', 'hrms.php'],
         ['QHSE', 'qhse.php'],
+    ],
+    'Communication' => [
+        ['Cloud PBX', 'cloud-pbx.php'],
+        ['Email Hosting', 'email-hosting-plan.php'],
         ['InterCom', 'intercom.php'],
         ['Call Center', 'call-center.php'],
     ],

@@ -116,7 +116,7 @@ function hero(p, cat) {
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol>
           <li><a href="index.php">Home</a></li>
-          <li>Our Services</li>
+          <li>Our Offerings</li>
           <li><a href="${esc(cat.href)}">${esc(cat.label)}</a></li>
           <li aria-current="page">${esc(p.h1)}</li>
         </ol>
