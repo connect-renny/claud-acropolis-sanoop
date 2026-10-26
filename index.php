@@ -104,12 +104,11 @@ include 'includes/header.php';
     <div class="container">
 
       <div class="cs-domain">
-        <p class="section-intro">Find your .om or international domain and run it on cloud infrastructure hosted in Oman.</p>
         <form class="domain-form" action="<?= e(DOMAIN_SEARCH_URL) ?>" method="get" target="_blank" role="search">
           <input type="hidden" name="a" value="add">
           <input type="hidden" name="domain" value="register">
           <label class="visually-hidden" for="cs-domain-query">Domain name</label>
-          <input class="ca-input" id="cs-domain-query" name="query" type="text" placeholder="Type the domain you want" autocomplete="off" autocapitalize="off" spellcheck="false" required>
+          <input class="ca-input" id="cs-domain-query" name="query" type="text" placeholder="Find your .om or global domain and host it in Oman" autocomplete="off" autocapitalize="off" spellcheck="false" required>
           <button class="btn btn-primary" type="submit">Search Domain <span class="arrow">→</span></button>
         </form>
       </div>
@@ -412,8 +411,8 @@ include 'includes/header.php';
           <figcaption><strong>Cloud Data Center</strong><span>Muscat</span></figcaption>
         </figure>
         <figure class="facility-shot reveal" style="--d:80ms">
-          <img src="assets/images/hero-datacenter.jpg" alt="Server racks in the Cloud Acropolis facility" loading="lazy">
-          <figcaption><strong>Carrier-neutral network</strong><span>Not tied to a single telecom provider</span></figcaption>
+          <img src="assets/images/facility-tier4.jpg" alt="Server racks in the Cloud Acropolis facility" loading="lazy">
+          <figcaption><strong>Tier 4 certified<br>by local Authorities</strong></figcaption>
         </figure>
         <div class="facility-team reveal" style="--d:160ms">
           <span class="brand-quad brand-quad--lg" aria-hidden="true"><i></i><i></i><i></i><i></i></span>

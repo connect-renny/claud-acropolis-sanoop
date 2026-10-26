@@ -6,7 +6,7 @@ $page = [
     'section' => 'services',
     'title' => 'ERP Enterprise | Cloud Acropolis',
     'description' => 'Cloud Acropolis is Oman\'s premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.',
-    'image' => 'hero-slider-03.jpg',
+    'image' => 'page-hero-osos-erp-enterprise.jpg',
 ];
 include 'includes/head.php';
 include 'includes/header.php';
@@ -16,7 +16,7 @@ include 'includes/header.php';
 
   <!-- ============ PAGE HERO ============ -->
   <section class="page-hero">
-    <img src="assets/images/hero-slider-03.jpg" alt="" class="page-hero-img">
+    <img src="assets/images/page-hero-osos-erp-enterprise.jpg" alt="" class="page-hero-img">
     <div class="page-hero-overlay"></div>
     <div class="container page-hero-inner">
       <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -28,7 +28,10 @@ include 'includes/header.php';
         </ol>
       </nav>
       <p class="page-kicker">SaaS Solutions</p>
-      <h1>ERP Enterprise</h1>
+      <div class="page-hero-title">
+        <h1>ERP Enterprise</h1>
+        <p class="page-hero-note">Apps of ERP</p>
+      </div>
       <nav aria-label="Service categories">
         <ul class="service-tabs">
           <li><a class="service-tab" href="linux-server.php"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><line x1="7" y1="7.5" x2="7.01" y2="7.5"/><line x1="7" y1="16.5" x2="7.01" y2="16.5"/></svg>Infrastructure</a></li>

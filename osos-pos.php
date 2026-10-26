@@ -6,7 +6,7 @@ $page = [
     'section' => 'services',
     'title' => 'OSOS POS | Cloud Acropolis',
     'description' => 'OSOS POS by Cloud Acropolis — a cloud-based point of sale for retail, restaurants and cafés in Oman, with inventory, customer management, multi-branch control and real-time reporting.',
-    'image' => 'hero-slider-03.jpg',
+    'image' => 'page-hero-osos-pos.jpg',
 ];
 include 'includes/head.php';
 include 'includes/header.php';
@@ -16,7 +16,7 @@ include 'includes/header.php';
 
   <!-- ============ PAGE HERO ============ -->
   <section class="page-hero">
-    <img src="assets/images/hero-slider-03.jpg" alt="" class="page-hero-img">
+    <img src="assets/images/page-hero-osos-pos.jpg" alt="" class="page-hero-img">
     <div class="page-hero-overlay"></div>
     <div class="container page-hero-inner">
       <nav class="breadcrumb" aria-label="Breadcrumb">

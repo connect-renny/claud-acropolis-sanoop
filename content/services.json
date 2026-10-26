@@ -157,7 +157,7 @@
     {
       "slug": "windows-server",
       "category": "infrastructure",
-      "image": "oman-network.jpg",
+      "image": "page-hero-linux-server.jpg",
       "h1": "Windows server",
       "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
       "sidebarTitle": "Infrastructure",
@@ -314,7 +314,7 @@
     {
       "slug": "colocation",
       "category": "infrastructure",
-      "image": "colocation.jpg",
+      "image": "page-hero-colocation.jpg",
       "h1": "Colocation",
       "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
       "sidebarTitle": "Infrastructure",
@@ -645,7 +645,7 @@
     {
       "slug": "cloud-pbx",
       "category": "saas",
-      "image": "page-hero-cloud-pbx.jpg",
+      "image": "page-hero-intercom.jpg",
       "h1": "Cloud PBX",
       "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
       "sidebarTitle": "SaaS Solutions",
@@ -856,7 +856,7 @@
     {
       "slug": "email-hosting-plan",
       "category": "saas",
-      "image": "oman-network.jpg",
+      "image": "page-hero-email-hosting.jpg",
       "h1": "Email Hosting Plan",
       "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
       "sidebarTitle": "SaaS Solutions",
@@ -1262,7 +1262,7 @@
     {
       "slug": "osos-pos",
       "category": "saas",
-      "image": "hero-slider-03.jpg",
+      "image": "page-hero-osos-pos.jpg",
       "h1": "OSOS POS",
       "description": "OSOS POS by Cloud Acropolis — a cloud-based point of sale for retail, restaurants and cafés in Oman, with inventory, customer management, multi-branch control and real-time reporting.",
       "sidebarTitle": "SaaS Solutions",
@@ -1474,8 +1474,9 @@
     {
       "slug": "erp-enterprise",
       "category": "saas",
-      "image": "hero-slider-03.jpg",
+      "image": "page-hero-osos-erp-enterprise.jpg",
       "h1": "ERP Enterprise",
+      "heroNote": "Apps of ERP",
       "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
       "sidebarTitle": "SaaS Solutions",
       "sidebar": [
@@ -1680,8 +1681,9 @@
     {
       "slug": "hrms",
       "category": "saas",
-      "image": "hero-slider-03.jpg",
+      "image": "page-hero-hrms.jpg",
       "h1": "HRMS",
+      "heroNote": "Apps of HRMS",
       "description": "Cloud-based HRMS from Cloud Acropolis — employee records, attendance and leave, payroll, self-service and HR reporting in one secure platform for businesses in Oman.",
       "sidebarTitle": "SaaS Solutions",
       "sidebar": [
@@ -1897,7 +1899,7 @@
     {
       "slug": "qhse",
       "category": "saas",
-      "image": "hero-slider-03.jpg",
+      "image": "page-hero-qhse.jpg",
       "h1": "QHSE",
       "description": "Cloud-based QHSE management from Cloud Acropolis — quality, health, safety and environmental compliance, incident reporting, audits and dashboards for organizations in Oman.",
       "sidebarTitle": "SaaS Solutions",
@@ -2114,7 +2116,7 @@
     {
       "slug": "intercom",
       "category": "saas",
-      "image": "hero-slider-04.jpg",
+      "image": "page-hero-intercom.jpg",
       "h1": "InterCom",
       "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
       "sidebarTitle": "SaaS Solutions",
@@ -2527,7 +2529,7 @@
     {
       "slug": "business-bundle",
       "category": "bundle",
-      "image": "hero-slider-02.jpg",
+      "image": "page-hero-business-bundle.jpg",
       "h1": "SME Businesses Bundle",
       "description": "Cloud Acropolis is Oman's premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.",
       "sidebarTitle": "Business Bundle",

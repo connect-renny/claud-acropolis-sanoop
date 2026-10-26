@@ -6,7 +6,7 @@ $page = [
     'section' => 'services',
     'title' => 'HRMS | Cloud Acropolis',
     'description' => 'Cloud-based HRMS from Cloud Acropolis — employee records, attendance and leave, payroll, self-service and HR reporting in one secure platform for businesses in Oman.',
-    'image' => 'hero-slider-03.jpg',
+    'image' => 'page-hero-hrms.jpg',
 ];
 include 'includes/head.php';
 include 'includes/header.php';
@@ -16,7 +16,7 @@ include 'includes/header.php';
 
   <!-- ============ PAGE HERO ============ -->
   <section class="page-hero">
-    <img src="assets/images/hero-slider-03.jpg" alt="" class="page-hero-img">
+    <img src="assets/images/page-hero-hrms.jpg" alt="" class="page-hero-img">
     <div class="page-hero-overlay"></div>
     <div class="container page-hero-inner">
       <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -28,7 +28,10 @@ include 'includes/header.php';
         </ol>
       </nav>
       <p class="page-kicker">SaaS Solutions</p>
-      <h1>HRMS</h1>
+      <div class="page-hero-title">
+        <h1>HRMS</h1>
+        <p class="page-hero-note">Apps of HRMS</p>
+      </div>
       <nav aria-label="Service categories">
         <ul class="service-tabs">
           <li><a class="service-tab" href="linux-server.php"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><line x1="7" y1="7.5" x2="7.01" y2="7.5"/><line x1="7" y1="16.5" x2="7.01" y2="16.5"/></svg>Infrastructure</a></li>

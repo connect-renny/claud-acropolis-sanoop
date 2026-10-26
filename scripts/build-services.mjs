@@ -122,7 +122,7 @@ function hero(p, cat) {
         </ol>
       </nav>
       <p class="page-kicker">${esc(p.sidebarTitle)}</p>
-      <h1>${esc(p.h1)}</h1>
+      ${heroTitle(p)}
       <nav aria-label="Service categories">
         <ul class="service-tabs">
 ${tabs}
@@ -130,6 +130,15 @@ ${tabs}
       </nav>
     </div>
   </section>`;
+}
+
+// Pages with a `heroNote` show it beside the title.
+function heroTitle(p) {
+  if (!p.heroNote) return `<h1>${esc(p.h1)}</h1>`;
+  return `<div class="page-hero-title">
+        <h1>${esc(p.h1)}</h1>
+        <p class="page-hero-note">${esc(p.heroNote)}</p>
+      </div>`;
 }
 
 function sidebar(p) {

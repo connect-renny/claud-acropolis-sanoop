@@ -6,7 +6,7 @@ $page = [
     'section' => 'services',
     'title' => 'Email Hosting Plan | Cloud Acropolis',
     'description' => 'Cloud Acropolis is Oman\'s premier Tier 4 Data Center solutions provider. We offer certified fault-tolerant Colocation, Cloud Servers, and VPS services in Muscat with 99.995% uptime guaranteed.',
-    'image' => 'oman-network.jpg',
+    'image' => 'page-hero-email-hosting.jpg',
 ];
 include 'includes/head.php';
 include 'includes/header.php';
@@ -16,7 +16,7 @@ include 'includes/header.php';
 
   <!-- ============ PAGE HERO ============ -->
   <section class="page-hero">
-    <img src="assets/images/oman-network.jpg" alt="" class="page-hero-img">
+    <img src="assets/images/page-hero-email-hosting.jpg" alt="" class="page-hero-img">
     <div class="page-hero-overlay"></div>
     <div class="container page-hero-inner">
       <nav class="breadcrumb" aria-label="Breadcrumb">
