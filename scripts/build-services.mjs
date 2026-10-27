@@ -420,7 +420,7 @@ function contactPage() {
   const main = `<main id="main" class="service-page company-page">
 
 ${pageHero({
-  image: "oman-network.jpg",
+  image: "page-hero-contact.jpg",
   crumb: "Contact Us",
   kicker: "Contact Us",
   h1: "Get in Touch",
@@ -498,7 +498,7 @@ ${HONEYPOT}
     section: "contact",
     title: "Contact Us | Cloud Acropolis",
     description: "Get in touch with Cloud Acropolis — Cloud Data Center, Building 2073, Way 6025, Ghala Industrial Area, Muscat. Call +968 9239 4675 or email Info@CloudAcropolis.om.",
-    image: "oman-network.jpg",
+    image: "page-hero-contact.jpg",
     main,
   });
 }
@@ -553,7 +553,7 @@ function partnerPage() {
   const main = `<main id="main" class="service-page company-page">
 
 ${pageHero({
-  image: "hero-datacenter.jpg",
+  image: "page-hero-partner.jpg",
   crumb: "Become a Partner",
   kicker: "Partner Program",
   h1: "Become a partner",
@@ -694,7 +694,7 @@ ${HONEYPOT}
     section: "partner",
     title: "Become a Partner | Cloud Acropolis",
     description: "Partner with Cloud Acropolis — a Rating IV data center in Oman. Harness our infrastructure, facilities and expert support to deliver exceptional services to your customers.",
-    image: "hero-datacenter.jpg",
+    image: "page-hero-partner.jpg",
     main,
   });
 }

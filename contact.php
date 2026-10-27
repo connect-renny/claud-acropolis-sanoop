@@ -5,7 +5,7 @@ $page = [
     'section' => 'contact',
     'title' => 'Contact Us | Cloud Acropolis',
     'description' => 'Get in touch with Cloud Acropolis — Cloud Data Center, Building 2073, Way 6025, Ghala Industrial Area, Muscat. Call +968 9239 4675 or email Info@CloudAcropolis.om.',
-    'image' => 'oman-network.jpg',
+    'image' => 'page-hero-contact.jpg',
 ];
 include 'includes/head.php';
 include 'includes/header.php';
@@ -15,7 +15,7 @@ include 'includes/header.php';
 
   <!-- ============ PAGE HERO ============ -->
   <section class="page-hero page-hero--company">
-    <img src="assets/images/oman-network.jpg" alt="" class="page-hero-img">
+    <img src="assets/images/page-hero-contact.jpg" alt="" class="page-hero-img">
     <div class="page-hero-overlay"></div>
     <div class="container page-hero-inner">
       <nav class="breadcrumb" aria-label="Breadcrumb">

@@ -5,7 +5,7 @@ $page = [
     'section' => 'partner',
     'title' => 'Become a Partner | Cloud Acropolis',
     'description' => 'Partner with Cloud Acropolis — a Rating IV data center in Oman. Harness our infrastructure, facilities and expert support to deliver exceptional services to your customers.',
-    'image' => 'hero-datacenter.jpg',
+    'image' => 'page-hero-partner.jpg',
 ];
 include 'includes/head.php';
 include 'includes/header.php';
@@ -15,7 +15,7 @@ include 'includes/header.php';
 
   <!-- ============ PAGE HERO ============ -->
   <section class="page-hero page-hero--company">
-    <img src="assets/images/hero-datacenter.jpg" alt="" class="page-hero-img">
+    <img src="assets/images/page-hero-partner.jpg" alt="" class="page-hero-img">
     <div class="page-hero-overlay"></div>
     <div class="container page-hero-inner">
       <nav class="breadcrumb" aria-label="Breadcrumb">
